@@ -21,46 +21,46 @@ class CustomButton extends React.Component {
         // hard-coded images -- FUTURE: could update to take string as icon file name
         let icon = "../media/" + this.props.icon
         let alt = "button"
-        if (this.props.icon == "home.png"){
+        if (this.props.icon === "home.png"){
             alt = "home"
         }
-        else if (this.props.icon == "email.png"){
+        else if (this.props.icon === "email.png"){
             alt = "email"
         }
-        else if (this.props.icon == "linkedin.png"){
+        else if (this.props.icon === "linkedin.png"){
             alt = "linkedin"
         }
-        else if (this.props.icon == "play.png"){
+        else if (this.props.icon === "play.png"){
             alt = "play"
         }
-        else if (this.props.icon == "p1.png"){
+        else if (this.props.icon === "p1.png"){
             alt = "project 1"
         }
-        else if (this.props.icon == "p2.png"){
+        else if (this.props.icon === "p2.png"){
             alt = "project 2"
         }
-        else if (this.props.icon == "p3.png"){
+        else if (this.props.icon === "p3.png"){
             alt = "project 3"
         }
-        else if (this.props.icon == "p4.png"){
+        else if (this.props.icon === "p4.png"){
             alt = "project 4"
         }
-        else if (this.props.icon == "p5.png"){
+        else if (this.props.icon === "p5.png"){
             alt = "project 5"
         }
-        else if (this.props.icon == "p6.png"){
+        else if (this.props.icon === "p6.png"){
             alt = "project 6"
         }
-        else if (this.props.icon == "close.png"){
+        else if (this.props.icon === "close.png"){
             alt = "close menu"
         }
-        else if (this.props.icon == "menu.png"){
+        else if (this.props.icon === "menu.png"){
             alt = "open menu"
         }
-        else if (this.props.icon == "on.png"){
+        else if (this.props.icon === "on.png"){
             alt = "on"
         }
-        else if (this.props.icon == "off.png"){
+        else if (this.props.icon === "off.png"){
             alt = "off"
         }
 
