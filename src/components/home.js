@@ -14,7 +14,7 @@ class Home extends React.Component {
         const disableVideo = (this.props.video) ? "" : "disabled"
 
         return <div className="home-display">
-                <video className={disableVideo} id="home-background-video" src={websitev2} typeof='video/mp4' autoPlay loop muted poster={websitev2gif} />
+                <video className={disableVideo} id="home-background-video" src={websitev2} typeof='video/mp4' autoPlay loop muted playsInline webkit-playsinline poster={websitev2gif} />
                 
                 <div className='home-simple'>
                     <div className='home-simple-name'>
