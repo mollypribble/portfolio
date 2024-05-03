@@ -56,12 +56,6 @@ class RecruitRight extends React.Component {
                 </div>
             </div>
         </div>
-
-        {/* Mobile */}
-
-        {/* <div className='project-display-mobile'>
-            <Title title="Recruit Right" />
-        </div> */}
         </>
     }
     

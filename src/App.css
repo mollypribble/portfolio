@@ -1232,7 +1232,7 @@ button:not(:hover).bounce .button-top{
 .htc-takeaway-image{
   height: 410px;
   width: 100%;
-  background-image: url('../public/media/project-media/htc/htc-insta.png');
+  background-image: url('./media/project-media/htc/htc-insta.png');
   background-size: cover;
   background-position: center;
   background-color: var(--default-white);
@@ -1260,7 +1260,7 @@ button:not(:hover).bounce .button-top{
   width: 80%;
   aspect-ratio: 2;
   overflow: hidden;
-  background-image: url('../public/media/project-media/htc/htc-home.png');
+  background-image: url('./media/project-media/htc/htc-home.png');
   background-size: cover;
   background-position: top;
   background-color: var(--default-white);
@@ -1330,7 +1330,7 @@ button:not(:hover).bounce .button-top{
   min-height: 240px;
   height: 100%;
   overflow: hidden;
-  background-image: url('../public/media/project-media/edc/EDC-web.gif');
+  background-image: url('./media/project-media/edc/EDC-web.gif');
   background-size: cover;
   background-position: center;
   background-color: var(--default-white);
@@ -1375,7 +1375,7 @@ button:not(:hover).bounce .button-top{
 
 .split-box-image{
   min-width: 360px;
-  background-image: url('../public/media/project-media/edc/what-is-an-adu.jpg');
+  background-image: url('./media/project-media/edc/what-is-an-adu.jpg');
   background-size: cover;
   background-position: center;
   background-color: var(--default-white);
@@ -1393,7 +1393,7 @@ button:not(:hover).bounce .button-top{
 .edc-takeaway.image-only .top-image {
   width: 100%;
   height: 50%;
-  background-image: url('../public/media/project-media/edc/edc-brainstorm1.png');
+  background-image: url('./media/project-media/edc/edc-brainstorm1.png');
   background-size: cover;
   background-position: center;
 }
@@ -1401,7 +1401,7 @@ button:not(:hover).bounce .button-top{
 .edc-takeaway.image-only .bottom-image{
   width: 100%;
   height: 50%;
-  background-image: url('../public/media/project-media/edc/edc-brainstorm2.png');
+  background-image: url('./media/project-media/edc/edc-brainstorm2.png');
   background-size: cover;
   background-position: center;
   border-top: var(--default-white) 1px solid;
@@ -1453,7 +1453,7 @@ button:not(:hover).bounce .button-top{
   aspect-ratio: 0.95;
   height: 100%;
   overflow: hidden;
-  background-image: url('../public/media/project-media/edc/edc-map.gif');
+  background-image: url('./media/project-media/edc/edc-map.gif');
   background-size: cover;
   background-position: center;
   background-color: var(--default-white);
@@ -1483,7 +1483,7 @@ button:not(:hover).bounce .button-top{
   aspect-ratio: 2;
   height: 100%;
   overflow: hidden;
-  background-image: url('../public/media/project-media/edc/EDC-web.gif');
+  background-image: url('./media/project-media/edc/EDC-web.gif');
   background-size: cover;
   background-position: center;
   background-color: var(--default-white);

@@ -19,7 +19,7 @@ class CustomButton extends React.Component {
         const buttonTopClass=this.props.active ?"button-top active" : "button-top"
 
         // hard-coded images -- FUTURE: could update to take string as icon file name
-        let icon = "/media/" + this.props.icon
+        let icon = "./media/" + this.props.icon
         let alt = "button"
         if (this.props.icon == "home.png"){
             alt = "home"

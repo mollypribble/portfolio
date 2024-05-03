@@ -27,7 +27,7 @@ class LandingPage extends React.Component {
         return <>
         <div className={'insert-vhs' + animateClass} />
         <div className={'landing-page' + animateClass}>
-            <img className='landing-page-vhs-img' src="/media/vhs.png" alt="Molly's UX portfolio now available on VHS. Play now!" width="80%" height="auto" />
+            <img className='landing-page-vhs-img' src="./media/vhs.png" alt="Molly's UX portfolio now available on VHS. Play now!" width="80%" height="auto" />
             <CustomButton small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} />
         </div>
         </>
