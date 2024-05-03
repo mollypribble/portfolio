@@ -415,11 +415,13 @@ button:not(:hover).bounce .button-top{
     width: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    border-left: transparent 1px solid;
   }
   100% { 
     width: 128px;
     padding-left: 16px;
     padding-right: 16px;
+    border-left: var(--default-white) 1px solid;
   }
 }
 
@@ -428,11 +430,13 @@ button:not(:hover).bounce .button-top{
     width: 128px;
     padding-left: 16px;
     padding-right: 16px;
+    border-left: var(--default-white) 1px solid;
   }
   100% { 
     width: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    border-left: transparent 1px solid;
   }
 }
 
@@ -446,7 +450,8 @@ button:not(:hover).bounce .button-top{
     -moz-animation: slideOut 700ms;
     -o-animation: slideOut 700ms;
     -ms-animation: slideOut 700ms;
-    border-left: 0px;
+    overflow-x: hidden;
+    border-left: transparent 1px solid;
   }
   .nav-bar.first,
   .nav-bar-small.first{
@@ -655,7 +660,7 @@ button:not(:hover).bounce .button-top{
 }
 
 .banner-subtitle{
-  width: 100%;
+  width: unset;
   font-size: 36px;
   font-family: 'VT323';
   font-weight: 400;
@@ -1163,6 +1168,7 @@ button:not(:hover).bounce .button-top{
   }
   .rr-summary .rr-text{
     width: unset;
+    border-bottom: var(--default-white) 1px solid;
   }
   .rr-summary-image{
     width: 90%;
