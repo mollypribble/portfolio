@@ -582,7 +582,7 @@ button:not(:hover).bounce .button-top{
   border-color: var(--default-black);
 }
 
-@media (max-width:416px) {
+@media (max-width:544px) {
   .banner.home-banner.small{
     display: flex;
   }
@@ -805,6 +805,7 @@ button:not(:hover).bounce .button-top{
     margin-top: 1px;
     margin-left: 1px;
     min-width: 140px;
+    max-width: 300px;
     flex-grow: 1;
   }
 }
