@@ -34,7 +34,6 @@
 
 html{
   cursor: url('./media/cursor.png') 9 9, auto;
-  height: 100%;
 }
 
 html:active{
@@ -50,7 +49,6 @@ body{
   font-weight: 300;
   scroll-behavior: smooth;
   line-height: 1.65;
-  height: 100%;
 }
 
 a{
@@ -468,7 +466,8 @@ button:not(:hover).bounce .button-top{
 .portfolio-content{
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
 }
 
 @keyframes fadeIn {
