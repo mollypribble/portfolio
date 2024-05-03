@@ -1,5 +1,7 @@
 import React from 'react';
 import CustomButton from './button';
+import menu from '../../public/media/menu.png'
+import home from '../../public/media/home.png'
 
 class NavBar extends React.Component {
 
@@ -51,13 +53,13 @@ class NavBar extends React.Component {
     render () {
         const first = (this.state.first) ? " first" : ""
         const navBarClass = (this.state.width <= 550 && this.state.open) ? "nav-bar-small" : "nav-bar"
-        const icon = (this.state.open) ? "close.png" : "menu.png"
+        const icon = (this.state.open) ? "close.png" : menu
         const tabIndex = (this.state.open) ? "0" : "-1"
         const disableButtons = (this.state.width <= 550 & !this.state.open) ? true : false
 
         return <div className={navBarClass+first}>
             <CustomButton disabled={false} className='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} />
-            <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)}/>
+            <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={home} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)}/>
             <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p1.png"} active={(this.props.currPage == 1)} onClick={(e) => this.handleNavWrapper(1)}/>
             <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p2.png"} active={(this.props.currPage == 2)} onClick={(e) => this.handleNavWrapper(2)}/>
             <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p3.png"} active={(this.props.currPage == 3)} onClick={(e) => this.handleNavWrapper(3)}/>
