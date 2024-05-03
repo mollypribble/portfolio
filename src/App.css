@@ -33,11 +33,11 @@
 }
 
 html{
-  cursor: url('../public/media/cursor.png') 9 9, auto;
+  cursor: url('./media/cursor.png') 9 9, auto;
 }
 
 html:active{
-  cursor: url('../public/media/active-cursor.png') 9 9, auto;
+  cursor: url('./media/active-cursor.png') 9 9, auto;
 }
 
 body{
@@ -53,7 +53,7 @@ body{
 
 a{
   color: var(--default-black);
-  cursor: url('../public/media/hover-cursor.png') 9 9, crosshair;
+  cursor: url('./media/hover-cursor.png') 9 9, crosshair;
 }
 
 a:focus{
@@ -63,12 +63,12 @@ a:focus{
 
 button{
   color: var(--default-black);
-  cursor: url('../public/media/hover-cursor.png') 9 9, crosshair;
+  cursor: url('./media/hover-cursor.png') 9 9, crosshair;
 }
 
 a:active,
 button:active{
-  cursor: url('../public/media/active-cursor.png') 9 9, crosshair;
+  cursor: url('./media/active-cursor.png') 9 9, crosshair;
 }
 
 button:focus{
