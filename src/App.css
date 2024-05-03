@@ -467,8 +467,7 @@ button:not(:hover).bounce .button-top{
   display: flex;
   flex-direction: row;
   height: 100vh;
-  position: fixed;
-  width: 100%;
+  height: -webkit-fill-available;
 }
 
 @keyframes fadeIn {
