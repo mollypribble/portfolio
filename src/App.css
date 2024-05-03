@@ -86,7 +86,7 @@ button:focus .button-bottom{
 /* VHS landing page */
 .landing-page{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -446,6 +446,7 @@ button:not(:hover).bounce .button-top{
     -moz-animation: slideOut 700ms;
     -o-animation: slideOut 700ms;
     -ms-animation: slideOut 700ms;
+    border-left: 0px;
   }
   .nav-bar.first,
   .nav-bar-small.first{
@@ -460,14 +461,16 @@ button:not(:hover).bounce .button-top{
     right: 17px;
     display: block;
   }
+  .custom-scroll{
+    display: none;
+  }
 }
 
 /* Portfolio Content */
 .portfolio-content{
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  height: -webkit-fill-available;
+  height: 100%;
 }
 
 @keyframes fadeIn {
