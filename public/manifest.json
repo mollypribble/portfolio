@@ -1,25 +1,70 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Molly Pribble",
+  "name": "Molly Pribble's Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "sizes": "16x16",
+      "type": "image/ico"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "logo.png",
+      "sizes": "16x16",
+      "type": "image/png"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "email.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "home.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "linkedin.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "p1.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "p2.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "p3.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "p4.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "p5.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "p6.png",
+      "sizes": "30x30",
+      "type": "image/png"
+    },
+    {
+      "src": "play.png",
+      "sizes": "30x30",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#1d2022"
 }
