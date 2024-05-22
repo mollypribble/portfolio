@@ -21,14 +21,14 @@ class NavBar extends React.Component {
             this.setState({ open: !this.state.open });
         }
     }
-    
+
 
     updateWidth() {
         this.setState({ width: window.innerWidth });
         if (this.state.width <= 550) {
             this.setState({ open: false })
         }
-        if (this.state.width > 550) {
+        else if (this.state.width > 550) {
             this.setState({first: false})
         }
     }
@@ -59,11 +59,19 @@ class NavBar extends React.Component {
         return <div className={navBarClass+first}>
             <CustomButton disabled={false} className='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} />
             <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)}/>
-            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p1.png"} active={(this.props.currPage == 1)} onClick={(e) => this.handleNavWrapper(1)}/>
-            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p2.png"} active={(this.props.currPage == 2)} onClick={(e) => this.handleNavWrapper(2)}/>
+            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0)} onClick={(e) => this.handleNavWrapper(1)}/>
+            {/* <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p2.png"} active={(this.props.currPage == 2)} onClick={(e) => this.handleNavWrapper(2)}/>
             <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p3.png"} active={(this.props.currPage == 3)} onClick={(e) => this.handleNavWrapper(3)}/>
             <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p4.png"} active={(this.props.currPage == 4)} onClick={(e) => this.handleNavWrapper(4)}/>
-            {/* <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p5.png"} active={(this.props.currPage == 5)} onClick={(e) => this.handleNavWrapper(5)}/> */}
+            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"p5.png"} active={(this.props.currPage == 5)} onClick={(e) => this.handleNavWrapper(5)}/> */}
+            
+            {/* <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
+                <CustomButton disabled={disableButtons} small={false} bounce={false} icon={"email.png"} onClick={(e) => this.handleNavWrapper(-1)}/>
+            </a>
+            <a href='https://www.linkedin.com/in/molly-pribble' target='_blank' tabIndex="-1">
+                <CustomButton disabled={disableButtons} small={false} bounce={false} icon={"linkedin.png"} onClick={(e) => this.handleNavWrapper(-1)}/>
+            </a> */}
+            
             <div className='link-nav'>
                 <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
                     <CustomButton disabled={disableButtons} small={true} bounce={false} icon={"email.png"} onClick={(e) => this.handleNavWrapper(-1)}/>

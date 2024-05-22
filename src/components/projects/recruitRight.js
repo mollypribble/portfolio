@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '../title';
 import ProjectOverview from '../projectOverview';
 import SubTitle from '../subtitle';
+import NextLastNav from '../nextLastNav';
 
 class RecruitRight extends React.Component {
 
@@ -55,6 +56,8 @@ class RecruitRight extends React.Component {
                     </div>
                 </div>
             </div>
+
+            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
         </div>
         </>
     }

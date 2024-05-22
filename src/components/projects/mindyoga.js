@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '../title';
 import ProjectOverview from '../projectOverview';
 import SubTitle from '../subtitle';
+import NextLastNav from '../nextLastNav';
 
 class Mindyoga extends React.Component {
 
@@ -48,6 +49,8 @@ class Mindyoga extends React.Component {
                 </div>
                 <div className='mindyoga-stage mindyoga-stages-image'/>
             </div>
+
+            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
         </div>
 
         </>

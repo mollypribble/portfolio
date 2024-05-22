@@ -13,6 +13,9 @@ import close from "../media/close.png"
 import menu from "../media/menu.png"
 import on from "../media/on.png"
 import off from "../media/off.png"
+import proj from "../media/proj.png"
+import next from "../media/next.png"
+import last from "../media/last.png"
 
 class CustomButton extends React.Component {
 
@@ -34,7 +37,6 @@ class CustomButton extends React.Component {
 
         // hard-coded images -- FUTURE: could update to take string as icon file name
         let icon = play
-        console.log(icon)
         let alt = "button"
         if (this.props.icon === "home.png"){
             icon = home
@@ -90,6 +92,18 @@ class CustomButton extends React.Component {
         else if (this.props.icon === "off.png"){
             icon = off
             alt = "off"
+        }
+        else if (this.props.icon === "proj.png"){
+            icon = proj
+            alt = "projects"
+        }
+        else if (this.props.icon === "last.png"){
+            icon = last
+            alt = "last project"
+        }
+        else if (this.props.icon === "next.png"){
+            icon = next
+            alt = "next project"
         }
 
         return <button className={buttonClass} onClick={(e) => this.clickAndBlur(e)} disabled={this.props.disabled}>

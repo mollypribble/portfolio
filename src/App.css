@@ -310,8 +310,8 @@ button:not(:hover).bounce .button-top{
 }
 
 .big-button .button-top img{
-  height: 30px;
-  width: 30px;
+  height: 36px;
+  width: 36px;
 }
 
 .big-button .button-bottom{
@@ -327,7 +327,8 @@ button:not(:hover).bounce .button-top{
   width: 18px;
 }
 
-.home-simple-video-controls .small-button .button-top img{
+.home-simple-video-controls .small-button .button-top img,
+.proj-next-last-controls .small-button .button-top img{
   height: 22px;
   width: 22px;
 }
@@ -498,7 +499,7 @@ button:not(:hover).bounce .button-top{
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* no scroll bar */
@@ -522,18 +523,17 @@ button:not(:hover).bounce .button-top{
   text-align: center;
   height: 100%;
   font-size: 26px;
+  align-items: center;
 }
 
 .home-simple-name{
   font-weight: 800;
+  font-size: 56px;
 }
 
 .home-simple-title{
   font-weight: 300;
-}
-
-.home-simple-portfolio{
-  font-weight: 300;
+  max-width: 850px;
 }
 
 .home-simple-video{
@@ -546,7 +546,8 @@ button:not(:hover).bounce .button-top{
   font-size: 22px;
 }
 
-.home-simple-video-controls{
+.home-simple-video-controls,
+.proj-next-last-controls{
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -554,7 +555,8 @@ button:not(:hover).bounce .button-top{
   justify-content: center;
 }
 
-.banner.home-banner{
+.banner.home-banner,
+.banner.proj-next-last-banner{
   text-align: end;
   box-sizing: border-box;
   padding-right: 12px;
@@ -566,17 +568,25 @@ button:not(:hover).bounce .button-top{
   gap: 8px;
 }
 
-.banner.home-banner button:hover .button-top{
+.banner.home-banner.disabled{
+  display: none;
+}
+
+.banner.home-banner button:hover .button-top,
+.banner.proj-next-last-banner button:hover .button-top{
   background-color: var(--default-white);
   border-color: var(--default-black);
 }
 
 .banner.home-banner button:hover .button-top img,
-.banner.home-banner button:focus .button-top img{
+.banner.home-banner button:focus .button-top img,
+.banner.proj-next-last-banner button:hover .button-top img,
+.banner.proj-next-last-banner button:focus .button-top img{
   filter: none;
 }
 
-.banner.home-banner button:hover .button-bottom{
+.banner.home-banner button:hover .button-bottom,
+.banner.proj-next-last-banner button:hover .button-bottom{
   background-color: var(--light-grey);
   border-color: var(--default-black);
 }
@@ -606,7 +616,6 @@ button:not(:hover).bounce .button-top{
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 75%;
-  z-index: 1;
 }
 
 #home-background-video.disabled{

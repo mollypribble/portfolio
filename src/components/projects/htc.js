@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '../title';
 import ProjectOverview from '../projectOverview';
 import SubTitle from '../subtitle';
+import NextLastNav from '../nextLastNav';
 
 class Htc extends React.Component {
 
@@ -45,6 +46,8 @@ class Htc extends React.Component {
                 </div>
                 <div className='htc-takeaway-image' />
             </div>
+
+            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
 
         </div>
         </>

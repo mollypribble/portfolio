@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '../title';
 import ProjectOverview from '../projectOverview';
 import SubTitle from '../subtitle';
+import NextLastNav from '../nextLastNav';
 
 class Akvd extends React.Component {
 
@@ -49,6 +50,8 @@ class Akvd extends React.Component {
                     <div className='akvd-text'>Lastly, AVD gave me ample opportunities to practice my presentation and communication skills. Throughout my internship, I regularly scheduled and lead status updates and feedback sessions with the rest of the UX group. My also mentors and co-workers often wanted to see demos or walkthroughs of AVD throughout the project, and I became practiced in explaining the concept of AVD and taking my audience through a typical user flow. My internship ended with a company-wide presentation and demo of the progress we’d made on AVD, where we generated a lot of interest and excitement about this new, relatively unknown project.</div>
                 </div>
             </div>
+
+            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
         </div>
 
         {/* Mobile */}

@@ -5,12 +5,14 @@ import Akvd from './projects/akvd';
 import Mindyoga from './projects/mindyoga';
 // import Edc from './projects/edc';
 import Htc from './projects/htc';
-import RecruitRight from './projects/recruitRight.js'
+import RecruitRight from './projects/recruitRight.js';
+import ProjectList from './projectList.js';
 
 class PortfolioContent extends React.Component {
     //pages --> 
     // 0 --> home
-    // 1+ --> projects
+    // 1 --> project list
+    // 2+ --> projects
 
     constructor(props) {
         super(props);
@@ -47,20 +49,20 @@ class PortfolioContent extends React.Component {
                     toggleVideo={this.toggleVideo}/>
         }
         else if (this.state.page == 1){
-            return <Mindyoga />
+            return <ProjectList handleNewProj={this.handleNewProj} />
         }
         else if (this.state.page == 2){
-            return <Akvd />
+            return <Mindyoga handleNewProj={this.handleNewProj} next={3} last={5}/>
         }
         else if (this.state.page == 3){
-            return <RecruitRight />
+            return <Akvd handleNewProj={this.handleNewProj} next={4} last={2}/>
         }
         else if (this.state.page == 4){
-            return <Htc />
+            return <RecruitRight handleNewProj={this.handleNewProj} next={5} last={3}/>
         }
-        // else if (this.state.page == 5){
-        //     return <Edc />
-        // }
+        else if (this.state.page == 5){
+            return <Htc handleNewProj={this.handleNewProj} next={2} last={4}/>
+        }
         return <div>{this.state.page}</div>
     }
 
@@ -90,6 +92,8 @@ class PortfolioContent extends React.Component {
 
     render () {
         const scrollClass = (this.state.page == 0) ? "custom-scroll no-display" : "custom-scroll"
+
+        console.log(this.state.page)
         
         return <div className='portfolio-content'>
                     <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page}/>
