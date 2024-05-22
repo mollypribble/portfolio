@@ -56,7 +56,8 @@ a{
   cursor: url('./media/hover-cursor.png') 9 9, crosshair;
 }
 
-a:focus{
+a:focus,
+button.link-button:focus {
   outline: var(--focus-shadow-blue) solid 2px;
   border-radius: 2px;
 }
@@ -67,7 +68,8 @@ button{
 }
 
 a:active,
-button:active{
+button:active,
+button.link-button:active {
   cursor: url('./media/active-cursor.png') 9 9, crosshair;
 }
 
@@ -81,6 +83,18 @@ button:focus .button-top{
 
 button:focus .button-bottom{
   background-color: var(--focus-shadow-blue);
+}
+
+/*link style button*/
+button.link-button{
+  background-color: var(--default-white);
+  height: 100%;
+  padding: 3px 3px 3px 3px;
+  color: var(--default-black);
+  font-size: 22px;
+  font-family: 'VT323';
+  text-decoration: underline;
+  border: none;
 }
 
 /* VHS landing page */
@@ -573,6 +587,11 @@ button:not(:hover).bounce .button-top{
   align-items: end;
   gap: 7px;
   justify-content: center;
+}
+
+.proj-next-last-controls{
+  justify-content: space-between;
+  width: 100%;
 }
 
 .banner.home-banner,
