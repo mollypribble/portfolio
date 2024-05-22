@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.7c6db707.css",
+    "main.js": "/portfolio/static/js/main.3066f461.js",
+    "static/js/453.c651ec7f.chunk.js": "/portfolio/static/js/453.c651ec7f.chunk.js",
+    "static/media/websitev2.mp4": "/portfolio/static/media/websitev2.a81b71204226661a3fbc.mp4",
+    "static/media/htc-insta.png": "/portfolio/static/media/htc-insta.9244609750990f431f06.png",
+    "static/media/still.png": "/portfolio/static/media/still.7631b12f343ad57a212d.png",
+    "static/media/EDC-web.gif": "/portfolio/static/media/EDC-web.bc215c6a29374135a503.gif",
+    "static/media/edc-brainstorm2.png": "/portfolio/static/media/edc-brainstorm2.21ff885628c4b9b3adf6.png",
+    "static/media/htc-home.png": "/portfolio/static/media/htc-home.00da487d6b48fe6ce1e9.png",
+    "static/media/edc-brainstorm1.png": "/portfolio/static/media/edc-brainstorm1.483381ba08f6a2c463ea.png",
+    "static/media/edc-map.gif": "/portfolio/static/media/edc-map.15fb99fb1f5e7c2b23fa.gif",
+    "static/media/vhs.png": "/portfolio/static/media/vhs.98c22fa2a0799241d451.png",
+    "static/media/what-is-an-adu.jpg": "/portfolio/static/media/what-is-an-adu.7bec8bc0af3c0789ece9.jpg",
+    "static/media/VT323-Regular.ttf": "/portfolio/static/media/VT323-Regular.2bc43ad8eb2f60b39f27.ttf",
+    "static/media/SpaceGrotesk-VariableFont_wght.ttf": "/portfolio/static/media/SpaceGrotesk-VariableFont_wght.5771010795a77ba7459b.ttf",
+    "static/media/Dosis-VariableFont_wght.ttf": "/portfolio/static/media/Dosis-VariableFont_wght.0e7b67016bff1c785ebd.ttf",
+    "static/media/Notable-Regular.ttf": "/portfolio/static/media/Notable-Regular.2fb7db2f6ecfd8c14fd0.ttf",
+    "index.html": "/portfolio/index.html",
+    "main.7c6db707.css.map": "/portfolio/static/css/main.7c6db707.css.map",
+    "main.3066f461.js.map": "/portfolio/static/js/main.3066f461.js.map",
+    "453.c651ec7f.chunk.js.map": "/portfolio/static/js/453.c651ec7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c6db707.css",
+    "static/js/main.3066f461.js"
+  ]
+}
