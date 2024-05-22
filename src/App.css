@@ -68,17 +68,20 @@ button{
 }
 
 a:active,
-button:active,
-button.link-button:active {
+button:active {
   cursor: url('./media/active-cursor.png') 9 9, crosshair;
 }
 
-button:focus{
+button:focus,
+button.proj-button:focus{
   outline: none;
 }
 
-button:focus .button-top{
+button:focus .button-top,
+button.proj-button:focus,
+button.proj-button:focus .proj-arrow{
   background-color: var(--focus-blue);
+  color: var(--default-black)
 }
 
 button:focus .button-bottom{
@@ -95,6 +98,94 @@ button.link-button{
   font-family: 'VT323';
   text-decoration: underline;
   border: none;
+}
+
+/*proj page button */
+button.proj-button{
+  background-color: var(--default-black);
+  color: var(--default-white);
+  border: none;
+  border-top: var(--default-white) 1px solid;
+  border-bottom: var(--default-white) 1px solid;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 80px;
+}
+
+button.proj-button .proj-label{
+  font-size: 48px;
+  font-family: 'VT323';
+  text-align: left;
+  padding-left: 24px;
+  padding-right: 24px;
+  align-content: center;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-wrap: nowrap;
+}
+
+button.proj-button .proj-desc{
+  font-size: 20px;
+  text-align: right;
+  padding: 24px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--default-black);
+  border-right: var(--default-black) 2px solid;
+  width: 100%;
+}
+
+@media (max-width:760px) {
+  button.proj-button .proj-desc{
+    display: none;
+  }
+}
+
+@media (max-width:627px) {
+  button.proj-button .proj-label{
+    font-size: 42px;
+  }
+}
+
+
+button.proj-button .proj-arrow{
+  font-size: 48px;
+  font-family: 'VT323';
+  background-color: var(--default-white);
+  color: var(--default-black);
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width:579px) {
+  button.proj-button .proj-label{
+    text-wrap: unset;
+    font-size: 32px;
+    padding-right: 12px;
+  }
+  button.proj-button .proj-arrow{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+
+button.proj-button:hover{
+  background-color: var(--default-white);
+  color: var(--default-black);
+  border: transparent 1px solid;
 }
 
 /* VHS landing page */
@@ -380,7 +471,7 @@ button:not(:hover).bounce .button-top{
 .nav-bar-small{
   height: 100%;
   min-height: 488px;
-  padding: 22px 16px 22px 16px;
+  padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -594,6 +685,23 @@ button:not(:hover).bounce .button-top{
   width: 100%;
 }
 
+.proj-next-last-controls .big{
+  display: block;
+}
+.proj-next-last-controls .small{
+  display: none;
+  text-decoration: none;
+}
+
+@media (max-width:375px){
+  .proj-next-last-controls .big{
+    display: none;
+  }
+  .proj-next-last-controls .small{
+    display: block;
+  }
+} 
+
 .banner.home-banner,
 .banner.proj-next-last-banner{
   text-align: end;
@@ -686,6 +794,15 @@ button:not(:hover).bounce .button-top{
   -moz-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
+}
+
+.project-list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  gap: 16px;
 }
 
 /* title and subtitle */

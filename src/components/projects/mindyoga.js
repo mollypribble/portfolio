@@ -50,7 +50,7 @@ class Mindyoga extends React.Component {
                 <div className='mindyoga-stage mindyoga-stages-image'/>
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={1} last={this.props.last} next={this.props.next}/>
         </div>
 
         </>

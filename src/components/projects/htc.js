@@ -47,7 +47,7 @@ class Htc extends React.Component {
                 <div className='htc-takeaway-image' />
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={4} last={this.props.last} next={this.props.next}/>
 
         </div>
         </>

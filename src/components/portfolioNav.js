@@ -61,6 +61,14 @@ class NavBar extends React.Component {
             <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)}/>
             <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0)} onClick={(e) => this.handleNavWrapper(1)}/>
             
+            {/* <a href='https://www.linkedin.com/in/molly-pribble' target='_blank' tabIndex="-1">
+                <CustomButton disabled={disableButtons} small={false} bounce={false} icon={"linkedin.png"} onClick={(e) => this.handleNavWrapper(-1)}/>
+            </a>
+
+            <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
+                <CustomButton disabled={disableButtons} small={false} bounce={false} icon={"email.png"} onClick={(e) => this.handleNavWrapper(-1)}/>
+            </a> */}
+
             <div className='link-nav'>
                 <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
                     <CustomButton disabled={disableButtons} small={true} bounce={false} icon={"email.png"} onClick={(e) => this.handleNavWrapper(-1)}/>

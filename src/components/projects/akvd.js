@@ -51,7 +51,7 @@ class Akvd extends React.Component {
                 </div>
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={2} last={this.props.last} next={this.props.next}/>
         </div>
 
         {/* Mobile */}

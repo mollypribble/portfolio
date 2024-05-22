@@ -51,7 +51,7 @@ class Edc extends React.Component {
                 <div className='edc-viz-image' />
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={"n/a"} last={this.props.last} next={this.props.next}/>
         </div>
 
         </>

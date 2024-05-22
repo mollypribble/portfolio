@@ -57,7 +57,7 @@ class RecruitRight extends React.Component {
                 </div>
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={3} last={this.props.last} next={this.props.next}/>
         </div>
         </>
     }

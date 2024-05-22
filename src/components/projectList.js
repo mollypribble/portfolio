@@ -1,5 +1,6 @@
 import React from 'react';
-import CustomButton from './button';
+import ProjectButton from './projectButton';
+import Title from './title';
 
 class ProjectList extends React.Component {
 
@@ -10,11 +11,13 @@ class ProjectList extends React.Component {
     render () {
 
         return <div className="project-list-display">
-                project list
-                <CustomButton disabled={false} small={false} bounce={false} icon={"p1.png"} active={false} onClick={(e) => this.props.handleNewProj(2)}/>
-                <CustomButton disabled={false} small={false} bounce={false} icon={"p2.png"} active={false} onClick={(e) => this.props.handleNewProj(3)}/>
-                <CustomButton disabled={false} small={false} bounce={false} icon={"p3.png"} active={false} onClick={(e) => this.props.handleNewProj(4)}/>
-                <CustomButton disabled={false} small={false} bounce={false} icon={"p4.png"} active={false} onClick={(e) => this.props.handleNewProj(5)}/>
+                <Title title="Projects"/>
+                <div className='project-list'>
+                    <ProjectButton projName={"MindYoga"} projNumber={'1'} projDescription={"Design Research, Human-Computer Interaction, Rapid Prototyping"} onClick={(e) => this.props.handleNewProj(2)}/>
+                    <ProjectButton projName={"Active View Data"} projNumber={'2'} projDescription={"UX Design, Interaction Design, Prototyping, User Testing"} onClick={(e) => this.props.handleNewProj(3)}/>
+                    <ProjectButton projName={"Recruit Right"} projNumber={'3'} projDescription={"Wireframing, User Personas, Branding/Logo Design"} onClick={(e) => this.props.handleNewProj(4)}/>
+                    <ProjectButton projName={"Hold the Code"} projNumber={'4'} projDescription={"Project Management, Tech Ethics, Writing, Leadership"} onClick={(e) => this.props.handleNewProj(5)}/>
+                </div>
         </div>
     }
     
