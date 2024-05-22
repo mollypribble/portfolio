@@ -474,7 +474,7 @@ button:not(:hover).bounce .button-top{
 /* Portfolio Content */
 .portfolio-content{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   height: 100%;
 }
 
@@ -564,14 +564,6 @@ button:not(:hover).bounce .button-top{
   gap: 8px;
 }
 
-.banner.home-banner.small{
-  display: none;
-}
-
-.banner.home-banner.small .home-simple-video-text{
-  font-size: 22px;
-}
-
 .banner.home-banner button:hover .button-top{
   background-color: var(--default-white);
   border-color: var(--default-black);
@@ -585,15 +577,6 @@ button:not(:hover).bounce .button-top{
 .banner.home-banner button:hover .button-bottom{
   background-color: var(--light-grey);
   border-color: var(--default-black);
-}
-
-@media (max-width:544px) {
-  .banner.home-banner.small{
-    display: flex;
-  }
-  .banner.home-banner{
-    display: none;
-  }
 }
 
 .home-display{
@@ -626,6 +609,12 @@ button:not(:hover).bounce .button-top{
 #home-background-video.disabled{
   display: none;
 }
+
+/* @media (max-width:844px){
+  #home-background-video{
+    display: none;
+  }
+} */
 
 /* Project Pages */
 .project-display{

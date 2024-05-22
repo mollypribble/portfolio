@@ -3,7 +3,7 @@ import NavBar from './portfolioNav';
 import Home from './home';
 import Akvd from './projects/akvd';
 import Mindyoga from './projects/mindyoga';
-import Edc from './projects/edc';
+// import Edc from './projects/edc';
 import Htc from './projects/htc';
 import RecruitRight from './projects/recruitRight.js'
 
@@ -92,16 +92,16 @@ class PortfolioContent extends React.Component {
         const scrollClass = (this.state.page == 0) ? "custom-scroll no-display" : "custom-scroll"
         
         return <div className='portfolio-content'>
+                    <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page}/>
+                    <div className='current-content' ref={this.scrollRef} onScroll={this.calcScroll}> 
+                        {this.renderCurrentPage()}
+                    </div>
                     <div className={scrollClass}>
                         <div className='custom-scroll-fill' 
                         style={{
                             height: `${this.state.heightCalc}px`
                         }} />
                     </div>
-                    <div className='current-content' ref={this.scrollRef} onScroll={this.calcScroll}> 
-                        {this.renderCurrentPage()}
-                    </div>
-                    <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page}/>
                 </div>
         
     }
