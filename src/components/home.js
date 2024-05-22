@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomButton from './button';
 import websitev2 from '../media/websitev2.mp4';
-import websitev2gif from '../media/websitev2.gif'
+import poster from '../media/still.png'
 
 class Home extends React.Component {
 
@@ -14,7 +14,7 @@ class Home extends React.Component {
         const disableVideo = (this.props.video) ? "" : "disabled"
 
         return <div className="home-display">
-                <video className={disableVideo} id="home-background-video" src={websitev2} typeof='video/mp4' autoPlay loop muted playsInline webkit-playsinline poster={websitev2.gif} />
+                <video className={disableVideo} id="home-background-video" src={websitev2} typeof='video/mp4' autoPlay loop muted playsInline webkit-playsinline poster={poster} />
                 
                 <div className='home-simple'>
                     <div className='home-simple-name'>
