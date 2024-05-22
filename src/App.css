@@ -373,7 +373,7 @@ button:not(:hover).bounce .button-top{
   border-left: var(--default-white) 1px solid;
   box-sizing: border-box;
   background-color: var(--default-black);
-  z-index: 5;
+  z-index: 10;
   animation: slideIn 900ms;
   -webkit-animation: slideIn 900ms;
   -moz-animation: slideIn 900ms;
@@ -398,6 +398,7 @@ button:not(:hover).bounce .button-top{
   -o-animation: flyOut 1s;
   -ms-animation: flyOut 1s;
   display: none;
+  z-index: 11;
 }
 
 @keyframes flyOut {
@@ -497,6 +498,7 @@ button:not(:hover).bounce .button-top{
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
   opacity: 1;
+  z-index: 1;
 }
 
 /* no scroll bar */
@@ -604,6 +606,7 @@ button:not(:hover).bounce .button-top{
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 75%;
+  z-index: 1;
 }
 
 #home-background-video.disabled{
