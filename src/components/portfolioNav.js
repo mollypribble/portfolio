@@ -21,6 +21,7 @@ class NavBar extends React.Component {
             this.setState({ open: !this.state.open });
         }
     }
+    
 
     updateWidth() {
         this.setState({ width: window.innerWidth });
