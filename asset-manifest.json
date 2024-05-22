@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.affb24bf.css",
+    "main.css": "/portfolio/static/css/main.ae511e56.css",
     "main.js": "/portfolio/static/js/main.8d49aa37.js",
     "static/js/453.c651ec7f.chunk.js": "/portfolio/static/js/453.c651ec7f.chunk.js",
     "static/media/websitev2.mp4": "/portfolio/static/media/websitev2.a81b71204226661a3fbc.mp4",
@@ -18,12 +18,12 @@
     "static/media/Dosis-VariableFont_wght.ttf": "/portfolio/static/media/Dosis-VariableFont_wght.0e7b67016bff1c785ebd.ttf",
     "static/media/Notable-Regular.ttf": "/portfolio/static/media/Notable-Regular.2fb7db2f6ecfd8c14fd0.ttf",
     "index.html": "/portfolio/index.html",
-    "main.affb24bf.css.map": "/portfolio/static/css/main.affb24bf.css.map",
+    "main.ae511e56.css.map": "/portfolio/static/css/main.ae511e56.css.map",
     "main.8d49aa37.js.map": "/portfolio/static/js/main.8d49aa37.js.map",
     "453.c651ec7f.chunk.js.map": "/portfolio/static/js/453.c651ec7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.affb24bf.css",
+    "static/css/main.ae511e56.css",
     "static/js/main.8d49aa37.js"
   ]
 }
