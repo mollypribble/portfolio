@@ -16,6 +16,7 @@ import off from "../media/off.png"
 import proj from "../media/proj.png"
 import next from "../media/next.png"
 import last from "../media/last.png"
+import emailText from "../media/email-text.png"
 
 class CustomButton extends React.Component {
 
@@ -49,6 +50,10 @@ class CustomButton extends React.Component {
         else if (this.props.icon === "linkedin.png"){
             icon = linkedin
             alt = "linkedin"
+        }
+        else if (this.props.icon === "email-text.png"){
+            icon = emailText
+            alt = "email"
         }
         else if (this.props.icon === "play.png"){
             alt = "play"

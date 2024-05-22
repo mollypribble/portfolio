@@ -1,6 +1,6 @@
 :root{
-  --default-white: #f0f0f0;
-  --default-black: #181b1c;
+  --default-white: #e6e5e5;
+  --default-black: #171c1e;
   --light-grey: #b7bfc6;
   --dark-grey: #747677;
   --focus-blue: #cee0eb;
@@ -81,7 +81,11 @@ button:focus .button-top,
 button.proj-button:focus,
 button.proj-button:focus .proj-arrow{
   background-color: var(--focus-blue);
-  color: var(--default-black)
+  color: var(--default-black);
+}
+
+button.proj-button:hover .proj-arrow{
+  background-color: var(--default-white);
 }
 
 button:focus .button-bottom{
@@ -415,8 +419,8 @@ button:not(:hover).bounce .button-top{
 }
 
 .big-button .button-top img{
-  height: 36px;
-  width: 36px;
+  height: 40px;
+  width: 40px;
 }
 
 .big-button .button-bottom{
@@ -690,6 +694,9 @@ button:not(:hover).bounce .button-top{
 }
 .proj-next-last-controls .small{
   display: none;
+  text-decoration: none;
+}
+.proj-next-last-controls .no-underline{
   text-decoration: none;
 }
 
