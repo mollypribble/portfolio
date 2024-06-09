@@ -44,7 +44,7 @@ class Home extends React.Component {
                         Hi, my name is Molly Pribble.
                     </div>
                     <div className='home-simple-title'>
-                        I am a UX designer with experience in human-computer interaction, enterprise software, and design research,.
+                        I am a UX designer with experience in human-computer interaction, enterprise software, and design research.
                     </div>
                 </div>
 
