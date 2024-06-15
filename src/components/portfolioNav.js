@@ -59,8 +59,8 @@ class NavBar extends React.Component {
         return <div className={navBarClass+first}>
             <CustomButton disabled={false} className='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} />
             <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)}/>
-            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0)} onClick={(e) => this.handleNavWrapper(1)}/>
-            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"about.png"} active={(this.props.currPage != 0)} onClick={(e) => this.handleNavWrapper(6)}/>
+            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)}/>
+            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)}/>
             
             {/* <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
                 <CustomButton disabled={disableButtons} small={false} bounce={false} icon={"email-text.png"} onClick={(e) => this.handleNavWrapper(-1)}/>
