@@ -7,12 +7,14 @@ import Mindyoga from './projects/mindyoga';
 import Htc from './projects/htc';
 import RecruitRight from './projects/recruitRight.js';
 import ProjectList from './projectList.js';
+import AboutMe from './about.js';
 
 class PortfolioContent extends React.Component {
     //pages --> 
     // 0 --> home
     // 1 --> project list
-    // 2+ --> projects
+    // 2-5 --> projects
+    // 6 --> about
 
     constructor(props) {
         super(props);
@@ -62,6 +64,9 @@ class PortfolioContent extends React.Component {
         }
         else if (this.state.page == 5){
             return <Htc handleNewProj={this.handleNewProj} next={2} last={4}/>
+        }
+        else if (this.state.page == 6){
+            return <AboutMe handleNewProj={this.handleNewProj} />
         }
         return <div>{this.state.page}</div>
     }

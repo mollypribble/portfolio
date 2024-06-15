@@ -86,6 +86,7 @@ button.proj-button:focus .proj-arrow{
 
 button.proj-button:hover .proj-arrow{
   background-color: var(--default-white);
+  color: var(--default-black);
 }
 
 button:focus .button-bottom{
@@ -111,14 +112,14 @@ button.proj-button{
   border: none;
   border-top: var(--default-white) 1px solid;
   border-bottom: var(--default-white) 1px solid;
-  width: 100%;
   padding: 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 80px;
+  width: 50%;
+  aspect-ratio: 1.8;
 }
 
 button.proj-button .proj-label{
@@ -128,23 +129,34 @@ button.proj-button .proj-label{
   padding-left: 24px;
   padding-right: 24px;
   align-content: center;
-  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-wrap: nowrap;
 }
 
 button.proj-button .proj-desc{
   font-size: 20px;
-  text-align: right;
   padding: 24px 16px 24px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
   color: var(--default-black);
   border-right: var(--default-black) 2px solid;
   width: 100%;
+  justify-content: flex-end;
+}
+
+.proj-image{
+  background-color: var(--default-white);
+  height: 100%;
+  /* aspect-ratio: 1.8; */
+}
+
+.proj-desc-arrow-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-top: var(--default-black) 2px solid;
 }
 
 @media (max-width:760px) {
@@ -163,8 +175,8 @@ button.proj-button .proj-desc{
 button.proj-button .proj-arrow{
   font-size: 48px;
   font-family: 'VT323';
-  background-color: var(--default-white);
-  color: var(--default-black);
+  background-color: var(--default-black);
+  color: var(--default-white);
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -191,6 +203,43 @@ button.proj-button:hover{
   color: var(--default-black);
   border: transparent 1px solid;
 }
+
+.project-list .top-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.project-list .top-row .proj-button:first-child,
+.project-list .bottom-row .proj-button:first-child {
+  border-right: var(--default-white) 1px solid;
+}
+
+.project-list .bottom-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@media (max-width:844px){
+  .project-list .top-row{
+    flex-direction: column;
+  }
+  
+  .project-list .top-row .proj-button:first-child,
+  .project-list .bottom-row .proj-button:first-child {
+    border-right: 0px;
+    margin-bottom: 16px;
+  }
+  
+  .project-list .bottom-row{
+    flex-direction: column;
+  }
+
+  button.proj-button{
+    width: 100%;
+  }
+} 
 
 /* VHS landing page */
 .landing-page{
@@ -636,32 +685,25 @@ button:not(:hover).bounce .button-top{
 }
 
 .home-simple-name{
-  font-weight: 800;
-  font-size: 56px;
+  font-size: 84px;
+  font-family: 'VT323';
+  line-height: 74px;
 }
 
 .home-simple-title{
   font-weight: 300;
   max-width: 850px;
+  text-wrap: nowrap;
 }
 
 @media (max-width:432px) {
   .home-simple-name{
     font-size: 42px;
+    line-height: 32px;
   }
   
   .home-simple-title{
-    font-size: 22px;
-  }
-}
-
-@media (max-width:432px) {
-  .home-simple-name{
-    font-size: 38px;
-  }
-
-  .home-simple-title{
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
