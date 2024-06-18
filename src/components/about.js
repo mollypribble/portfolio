@@ -44,7 +44,7 @@ class AboutMe extends React.Component {
                         </div>
 
                         <div className='link-nav banner'>
-                            <div className='about-button-label'>LinkedIn & email. &rarr;</div>
+                            <div className='about-button-label'>LinkedIn & email &rarr;</div>
                             <div className='about-button-wrapper'>
                                 <a href='https://www.linkedin.com/in/molly-pribble' target='_blank' tabIndex="-1">
                                     <CustomButton disabled={false} small={true} bounce={false} icon={"linkedin.png"} onClick={(e) => {}}/>
