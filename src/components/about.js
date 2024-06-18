@@ -37,9 +37,9 @@ class AboutMe extends React.Component {
                 <div className='about-split'>
                     <div className='about-split-text'>
                         <div>
-                            <div className='section-header'>HI, I'M MOLLY</div>
+                            <div className='section-header'>HI, I'M MOLLY.</div>
                             <div className='about-text'>
-                                I'm a UX Designer based in Boston, MA with experience in human-computer interaction (HCI), enterprise software, and design research. Feel free to reach out for any professional inquiries.
+                                I'm a UX designer at Ab Initio Software Corporation (an enterprise software company based in Boston, MA). My background and areas of expertise include human-computer interaction (HCI), academic design research, interaction design, and web design. Feel free to reach out with any professional inquiries.
                             </div>
                         </div>
 
@@ -61,12 +61,12 @@ class AboutMe extends React.Component {
 
                 <div className="about-takeaways">
                     <div className='about-takeaway text-only'>
-                        <div className='section-header'>RELEVANT EXPERIENCE</div>
+                        <div className='section-header'>RESUME SUMMARY</div>
                         <div className='about-text'>-- {this.state.exp} years of professional UX experience<br />-- 1.5 years of academic research experience<br />-- BS/MS in Computer Science (Northwestern '22)<br />-- Segal Design Certificate (Northwestern '22)<br />-- HTML, CSS, Javascript/Typescript, React, Python</div>
                     </div>
                     <div className='about-takeaway text-only last-one'>
-                    <div className='section-header'>OTHER EXPERIENCE</div>
-                        <div className='about-text'>--  Pottery <br />-- Baking<br />-- Photography<br />-- Yoga<br />-- Soccer<br />-- Hiking</div>
+                    <div className='section-header'>MISC. INTERESTS</div>
+                        <div className='about-text'>--  Pottery <br />-- Baking<br />-- Yoga<br />-- Soccer<br />-- Hiking<br />-- Photography</div>
                     </div>
                 </div>
         </div>
