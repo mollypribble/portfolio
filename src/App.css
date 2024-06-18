@@ -1959,3 +1959,15 @@ button:not(:hover).bounce .button-top{
     display: none;
   }
 }
+
+/* safari */
+video {
+  &::-webkit-media-controls {
+      display:none !important;
+  }
+
+  &::-webkit-media-controls-start-playback-button {
+      display: none!important;
+      -webkit-appearance: none;
+  }
+}

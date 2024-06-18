@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomButton from './button';
 import websitev2 from '../media/websitev2.mp4';
+import websitev2gif from '../media/websitev2.mp4';
 import poster from '../media/still.png'
 
 class Home extends React.Component {
@@ -38,7 +39,7 @@ class Home extends React.Component {
         const videoControls = (this.state.videoSize) ? "banner home-banner" : "banner home-banner disabled"
 
         return <div className="home-display">
-                <video className={disableVideo} id="home-background-video" src={websitev2} typeof='video/mp4' autoPlay="true" loop="true" muted="muted" playsInline="true" webkit-playsinline="true" poster={poster} />
+                <video className={disableVideo} id="home-background-video" src={websitev2} typeof='video/mp4' autoPlay loop muted playsInline webkit-playsinline="true" poster={websitev2gif} />
                 <div className='home-simple'>
                     <div className='home-simple-name'>
                         Molly Pribble
