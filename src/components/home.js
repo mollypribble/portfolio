@@ -1,8 +1,8 @@
 import React from 'react';
 import CustomButton from './button';
-import websitev2 from '../media/websitev2.mp4';
+// import websitev2 from '../media/websitev2.mp4';
 import websitev2gif from '../media/websitev2.gif';
-import poster from '../media/still.png'
+// import poster from '../media/still.png'
 
 class Home extends React.Component {
 

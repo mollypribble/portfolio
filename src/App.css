@@ -767,11 +767,11 @@ button:not(:hover).bounce .button-top{
 
 .home-display{
   width: 100%;
-  animation: fadeIn 1s;
-  -webkit-animation: fadeIn 1s;
-  -moz-animation: fadeIn 1s;
-  -o-animation: fadeIn 1s;
-  -ms-animation: fadeIn 1s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
   opacity: 1;
   height: 100%;
   display: flex;
@@ -790,6 +790,11 @@ button:not(:hover).bounce .button-top{
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 75%;
+  animation: fadeIn 12s;
+  -webkit-animation: fadeIn 12s;
+  -moz-animation: fadeIn 12s;
+  -o-animation: fadeIn 12s;
+  -ms-animation: fadeIn 12s;
 }
 
 #home-background-video.disabled{
