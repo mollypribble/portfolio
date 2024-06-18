@@ -801,6 +801,14 @@ button:not(:hover).bounce .button-top{
   display: none;
 }
 
+#preloadedImages
+{
+    width: 0px;
+    height: 0px;
+    background-image: url('./media/websitev2.gif');
+
+}
+
 /* @media (max-width:844px){
   #home-background-video{
     display: none;
