@@ -159,12 +159,6 @@ button.proj-button .proj-desc{
   border-top: var(--default-black) 2px solid;
 }
 
-@media (max-width:760px) {
-  button.proj-button .proj-desc{
-    display: none;
-  }
-}
-
 @media (max-width:627px) {
   button.proj-button .proj-label{
     font-size: 42px;
@@ -183,20 +177,6 @@ button.proj-button .proj-arrow{
   flex-direction: column;
   justify-content: center;
 }
-
-@media (max-width:579px) {
-  button.proj-button .proj-label{
-    text-wrap: unset;
-    font-size: 32px;
-    padding-right: 12px;
-  }
-  button.proj-button .proj-arrow{
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
-
 
 button.proj-button:hover{
   background-color: var(--default-white);
@@ -238,6 +218,11 @@ button.proj-button:hover{
 
   button.proj-button{
     width: 100%;
+    aspect-ratio: unset;
+  }
+
+  button.proj-button .proj-image{
+    height: 180px;
   }
 } 
 
@@ -538,13 +523,6 @@ button:not(:hover).bounce .button-top{
   -moz-animation: slideIn 900ms;
   -o-animation: slideIn 900ms;
   -ms-animation: slideIn 900ms;
-}
-
-.link-nav{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .nav-toggle{
@@ -1381,9 +1359,14 @@ button:not(:hover).bounce .button-top{
   .rr-takeaway{
     padding: 24px 0px 24px 0px;
   }
+
+  .rr-takeaway-image-wrapper{
+    border-right: 0px;
+  }
   .rr-summary .rr-text{
     width: unset;
     border-bottom: var(--default-white) 1px solid;
+    border-right: 0px;
   }
   .rr-summary-image{
     width: 90%;
@@ -1816,4 +1799,148 @@ button:not(:hover).bounce .button-top{
   .edc-viz-image{
     width: 100%;
   }
+}
+
+/* about */
+.about-takeaways{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: var(--default-white) 1px solid;
+  border-top: var(--default-white) 1px solid;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.about-takeaways-header{
+  width: 100%;
+  border-top: var(--default-white) 1px solid;
+  margin-top: 36px;
+}
+
+.about-takeaway.text-only{
+  margin-right: 0px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 24px 0;
+  gap: 7px;
+}
+
+.about-takeaway.text-only:last-child{
+  width: 40%;
+}
+
+.about-takeaways .about-takeaway.text-only:first-child {
+  border-right: var(--default-white) 1px solid;
+}
+
+.about-split{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  border-bottom: var(--default-white) 1px solid;
+  border-top: var(--default-white) 1px solid;
+  width: 100%;
+  margin-bottom: 36px;
+  margin-top: 36px;
+  /* min-height: 240px; */
+  justify-content: space-between;
+}
+
+.about-split-text{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border-left: var(--default-white) 1px solid;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.about-split-text .section-header,
+.about-takeaway .section-header,
+.about-split-text .about-text,
+.about-takeaway .about-text{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.about-takeaway{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 7px;
+}
+
+.about-split-text{
+  padding-top: 24px;
+  gap: 7px;
+}
+
+.about-takeaway-image{
+  width: 30%;
+  background-image: url('./media/me-prof.jpg');
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 0.9;
+}
+
+.about-split-text .link-nav{
+  width: 100%;
+  background-color: var(--default-white);
+  text-align: end;
+  box-sizing: border-box;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+  color: var(--default-black);
+}
+
+.about-split-text .link-nav button:hover .button-top {
+  background-color: var(--default-white);
+  border-color: var(--default-black);
+}
+
+.about-split-text .link-nav button:hover .button-bottom {
+  background-color: var(--light-grey);
+  border-color: var(--default-black);
+}
+
+@media (max-width:912px){
+  .about-split{
+    flex-direction: column;
+    border-top: 0px;
+  }
+  .about-takeaways{
+    flex-direction: column;
+  }
+  .about-takeaway.text-only{
+    width: unset;
+  }
+  .about-takeaways .about-takeaway.text-only:first-child{
+    border-right: 0px;
+    border-bottom: var(--default-white) 1px solid;
+  }
+  .about-split-text{
+    width: unset;
+    max-width: unset;
+    border-left: 0px;
+    border-top: var(--default-white) 1px solid;
+    border-bottom: var(--default-white) 1px solid;
+  }
+
+  .about-takeaway.text-only:last-child,
+  .about-takeaway-image {
+    width: unset;
+  }
+
+  .about-split-text .link-nav {
+    margin-top: 24px;
+  }
+
 }
