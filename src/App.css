@@ -1911,6 +1911,15 @@ button:not(:hover).bounce .button-top{
   border-color: var(--default-black);
 }
 
+.about-button-wrapper{
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 7px;
+  justify-content: center;
+}
+
 @media (max-width:912px){
   .about-split{
     flex-direction: column;
@@ -1943,4 +1952,10 @@ button:not(:hover).bounce .button-top{
     margin-top: 24px;
   }
 
+}
+
+@media (max-width:299px){
+  .about-button-label{
+    display: none;
+  }
 }
