@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f56a9ac3.css",
-    "main.js": "/portfolio/static/js/main.cc14895c.js",
+    "main.css": "/portfolio/static/css/main.ced58642.css",
+    "main.js": "/portfolio/static/js/main.2386acd2.js",
     "static/js/453.c651ec7f.chunk.js": "/portfolio/static/js/453.c651ec7f.chunk.js",
-    "static/media/websitev2.gif": "/portfolio/static/media/websitev2.bb1234a611453a3f3df8.gif",
+    "static/media/websitev3.gif": "/portfolio/static/media/websitev3.26e471a764741c322763.gif",
     "static/media/htc-insta.png": "/portfolio/static/media/htc-insta.9244609750990f431f06.png",
     "static/media/EDC-web.gif": "/portfolio/static/media/EDC-web.bc215c6a29374135a503.gif",
     "static/media/edc-brainstorm2.png": "/portfolio/static/media/edc-brainstorm2.21ff885628c4b9b3adf6.png",
@@ -18,12 +18,12 @@
     "static/media/Dosis-VariableFont_wght.ttf": "/portfolio/static/media/Dosis-VariableFont_wght.0e7b67016bff1c785ebd.ttf",
     "static/media/Notable-Regular.ttf": "/portfolio/static/media/Notable-Regular.2fb7db2f6ecfd8c14fd0.ttf",
     "index.html": "/portfolio/index.html",
-    "main.f56a9ac3.css.map": "/portfolio/static/css/main.f56a9ac3.css.map",
-    "main.cc14895c.js.map": "/portfolio/static/js/main.cc14895c.js.map",
+    "main.ced58642.css.map": "/portfolio/static/css/main.ced58642.css.map",
+    "main.2386acd2.js.map": "/portfolio/static/js/main.2386acd2.js.map",
     "453.c651ec7f.chunk.js.map": "/portfolio/static/js/453.c651ec7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f56a9ac3.css",
-    "static/js/main.cc14895c.js"
+    "static/css/main.ced58642.css",
+    "static/js/main.2386acd2.js"
   ]
 }
