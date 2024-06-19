@@ -801,7 +801,7 @@ button:not(:hover).bounce .button-top{
   display: none;
 }
 
-#preloadedImages
+/* #preloadedImages
 {
     width: 0px;
     height: 0px;
@@ -815,7 +815,7 @@ button:not(:hover).bounce .button-top{
     height: 0px;
     background-image: url('./media/vhs.png');
 
-}
+} */
 
 /* @media (max-width:844px){
   #home-background-video{
