@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomButton from './button';
 // import websitev2 from '../media/websitev2.mp4';
-import websitev2gif from '../media/websitev2.gif';
+import websitev3gif from '../media/websitev3.gif';
 // import poster from '../media/still.png'
 
 class Home extends React.Component {
@@ -40,7 +40,7 @@ class Home extends React.Component {
 
         return <div className="home-display">
                 {/* <video className={disableVideo} id="home-background-video" src={websitev2} typeof='video/mp4' autoPlay loop muted playsInline webkit-playsinline="true" poster={websitev2gif} /> */}
-                <img className={disableVideo} id="home-background-video" src={websitev2gif} />
+                <img className={disableVideo} id="home-background-video" src={websitev3gif} />
                 <div className='home-simple'>
                     <div className='home-simple-name'>
                         Molly Pribble
