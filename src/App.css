@@ -360,7 +360,7 @@ button.proj-button:hover{
   position: fixed;
   top: -100px;
   background-color: var(--default-black);
-  z-index: 4;
+  z-index: 15;
 }
 
 .insert-vhs.animate{
