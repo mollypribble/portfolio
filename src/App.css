@@ -226,6 +226,76 @@ button.proj-button:hover{
   }
 } 
 
+/*Loading page*/
+.loading-page{
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: absolute;
+  bottom: 0vh;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 7px;
+  z-index: 1;
+}
+
+.loading-bar{
+  max-width: 590px;
+  width: 60%;
+  height: 36px;
+  background-color: var(--default-black);
+  border-radius: 6px;
+  border: var(--default-white) 1px solid;
+  overflow: hidden;
+}
+
+.loading-bar-text{
+  text-wrap: nowrap;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'VT323';
+  line-height: 36px;
+  position: relative;
+  left: 4px;
+  animation: moveLeft 3s infinite;
+  -webkit-animation: moveLeft 3s infinite;
+  -moz-animation: moveLeft 3s infinite;
+  -o-animation: moveLeft 3s infinite;
+  -ms-animation: moveLeft 3s infinite;
+}
+
+@keyframes moveLeft {
+  0%{
+    left: 4px;
+  }
+  50%{
+    left: -74px;
+  }
+  100%{
+    left: -152px;
+  }
+}
+
+.show-me{
+  opacity: 1;
+}
+
+.hide-me .loading-bar{
+  animation: fadeOut 100ms;
+  -webkit-animation: fadeOut 100ms;
+  -moz-animation: fadeOut 100ms;
+  -o-animation: fadeOut 100ms;
+  -ms-animation: fadeOut 100ms;
+  opacity: 0;
+}
+
 /* VHS landing page */
 .landing-page{
   width: 100%;
@@ -235,21 +305,25 @@ button.proj-button:hover{
   align-items: center;
   justify-content: center;
   gap: 30px;
-  animation: fadeIn 3s;
-  -webkit-animation: fadeIn 3s;
-  -moz-animation: fadeIn 3s;
-  -o-animation: fadeIn 3s;
-  -ms-animation: fadeIn 3s;
-  opacity: 1;
+  animation: fadeIn 4s;
+  -webkit-animation: fadeIn 4s;
+  -moz-animation: fadeIn 4s;
+  -o-animation: fadeIn 4s;
+  -ms-animation: fadeIn 4s;
   position: absolute;
   bottom: 0vh;
   opacity: 1;
+  z-index: 10;
+}
+
+.hide-me .landing-page{
+  display: none;
 }
 
 .landing-page .landing-page-vhs-img{
   max-width: 592px;
   width: 80%;
-  filter: drop-shadow(0 0 0.75rem #000000);
+  /* filter: drop-shadow(0 0 0.75rem #000000); */
 }
 
 .landing-page.animate{
@@ -488,11 +562,11 @@ button:not(:hover).bounce .button-top{
   border-right: var(--default-white) 1px solid;
   box-sizing: border-box;
   overflow: hidden;
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 24;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 
 .custom-scroll.no-display{
@@ -629,11 +703,11 @@ button:not(:hover).bounce .button-top{
   border-right: 0px;
   box-sizing: border-box;
   overflow-x: hidden;
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
+  animation: fadeIn 3;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
   opacity: 1;
   z-index: 2;
 }
@@ -790,11 +864,11 @@ button:not(:hover).bounce .button-top{
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 75%;
-  animation: fadeIn 12s;
-  -webkit-animation: fadeIn 12s;
-  -moz-animation: fadeIn 12s;
-  -o-animation: fadeIn 12s;
-  -ms-animation: fadeIn 12s;
+  animation: fadeIn 8s;
+  -webkit-animation: fadeIn 8s;
+  -moz-animation: fadeIn 8s;
+  -o-animation: fadeIn 8s;
+  -ms-animation: fadeIn 8s;
 }
 
 #home-background-video.disabled{
@@ -827,21 +901,21 @@ button:not(:hover).bounce .button-top{
 .project-display{
   background-color: var(--default-black);
   color: var(--default-white);
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
   opacity: 1;
 }
 
 /*Project list*/
 .project-list-display{
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 
 .project-list{
@@ -1626,6 +1700,7 @@ button:not(:hover).bounce .button-top{
   background-image: url('./media/project-media/edc/edc-brainstorm1.png');
   background-size: cover;
   background-position: center;
+  background-color: var(--default-white);
 }
 
 .edc-takeaway.image-only .bottom-image{
@@ -1634,6 +1709,7 @@ button:not(:hover).bounce .button-top{
   background-image: url('./media/project-media/edc/edc-brainstorm2.png');
   background-size: cover;
   background-position: center;
+  background-color: var(--default-white);
   border-top: var(--default-white) 1px solid;
 }
 
@@ -1903,6 +1979,7 @@ button:not(:hover).bounce .button-top{
   background-image: url('./media/me-prof.jpg');
   background-size: cover;
   background-position: center;
+  background-color: var(--default-white);
   aspect-ratio: 0.9;
 }
 
@@ -1933,12 +2010,19 @@ button:not(:hover).bounce .button-top{
 }
 
 .about-button-wrapper{
-  margin-bottom: 4px;
   display: flex;
   flex-direction: row;
   align-items: end;
   gap: 7px;
   justify-content: center;
+}
+
+.about-button-wrapper{
+  align-items: center;
+}
+
+.about-button-wrapper a{
+  display: flex;
 }
 
 @media (max-width:912px){
