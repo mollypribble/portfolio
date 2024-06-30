@@ -864,11 +864,11 @@ button:not(:hover).bounce .button-top{
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 75%;
-  animation: fadeIn 8s;
-  -webkit-animation: fadeIn 8s;
-  -moz-animation: fadeIn 8s;
-  -o-animation: fadeIn 8s;
-  -ms-animation: fadeIn 8s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 
 #home-background-video.disabled{
