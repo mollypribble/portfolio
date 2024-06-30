@@ -154,6 +154,34 @@ button.proj-button .proj-desc{
   border-top: var(--default-black) 2px solid;
 }
 
+button.proj-button.button-1 .proj-image{
+  background-image: url('./media/project-media/thumbnails/MCR-thumb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button.proj-button.button-2 .proj-image{
+  background-image: url('./media/project-media/thumbnails/AKVD-thumb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button.proj-button.button-3 .proj-image{
+  background-image: url('./media/project-media/thumbnails/RR-thumb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button.proj-button.button-4 .proj-image{
+  background-image: url('./media/project-media/thumbnails/HTC-thumb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .proj-desc-arrow-wrapper{
   display: flex;
   flex-direction: row;
