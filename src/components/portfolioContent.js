@@ -112,9 +112,7 @@ class PortfolioContent extends React.Component {
                         }} />
                     </div>
                 </div>
-        
     }
-    
 }
 
 export default PortfolioContent

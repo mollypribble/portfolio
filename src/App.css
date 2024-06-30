@@ -44,6 +44,7 @@ body{
   background-color: var(--default-black);
   color: var(--default-white);
   box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-family: 'Space';
   font-size: 17px;
   font-weight: 300;
@@ -150,6 +151,7 @@ button.proj-button .proj-desc{
   background-color: var(--default-white);
   height: 100%;
   /* aspect-ratio: 1.8; */
+  border-top: var(--default-black) 2px solid;
 }
 
 .proj-desc-arrow-wrapper{
@@ -1226,21 +1228,16 @@ button:not(:hover).bounce .button-top{
 }
 
 .mindyoga-text-banner-wrapper{
-  width: calc(100% - 380px);
+  width: 80%;
+}
+
+.mindyoga-text{
+  padding: 24px;
 }
 
 .mindyoga-summary .mindyoga-text{
   border-right: var(--default-white) 1px solid;
-  padding: 24px;
   min-height: 160px;
-}
-
-.mindyoga-summary-image{
-  width: 380px;
-  min-height: 260px;
-  height: 100%;
-  overflow: hidden;
-  background-color: var(--default-white);
 }
 
 .mindyoga-request-info-title{
@@ -1266,6 +1263,7 @@ button:not(:hover).bounce .button-top{
   width: 100%;
   min-height: 400px;
   margin-bottom: 36px;
+  gap: 36px;
 }
 
 .mindyoga-three-stages-text-title{
@@ -1299,10 +1297,16 @@ button:not(:hover).bounce .button-top{
 }
 
 .mindyoga-stages-image{
+  background-image: url('./media/project-media/mindyoga/process.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--default-white);
   height: 300px;
-  width: 85%;
+  width: 100%;
   border-right: var(--default-white) 1px solid;
+  display: flex;
+  padding: 0px;
 }
 
 .mindyoga-three-stages .mindyoga-stage:last-child{
@@ -1329,16 +1333,6 @@ button:not(:hover).bounce .button-top{
     border-top: var(--default-white) 1px solid;
     padding: 24px;
     min-height: unset;
-  }
-  
-  .mindyoga-summary-image{
-    border: var(--default-white) 1px solid;
-    border-bottom: 0px;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    background-color: var(--default-white);
-    margin-bottom: 36px;
   }
 
   .mindyoga-three-stages-text{
@@ -1382,7 +1376,6 @@ button:not(:hover).bounce .button-top{
 .rr-summary .rr-text{
   border-right: var(--default-white) 1px solid;
   padding: 24px;
-  height: fit-content;
   min-height: 80px;
   width: calc(100% - 380px);
   max-width: 900px;
