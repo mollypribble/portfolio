@@ -133,6 +133,7 @@ button.proj-button .proj-label{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: var(--default-black) 1px solid;
 }
 
 button.proj-button .proj-desc{
@@ -148,10 +149,15 @@ button.proj-button .proj-desc{
 }
 
 .proj-image{
-  background-color: var(--default-white);
+  background-color: var(--default-black);
   height: 100%;
   /* aspect-ratio: 1.8; */
-  border-top: var(--default-black) 2px solid;
+  border-top: var(--default-white) 1px solid;
+  border-bottom: var(--default-white) 1px solid;
+}
+
+button.proj-button:hover .proj-image{
+  filter:invert(100%);
 }
 
 button.proj-button.button-1 .proj-image{
@@ -186,7 +192,7 @@ button.proj-button.button-4 .proj-image{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  border-top: var(--default-black) 2px solid;
+  border-top: var(--default-black) 1px solid;
 }
 
 @media (max-width:627px) {
