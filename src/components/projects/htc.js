@@ -16,7 +16,7 @@ class Htc extends React.Component {
         <div className="project-display">
             <Title title="Hold the Code" />
             <ProjectOverview 
-            skills='Project Management, Tech Ethics, Writing, Leadership' 
+            skills='Communication Design, Project Management, Tech Ethics' 
             dates='Jan 2021-Jun 2022' 
             affiliation='Responsible AI Student Org. (RAISO)' />
 
