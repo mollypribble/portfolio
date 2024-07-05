@@ -236,6 +236,16 @@ button.proj-button:hover{
   flex-direction: row;
   flex-wrap: nowrap;
 }
+@media (max-width:234px){
+
+  button.proj-button .proj-arrow {
+    display: none;
+  }
+  button.proj-button .proj-desc{
+    border-right: 0px;
+    font-size: 18px;
+  }
+}
 
 @media (max-width:844px){
   .project-list .top-row{
@@ -775,7 +785,7 @@ button:not(:hover).bounce .button-top{
 .home-simple-name{
   font-size: 84px;
   font-family: 'VT323';
-  line-height: 74px;
+  line-height: 84px;
 }
 
 .home-simple-title{

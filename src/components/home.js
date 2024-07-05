@@ -46,7 +46,7 @@ class Home extends React.Component {
                         Molly Pribble
                     </div>
                     <div className='home-simple-title'>
-                        [UX designer]
+                        [ UX designer ]
                     </div>
                 </div>
 

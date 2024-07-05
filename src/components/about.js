@@ -39,7 +39,7 @@ class AboutMe extends React.Component {
                         <div>
                             <div className='section-header'>HI, I'M MOLLY.</div>
                             <div className='about-text'>
-                                I'm a UX designer at Ab Initio Software Corporation, an enterprise software company based in Boston, MA. My background and areas of expertise include human-computer interaction (HCI), academic design research, interaction design, and web design. Feel free to reach out with any professional inquiries.
+                                I'm a UX designer at Ab Initio Software Corporation in Boston, MA. I employ an iterative design process to tackle complex, user challenges, seek feedback from multiple perspectives, and communicate solutions for web-based products. My background and areas of expertise include human-computer interaction (HCI), academic design research, interaction design, and web design. <br/> <br/> Contact me for professional inquiries.
                             </div>
                         </div>
 
