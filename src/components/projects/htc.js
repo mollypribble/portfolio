@@ -21,7 +21,7 @@ class Htc extends React.Component {
             affiliation='Responsible AI Student Org. (RAISO)' />
 
             <div className='htc-summary'>
-                <div className='htc-text'>While not strictly a UX project, Hold the Code was one of initiatives that I was proudest of and most passionate to be a part of. Hold the Code is the newsletter for the Responsible AI Student Organization (RAISO) at Northwestern University, aimed at educating non-technical readers about the applications, break-throughs, and risks of AI and contemporary technology. As technology becomes more advanced, it is important that everyone is able to understand how it works, what it does, and what the potential impacts are. Hold the Code aims to educate about these topics in an understandable, accessible way without misleading or confusing jargon and buzzwords.</div>
+                <div className='htc-text'>Hold the Code was a communication design initiative based out of the Responsible AI Student Organization (RAISO) at Northwestern University, aimed at educating non-technical readers about the applications, break-throughs, and risks of AI and contemporary technology. As technology becomes more advanced, it is important that everyone is able to understand how it works, what it does, and what the potential impacts are. Hold the Code is a newsletter that aims to educate about these topics in an understandable, accessible way without misleading or confusing jargon and buzzwords.</div>
                 <div className='htc-summary-image' />
             </div>
 

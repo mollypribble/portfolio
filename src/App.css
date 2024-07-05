@@ -1404,6 +1404,7 @@ button:not(:hover).bounce .button-top{
   border-top: var(--default-white) 1px solid;
   width: 100%;
   margin-top: 36px;
+  margin-bottom: 36px;
   min-height: 150px;
 }
 
@@ -1435,8 +1436,33 @@ button:not(:hover).bounce .button-top{
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  min-height: 320px;
   margin-bottom: 36px;
+  border-bottom: var(--default-white) 1px solid;
+}
+
+.rr-features{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  border-bottom: var(--default-white) 1px solid;
+  border-top: var(--default-white) 1px solid;
+}
+
+.rr-features-images{
+  background-color: var(--default-white);
+  height: 400px;
+  width: 90%;
+  border-left: var(--default-white) 1px solid;
+}
+
+.rr-features-image-wrapper{
+  width: 100%;
+  border-bottom: var(--default-white) 1px solid;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
 }
 
 .rr-takeaway-image-wrapper{
@@ -1444,7 +1470,21 @@ button:not(:hover).bounce .button-top{
   flex-direction: column;
   justify-content: space-between;
   border-right: var(--default-white) 1px solid;
+  width: calc(100%/3);
 }
+
+.rr-feature-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: var(--default-white) 1px solid;
+  width: calc(100%/2);
+}
+
+.rr-feature-text-wrapper.last {
+  border-right: 0px;
+}
+
 .rr-takeaways .rr-takeaway-image-wrapper:last-child{
   border-right: 0px;
 }
@@ -1484,6 +1524,8 @@ button:not(:hover).bounce .button-top{
 
   .rr-takeaway-image-wrapper{
     border-right: 0px;
+    border-bottom: var(--default-white) 1px solid;
+    width: unset;
   }
   .rr-summary .rr-text{
     width: unset;
@@ -1493,9 +1535,6 @@ button:not(:hover).bounce .button-top{
   .rr-summary-image{
     width: 90%;
     height: 300px;
-  }
-  .rr-takeaways-header{
-    border-top: var(--default-white) 1px solid;
   }
 }
 

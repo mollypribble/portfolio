@@ -29,6 +29,7 @@ class Mindyoga extends React.Component {
 
             <div className='mindyoga-three-stages'>
                 <div>
+                    <SubTitle title="WHAT IS METACOGNITIVE REFLECTION?" />
                     <div className='mindyoga-text'>Prior research in the field of learning science has found that reflection is an essential skill that drives improved learning. While some models may vary, most reflection process detail a monitoring phase - where learner identify risks, a planning phase - where learners determine how they can address risks, and a practicing phase - where learning implement improvements. Mindyoga adapts this model to further address obstacles novice learners face in their reflection processes.</div>
                     <div className='mindyoga-stage mindyoga-stages-image'/>
                 </div>

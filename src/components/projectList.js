@@ -19,7 +19,7 @@ class ProjectList extends React.Component {
                     </div>
                     <div className='bottom-row'>
                         <ProjectButton projName={"Recruit Right"} projNumber={'3'} projDescription={"Wireframing, User Personas"} onClick={(e) => this.props.handleNewProj(4)}/>
-                        <ProjectButton projName={"Hold the Code"} projNumber={'4'} projDescription={"Project Management, Tech Ethics, Writing, Leadership"} onClick={(e) => this.props.handleNewProj(5)}/>
+                        <ProjectButton projName={"Hold the Code"} projNumber={'4'} projDescription={"Communication Design, Project Management, Tech Ethics"} onClick={(e) => this.props.handleNewProj(5)}/>
                     </div>
             </div>
         </div>
