@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7b5978ca.css",
-    "main.js": "/portfolio/static/js/main.ce01391c.js",
+    "main.css": "/portfolio/static/css/main.d3fd265f.css",
+    "main.js": "/portfolio/static/js/main.eb9fd1b5.js",
     "static/js/453.c651ec7f.chunk.js": "/portfolio/static/js/453.c651ec7f.chunk.js",
     "static/media/websitev3.gif": "/portfolio/static/media/websitev3.26e471a764741c322763.gif",
     "static/media/htc-insta.png": "/portfolio/static/media/htc-insta.9244609750990f431f06.png",
@@ -21,12 +21,12 @@
     "static/media/HTC-thumb.png": "/portfolio/static/media/HTC-thumb.723daf2e8d63d7f8a2b4.png",
     "static/media/MCR-thumb.png": "/portfolio/static/media/MCR-thumb.38633a13ae0f63ba135a.png",
     "index.html": "/portfolio/index.html",
-    "main.7b5978ca.css.map": "/portfolio/static/css/main.7b5978ca.css.map",
-    "main.ce01391c.js.map": "/portfolio/static/js/main.ce01391c.js.map",
+    "main.d3fd265f.css.map": "/portfolio/static/css/main.d3fd265f.css.map",
+    "main.eb9fd1b5.js.map": "/portfolio/static/js/main.eb9fd1b5.js.map",
     "453.c651ec7f.chunk.js.map": "/portfolio/static/js/453.c651ec7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b5978ca.css",
-    "static/js/main.ce01391c.js"
+    "static/css/main.d3fd265f.css",
+    "static/js/main.eb9fd1b5.js"
   ]
 }
