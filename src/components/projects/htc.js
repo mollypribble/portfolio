@@ -30,18 +30,18 @@ class Htc extends React.Component {
             </div>
             <div className="htc-takeaways">
                 <div className='htc-takeaway text-only'>
-                    <div className='section-header'>COLLABORATE & CREATE</div>
+                    <h3 className='section-header'>COLLABORATE & CREATE</h3>
                     <div className='htc-text'>Much of our success during my tenure as newsletter executive came from the collaborative practices that I introduced to our team's workflow. Curating the newsletter became a collective effort from the entire team, ensuring each writer could choose topics they were truley interested in. Team meetings turned from brief status updates into team-driven whiteboarding sessions, where we would brainstorm new topics to explore and new ways to present these topics to our audience. As team members had more of a say in what they individually worked on and in setting the creative direction for the entire group, our group's dedication and productivity saw a remarkable increase.</div>
                 </div>
                 <div className='htc-takeaway text-only'>
-                <div className='section-header'>GROWING OUR ROOTS</div>
+                <h3 className='section-header'>GROWING OUR ROOTS</h3>
                     <div className='htc-text'>During my time leading Hold the Code as newsletter executive, our team reached a number of milestones, including:<br /> <br />1 - A 150% increase in subscriber count and 120% increase in overall viewership.<br />2 - Expansion into new forms of content, such as opinion pieces and interviews Instagram content.<br />3 - Welcoming 5 new team members to grow our initial team of 3.<br />4 - Continued publication of our newsletter with over 25 new editions.</div>
                 </div>
             </div>
 
             <div className='htc-split'>
                 <div className='htc-split-text'>
-                    <div className='section-header'>OUT OF THE INBOX</div>
+                    <h3 className='section-header'>OUT OF THE INBOX</h3>
                     <div className='htc-text'>Another initiative at Hold the Code was to expand beyond written content to social media. Since social media is generally more popular among younger audiences, Hold the Code began visually engaging summaries of our newsletter editions for Instagram to increase our reach. The success of this effort lead to our committee absorbing most of RAISO's social media operations, where Hold the Code's social media expert would create stories and posts, advertise about upcoming events, and engage with our audience directly.</div>
                 </div>
                 <div className='htc-takeaway-image' />

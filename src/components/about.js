@@ -1,5 +1,5 @@
 import React from 'react';
-// import ProjectButton from './projectButton';
+import SubTitle from './subtitle';
 import Title from './title';
 import CustomButton from './button';
 
@@ -36,8 +36,9 @@ class AboutMe extends React.Component {
 
                 <div className='about-split'>
                     <div className='about-split-text'>
+                        
                         <div>
-                            <div className='section-header'>HI, I'M MOLLY.</div>
+                            <SubTitle title="HI, I'M MOLLY" />
                             <div className='about-text'>
                                 I'm a UX designer at Ab Initio Software Corporation in Boston, MA. I employ an iterative design process to tackle complex, user challenges, seek feedback from multiple perspectives, and communicate solutions for web-based products. My background and areas of expertise include human-computer interaction (HCI), academic design research, interaction design, and web design. <br/> <br/> Contact me for professional inquiries.
                             </div>
@@ -61,11 +62,11 @@ class AboutMe extends React.Component {
 
                 <div className="about-takeaways">
                     <div className='about-takeaway text-only'>
-                        <div className='section-header'>RESUME SUMMARY</div>
+                        <h3 className='section-header'>RESUME SUMMARY</h3>
                         <div className='about-text'>-- {this.state.exp} years of professional UX experience<br />-- 1.5 years of academic research experience<br />-- BS/MS in Computer Science (Northwestern '22)<br />-- Segal Design Certificate (Northwestern '22)<br />-- HTML, CSS, Javascript/Typescript, React, Python</div>
                     </div>
                     <div className='about-takeaway text-only last-one'>
-                    <div className='section-header'>MISC. INTERESTS</div>
+                    <h3 className='section-header'>MISC. INTERESTS</h3>
                         <div className='about-text'>--  Pottery <br />-- Baking<br />-- Yoga<br />-- Soccer<br />-- Hiking<br />-- Photography</div>
                     </div>
                 </div>

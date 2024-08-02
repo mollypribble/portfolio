@@ -10,9 +10,9 @@ class SubTitle extends React.Component {
 
         const className = (this.props.className) ? "banner-subtitle " + this.props.className : "banner-subtitle "
 
-        return <div className={className}>
+        return <h2 className={className}>
                 {this.props.title}
-            </div>
+            </h2>
     }
     
 }

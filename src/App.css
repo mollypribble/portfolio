@@ -37,7 +37,7 @@ html{
 }
 
 html:active{
-  cursor: url('./media/active-cursor.png') 9 9, auto;
+  cursor: url('./media/active-cursor.png') 9 6, auto;
 }
 
 body{
@@ -66,6 +66,7 @@ button.link-button:focus {
 button{
   color: var(--default-black);
   cursor: url('./media/hover-cursor.png') 9 9, crosshair;
+  font-family: 'Space';
 }
 
 a:active,
@@ -117,82 +118,36 @@ button.proj-button{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
   align-items: stretch;
   width: 50%;
-  aspect-ratio: 1.8;
+  justify-content: space-between;
 }
 
 button.proj-button .proj-label{
   font-size: 48px;
   font-family: 'VT323';
   text-align: left;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 8px 24px;
   align-content: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: var(--default-black) 1px solid;
 }
 
 button.proj-button .proj-desc{
   font-size: 20px;
-  padding: 24px 16px 24px 16px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  color: var(--default-black);
-  border-right: var(--default-black) 2px solid;
   width: 100%;
   justify-content: flex-end;
-}
-
-.proj-image{
-  background-color: var(--default-black);
-  height: 100%;
-  /* aspect-ratio: 1.8; */
-  border-top: var(--default-white) 1px solid;
-  border-bottom: var(--default-white) 1px solid;
-}
-
-button.proj-button:hover .proj-image{
-  filter:invert(100%);
-}
-
-button.proj-button.button-1 .proj-image{
-  background-image: url('./media/project-media/thumbnails/MCR-thumb.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-button.proj-button.button-2 .proj-image{
-  background-image: url('./media/project-media/thumbnails/AKVD-thumb.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-button.proj-button.button-3 .proj-image{
-  background-image: url('./media/project-media/thumbnails/RR-thumb.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-button.proj-button.button-4 .proj-image{
-  background-image: url('./media/project-media/thumbnails/HTC-thumb.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .proj-desc-arrow-wrapper{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  border-top: var(--default-black) 1px solid;
 }
 
 @media (max-width:627px) {
@@ -206,7 +161,7 @@ button.proj-button .proj-arrow{
   font-size: 48px;
   font-family: 'VT323';
   background-color: var(--default-black);
-  color: var(--default-white);
+  color: var(--default-black);
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -369,7 +324,6 @@ button.proj-button:hover{
 .landing-page .landing-page-vhs-img{
   max-width: 592px;
   width: 80%;
-  /* filter: drop-shadow(0 0 0.75rem #000000); */
 }
 
 .landing-page.animate{
@@ -768,8 +722,7 @@ button:not(:hover).bounce .button-top{
 }
 
 /* Home page */
-.home-simple{
-  opacity: 90%;
+.home-simple-alt.no-video{
   padding: 0 24px 0 24px;
   font-family: 'Space';
   font-weight: 300;
@@ -778,23 +731,60 @@ button:not(:hover).bounce .button-top{
   justify-content: center;
   text-align: center;
   height: 100%;
-  font-size: 26px;
   align-items: center;
+  border: 0px;
+}
+
+.home-simple-alt.no-video .home-simple-name{
+  font-size: 42px;
+  line-height: 32px;
+}
+
+.home-simple-alt.no-video .home-simple-title{
+  font-size: 18px;
+}
+
+.home-simple-alt{
+  padding: 0 24px 0 24px;
+  font-family: 'Space';
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--default-black);
+  border-bottom: var(--default-white) 1px solid;
 }
 
 .home-simple-name{
-  font-size: 84px;
   font-family: 'VT323';
-  line-height: 84px;
+  margin: 0px;
+  font-weight: unset;
+  font-size: 44px;
 }
 
 .home-simple-title{
   font-weight: 300;
   max-width: 850px;
   text-wrap: nowrap;
+  margin: 0px;
+  font-size: 28px;
 }
 
-@media (max-width:432px) {
+@media (max-width:550px) {
+  .home-simple-alt{
+    padding: 0 24px 0 24px;
+    font-family: 'Space';
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    border: 0px;
+  }
+
   .home-simple-name{
     font-size: 42px;
     line-height: 32px;
@@ -861,6 +851,10 @@ button:not(:hover).bounce .button-top{
   justify-content: start;
   gap: 8px;
 }
+.banner.home-banner{
+  position: absolute;
+  bottom: 0px;
+}
 
 .banner.home-banner.disabled{
   display: none;
@@ -909,12 +903,7 @@ button:not(:hover).bounce .button-top{
   z-index: -1;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 75%;
-  animation: fadeIn 3s;
-  -webkit-animation: fadeIn 3s;
-  -moz-animation: fadeIn 3s;
-  -o-animation: fadeIn 3s;
-  -ms-animation: fadeIn 3s;
+  opacity: 70%;
 }
 
 #home-background-video.disabled{
@@ -991,6 +980,8 @@ button:not(:hover).bounce .button-top{
   font-size: 58px;
   font-family: 'Notable';
   text-wrap: nowrap;
+  margin: 0px;
+  font-weight: unset;
 }
 
 .banner-subtitle{
@@ -1003,6 +994,8 @@ button:not(:hover).bounce .button-top{
   line-height: 36px;
   letter-spacing: 1px;
   padding: 12px 24px 12px 24px;
+  margin: 0px;
+  font-weight: unset;
 }
 
 .rect-1{
@@ -1256,6 +1249,7 @@ button:not(:hover).bounce .button-top{
   font-family: 'Space';
   font-size: 24px;
   font-weight: 600;
+  margin: 0px;
 }
 
 /* Mindyoga */
@@ -2029,11 +2023,14 @@ button:not(:hover).bounce .button-top{
   border-left: var(--default-white) 1px solid;
   width: 70%;
   justify-content: space-between;
+  gap: 7px;
 }
 
-.about-split-text .section-header,
+.about-split-text .about-text {
+  padding: 24px;
+}
+
 .about-takeaway .section-header,
-.about-split-text .about-text,
 .about-takeaway .about-text{
   padding-left: 24px;
   padding-right: 24px;
@@ -2042,11 +2039,6 @@ button:not(:hover).bounce .button-top{
 .about-takeaway{
   padding-top: 24px;
   padding-bottom: 24px;
-  gap: 7px;
-}
-
-.about-split-text{
-  padding-top: 24px;
   gap: 7px;
 }
 

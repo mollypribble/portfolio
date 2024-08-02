@@ -68,7 +68,7 @@ class LandingPage extends React.Component {
         const animateClass = this.state.animate ? " animate" : ""
 
         return <>
-        <div className={this.state.loaded ? "hide-me" : "show-me"}>
+        <div className={this.state.loaded ? "hide-me" : "show-me"} aria-hidden={this.state.loaded ? "true" : "false"}>
           <div className='loading-page'>
             <div className='loading-bar'>
               <div className='loading-bar-text'>
@@ -77,7 +77,7 @@ class LandingPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className={this.state.loaded ? "show-me" : "hide-me"} >
+        <div className={this.state.loaded ? "show-me" : "hide-me"} aria-hidden={this.state.loaded ? "false" : "true"}>
           <div className={'insert-vhs' + animateClass} />
           <div className={'landing-page' + animateClass}>
               <img className='landing-page-vhs-img' src={vhs} alt="Molly's UX portfolio now available on VHS. Play now!" width="80%" height="auto" />

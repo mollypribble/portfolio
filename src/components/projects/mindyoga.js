@@ -38,15 +38,15 @@ class Mindyoga extends React.Component {
                     <SubTitle title="OBSTACLES IN METACOGNITIVE REFLECTION" />
                     <div className='mindyoga-three-stages-text'>
                         <div className='mindyoga-stage'>
-                            <div className='section-header'>PRACTICAL &gt; METACOGNITIVE</div>
+                            <h3 className='section-header'>PRACTICAL &gt; METACOGNITIVE</h3>
                             <div className='akvd-text'>Novice learners are often prioritize improving their practical risks as opposed to their metacognitive risks. During some needfinding observations, learners were even unaware when their mentor gave them direct metacognitive feedback. After one session, the mentor reported that they “gave them feedback on believing in themselves as an expert designer”. However, the learners only reported receiving “feedback on ways to collect data”, missing the comments about how their lack of confidence was impacting their work entirely. This observation was corroborated by another learner, stating “I never really think about metacognitive feedback, only practical or project-based feedback”.</div>
                         </div>
                         <div className='mindyoga-stage'>
-                            <div className='section-header'>VAGUE PLANNING</div>
+                            <h3 className='section-header'>VAGUE PLANNING</h3>
                             <div className='akvd-text'>If learners are able to identify metacognitive risks and feedback, they then form a plan to improve on their weak points. This could be committing to using a planner to track upcoming meetings or writing out a list of goals before each work session to stay focused. If these plans are not specific enough, they can be difficult to implement. This is the main obstacle novice learners encounter in the planning stage. Often their plans are vague and difficult to take action on, making it more difficult for novice learners to successfully complete the expert learning process. One learner stated that they “should help seek better” as their plan, but had no concrete way to make their helpseeking "better".</div>
                         </div>
                         <div className='mindyoga-stage'>
-                            <div className='section-header'>FORGETFUL PRACTICING</div>
+                            <h3 className='section-header'>FORGETFUL PRACTICING</h3>
                             <div className='akvd-text'>The last phase of the learning process is to practice what the learner outlined in their plan. However, even if learners are able to identify relevant metacognitive risks and develop an actionable strategy to improve, they commonly report forgetting to implement their plan in their work sessions. These new ways of working are often not front-of-mind when learners begin to work, perhaps due to an over-emphasis on practical risks or an over-reliance on poor metacognitive habits that require effort to break.</div>
                         </div>
                     </div>
