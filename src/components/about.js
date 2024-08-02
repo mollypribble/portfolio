@@ -2,6 +2,7 @@ import React from 'react';
 import SubTitle from './subtitle';
 import Title from './title';
 import CustomButton from './button';
+import me from "../media/me-prof.jpg";
 
 class AboutMe extends React.Component {
 
@@ -35,12 +36,13 @@ class AboutMe extends React.Component {
                 <Title title="About Me"/>
 
                 <div className='about-split'>
+                    <img className='about-takeaway-image' alt='Headshot of Molly' src={me}/>
                     <div className='about-split-text'>
                         
                         <div>
                             <SubTitle title="HI, I'M MOLLY" />
                             <div className='about-text'>
-                                I'm a UX designer at Ab Initio Software Corporation in Boston, MA. I employ an iterative design process to tackle complex, user challenges, seek feedback from multiple perspectives, and communicate solutions for web-based products. My background and areas of expertise include human-computer interaction (HCI), academic design research, interaction design, and web design. <br/> <br/> Contact me for professional inquiries.
+                                <p>I'm a UX designer at Ab Initio Software Corporation in Boston, MA. I employ an iterative design process to tackle complex, user challenges, seek feedback from multiple perspectives, and communicate solutions for web-based products. My background and areas of expertise include human-computer interaction (HCI), academic design research, interaction design, and web design. <br/> <br/> Contact me for professional inquiries.</p>
                             </div>
                         </div>
 
@@ -48,26 +50,39 @@ class AboutMe extends React.Component {
                             <div className='about-button-label'>LinkedIn & email &rarr;</div>
                             <div className='about-button-wrapper'>
                                 <a href='https://www.linkedin.com/in/molly-pribble' target='_blank' tabIndex="-1">
-                                    <CustomButton disabled={false} small={true} bounce={false} icon={"linkedin.png"} onClick={(e) => {}}/>
+                                    <CustomButton disabled={false} small={true} bounce={false} icon={"linkedin.png"} onClick={(e) => {}} role="link"/>
                                 </a>
                                 <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
-                                    <CustomButton disabled={false} small={true} bounce={false} icon={"email.png"} onClick={(e) => {}}/>
+                                    <CustomButton disabled={false} small={true} bounce={false} icon={"email.png"} onClick={(e) => {}}role="link"/>
                                 </a>
                             </div>
                         </div>
 
                     </div>
-                    <div className='about-takeaway-image' />
+                    
                 </div>
 
                 <div className="about-takeaways">
                     <div className='about-takeaway text-only'>
                         <h3 className='section-header'>RESUME SUMMARY</h3>
-                        <div className='about-text'>-- {this.state.exp} years of professional UX experience<br />-- 1.5 years of academic research experience<br />-- BS/MS in Computer Science (Northwestern '22)<br />-- Segal Design Certificate (Northwestern '22)<br />-- HTML, CSS, Javascript/Typescript, React, Python</div>
+                        <ul className='about-text'>
+                            <li>{this.state.exp} years of professional UX experience</li>
+                            <li>1.5 years of academic research experience</li>
+                            <li>BS/MS in Computer Science (Northwestern '22)</li>
+                            <li>Segal Design Certificate (Northwestern '22)</li>
+                            <li>HTML, CSS, Javascript/Typescript, React, Python</li>
+                        </ul>
                     </div>
                     <div className='about-takeaway text-only last-one'>
-                    <h3 className='section-header'>MISC. INTERESTS</h3>
-                        <div className='about-text'>--  Pottery <br />-- Baking<br />-- Yoga<br />-- Soccer<br />-- Hiking<br />-- Photography</div>
+                        <h3 className='section-header'>MISC. INTERESTS</h3>
+                        <ul className='about-text'>
+                            <li>Pottery</li>
+                            <li>Baking</li>
+                            <li>Yoga</li>
+                            <li>Soccer</li>
+                            <li>Hiking</li>
+                            <li>Photography</li>
+                        </ul>
                     </div>
                 </div>
         </div>

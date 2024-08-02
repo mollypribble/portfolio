@@ -93,11 +93,11 @@ class CustomButton extends React.Component {
         }
         else if (this.props.icon === "on.png"){
             icon = on
-            alt = "on"
+            alt = "turn video on"
         }
         else if (this.props.icon === "off.png"){
             icon = off
-            alt = "off"
+            alt = "turn video off"
         }
         else if (this.props.icon === "proj.png"){
             icon = proj
@@ -116,9 +116,9 @@ class CustomButton extends React.Component {
             alt = "about"
         }
 
-        return <button className={buttonClass} onClick={(e) => this.clickAndBlur(e)} disabled={this.props.disabled}>
+        return <button className={buttonClass} onClick={(e) => this.clickAndBlur(e)} disabled={this.props.disabled} role={this.props.role} aria-label={this.props.ariaLabel}>
             <div className={buttonTopClass}>
-                <img src={icon} alt={alt} />
+                <img src={icon} alt={alt} aria-hidden="true"/>
             </div>
             <div className="button-bottom" />
         </button>

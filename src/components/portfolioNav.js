@@ -55,12 +55,14 @@ class NavBar extends React.Component {
         const icon = (this.state.open) ? "close.png" : "menu.png"
         const tabIndex = (this.state.open) ? "0" : "-1"
         const disableButtons = (this.state.width <= 550 & !this.state.open) ? true : false
+        const label = (this.props.currPage == 6) ? "You are currently on the About page" : (this.props.currPage == 0) ? "You are currently on the Home page" : "You are currently in the Projects section"
+        const toggleLabel = (this.state.open) ? "Close navigation menu" : "Open navigation menu"
 
-        return <div className={navBarClass+first}>
-            <CustomButton disabled={false} className='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} />
-            <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)}/>
-            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)}/>
-            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)}/>
+        return <div className={navBarClass+first} aria-label={"Portfolio Navigation, " + label}>
+            <CustomButton disabled={false} className='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} ariaLabel={toggleLabel}/>
+            <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Go to home page"/>
+            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Go to projects list"/>
+            <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)} ariaLabel="Go to about page"/>
         </div>
     }
     
