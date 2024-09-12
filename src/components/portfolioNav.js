@@ -51,14 +51,14 @@ class NavBar extends React.Component {
 
     render () {
         const first = (this.state.first) ? " first" : ""
-        const navBarClass = (this.state.width <= 550 && this.state.open) ? "nav-bar-small" : "nav-bar"
+        const navBarClass = (this.state.width <= 600 && this.state.open) ? "nav-bar-small" : "nav-bar"
         const icon = (this.state.open) ? "close.png" : "menu.png"
         const tabIndex = (this.state.open) ? "0" : "-1"
-        const disableButtons = (this.state.width <= 550 & !this.state.open) ? true : false
+        const disableButtons = (this.state.width <= 600 & !this.state.open) ? true : false
         const label = (this.props.currPage == 6) ? "You are currently on the About page" : (this.props.currPage == 0) ? "You are currently on the Home page" : "You are currently in the Projects section"
         const toggleLabel = (this.state.open) ? "Close navigation menu" : "Open navigation menu"
 
-        return <nav className={navBarClass+first} aria-label={"Portfolio Navigation, " + label}>
+        return <nav className={navBarClass+first} aria-label={"Portfolio Navigation, " + label} >
             <a href="#main" class="visually-hidden skip">Skip to main</a>
             <CustomButton disabled={false} className='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} ariaLabel={toggleLabel} />
             <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Go to home page" role="link" />

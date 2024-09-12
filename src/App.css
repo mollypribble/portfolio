@@ -1074,7 +1074,7 @@ main{
 
 .banner-subtitle{
   width: unset;
-  font-size: var(--font-medium);
+  font-size: var(--font-large);
   font-family: 'VT323';
   font-weight: 400;
   color: var(--default-black);
@@ -1953,3 +1953,5 @@ video {
 .skip {
   color:var(--default-white);
 }
+
+/* @media (max-width:600px) { .skip{display: none;} } */
