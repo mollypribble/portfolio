@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b9f0f24c.css",
-    "main.js": "/portfolio/static/js/main.a09a6996.js",
+    "main.css": "/portfolio/static/css/main.16a92417.css",
+    "main.js": "/portfolio/static/js/main.9f6c3018.js",
     "static/js/453.c651ec7f.chunk.js": "/portfolio/static/js/453.c651ec7f.chunk.js",
     "static/media/websitev3.gif": "/portfolio/static/media/websitev3.26e471a764741c322763.gif",
     "static/media/htc-insta.png": "/portfolio/static/media/htc-insta.9244609750990f431f06.png",
@@ -13,13 +13,14 @@
     "static/media/Dosis-VariableFont_wght.ttf": "/portfolio/static/media/Dosis-VariableFont_wght.0e7b67016bff1c785ebd.ttf",
     "static/media/process.png": "/portfolio/static/media/process.37d164efd9798530f091.png",
     "static/media/Notable-Regular.ttf": "/portfolio/static/media/Notable-Regular.2fb7db2f6ecfd8c14fd0.ttf",
+    "static/media/TV.svg": "/portfolio/static/media/TV.8bcb9d8f3445ff37d1d25fdcf7292f41.svg",
     "index.html": "/portfolio/index.html",
-    "main.b9f0f24c.css.map": "/portfolio/static/css/main.b9f0f24c.css.map",
-    "main.a09a6996.js.map": "/portfolio/static/js/main.a09a6996.js.map",
+    "main.16a92417.css.map": "/portfolio/static/css/main.16a92417.css.map",
+    "main.9f6c3018.js.map": "/portfolio/static/js/main.9f6c3018.js.map",
     "453.c651ec7f.chunk.js.map": "/portfolio/static/js/453.c651ec7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9f0f24c.css",
-    "static/js/main.a09a6996.js"
+    "static/css/main.16a92417.css",
+    "static/js/main.9f6c3018.js"
   ]
 }
