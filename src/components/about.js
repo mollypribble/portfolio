@@ -50,10 +50,10 @@ class AboutMe extends React.Component {
                             <div className='about-button-label'>LinkedIn & email &rarr;</div>
                             <div className='about-button-wrapper'>
                                 <a href='https://www.linkedin.com/in/molly-pribble' target='_blank' tabIndex="-1">
-                                    <CustomButton disabled={false} small={true} bounce={false} icon={"linkedin.png"} onClick={(e) => {}} ariaLabel="LinkedIn Profile" role="link"/>
+                                    <CustomButton disabled={false} small={true} bounce={false} icon={"linkedin.png"} onClick={(e) => {}} ariaLabel="LinkedIn" role="link"/>
                                 </a>
                                 <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
-                                    <CustomButton disabled={false} small={true} bounce={false} icon={"email.png"} onClick={(e) => {}} ariaLabel="Email Me" role="link"/>
+                                    <CustomButton disabled={false} small={true} bounce={false} icon={"email.png"} onClick={(e) => {}} ariaLabel="Email" role="link"/>
                                 </a>
                             </div>
                         </div>
@@ -73,6 +73,7 @@ class AboutMe extends React.Component {
                             <li>BS/MS in Computer Science (Northwestern '22)</li>
                             <li>Segal Design Certificate (Northwestern '22)</li>
                             <li>HTML, CSS, Javascript/Typescript, React, Python</li>
+                            <li>Figma, Sketch</li>
                         </ul>
                     </div>
                     <div className='about-takeaway text-only last-one'>
