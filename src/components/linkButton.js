@@ -14,7 +14,7 @@ class LinkButton extends React.Component {
     render () {
         const classy = "link-button " + this.props.className;
 
-        return <button className={classy} alt={this.props.alt} onClick={(e) => this.clickAndBlur(e)}>
+        return <button role="link" className={classy} aria-label={this.props.alt} onClick={(e) => this.clickAndBlur(e)}>
             {this.props.label}
         </button>
     }

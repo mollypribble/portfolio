@@ -102,9 +102,9 @@ class PortfolioContent extends React.Component {
         
         return <div className='portfolio-content'>
                     <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page}/>
-                    <div className='current-content' ref={this.scrollRef} onScroll={this.calcScroll}> 
+                    <main id='main' className='current-content' ref={this.scrollRef} onScroll={this.calcScroll}> 
                         {this.renderCurrentPage()}
-                    </div>
+                    </main>
                     <div className={scrollClass}>
                         <div className='custom-scroll-fill' 
                         style={{

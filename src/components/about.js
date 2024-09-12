@@ -50,10 +50,10 @@ class AboutMe extends React.Component {
                             <div className='about-button-label'>LinkedIn & email &rarr;</div>
                             <div className='about-button-wrapper'>
                                 <a href='https://www.linkedin.com/in/molly-pribble' target='_blank' tabIndex="-1">
-                                    <CustomButton disabled={false} small={true} bounce={false} icon={"linkedin.png"} onClick={(e) => {}} role="link"/>
+                                    <CustomButton disabled={false} small={true} bounce={false} icon={"linkedin.png"} onClick={(e) => {}} ariaLabel="LinkedIn Profile" role="link"/>
                                 </a>
                                 <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
-                                    <CustomButton disabled={false} small={true} bounce={false} icon={"email.png"} onClick={(e) => {}}role="link"/>
+                                    <CustomButton disabled={false} small={true} bounce={false} icon={"email.png"} onClick={(e) => {}} ariaLabel="Email Me" role="link"/>
                                 </a>
                             </div>
                         </div>
