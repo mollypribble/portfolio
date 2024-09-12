@@ -59,7 +59,7 @@ class NavBar extends React.Component {
         const toggleLabel = (this.state.open) ? "Close navigation menu" : "Open navigation menu"
 
         return <nav className={navBarClass+first} aria-label={"Portfolio Navigation, " + label} >
-            <a href="#main" class="visually-hidden skip">Skip to main</a>
+            <a href="#main" class="visually-hidden skip" tabIndex={tabIndex}>Skip to main</a>
             <CustomButton disabled={false} className='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} ariaLabel={toggleLabel} />
             <CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Go to home page" role="link" />
             <CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Go to projects list" role="link"/>

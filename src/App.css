@@ -1953,5 +1953,3 @@ video {
 .skip {
   color:var(--default-white);
 }
-
-/* @media (max-width:600px) { .skip{display: none;} } */
