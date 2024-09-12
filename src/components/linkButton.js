@@ -15,7 +15,8 @@ class LinkButton extends React.Component {
         const classy = "link-button " + this.props.className;
 
         return <button role="link" className={classy} aria-label={this.props.alt} onClick={(e) => this.clickAndBlur(e)}>
-            {this.props.label}
+            <img className='next-prev-icon' src={this.props.icon} aria-hidden />
+            <p>{this.props.label}</p>
         </button>
     }
     

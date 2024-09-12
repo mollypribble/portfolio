@@ -47,7 +47,9 @@ class Home extends React.Component {
                             <CustomButton disabled={false} small={true} bounce={false} icon={"off.png"} active= {!this.props.video} onClick={(e) => this.props.toggleVideo(false)} ariaLabel="Pause video" ariaPressed={this.props.video ? "false" : "true"}/> 
                         </div>
                         <img className={"home-tv-tv"} src={tv} aria-hidden/>
-                        <img className={"home-tv-video" + disableVideo} src={websitev3gif} alt="Stylistic introduction video played on a retro TV with scenes from Molly's recent adventures, hobbies, and life"/>
+                        <p className='visually-hidden-text' id='tv-label'>Stylistic introduction video played on a retro TV with scenes from Molly's recent adventures, hobbies, and life</p>
+                        <p className='visually-hidden-text' id='tv-description'>Includes videos of traveling in Europe and South America, hiking, cute animals, road tripping through national parks, going to Lake Michigan, walking around Boston, visiting San Francisco, and doing pottery.</p>
+                        <img className={"home-tv-video" + disableVideo} src={websitev3gif} aria-labelledby='tv-label' aria-describedby='tv-description'/>
                     </div>
                     <h1 className='home-simple-name'>
                         Molly Pribble

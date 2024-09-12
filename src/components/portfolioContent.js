@@ -100,7 +100,7 @@ class PortfolioContent extends React.Component {
 
         console.log(this.state.page)
         
-        return <div className='portfolio-content'>
+        return <div className='portfolio-content' >
                     <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page}/>
                     <main id='main' className='current-content' ref={this.scrollRef} onScroll={this.calcScroll}> 
                         {this.renderCurrentPage()}

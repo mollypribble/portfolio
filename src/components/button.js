@@ -15,7 +15,7 @@ import on from "../media/on.png"
 import off from "../media/off.png"
 import proj from "../media/proj.png"
 import next from "../media/next.png"
-import last from "../media/last.png"
+import last from "../media/prev.png"
 import emailText from "../media/email-text.png"
 import about from "../media/about.png"
 
@@ -103,13 +103,13 @@ class CustomButton extends React.Component {
             icon = proj
             alt = "projects"
         }
-        else if (this.props.icon === "last.png"){
+        else if (this.props.icon === "prev.png"){
             icon = last
-            alt = "last project"
+            alt = "previous"
         }
         else if (this.props.icon === "next.png"){
             icon = next
-            alt = "next project"
+            alt = "next"
         }
         else if (this.props.icon === "about.png"){
             icon = about

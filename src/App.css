@@ -7,6 +7,11 @@
   --focus-shadow-blue: #7fabcb;
   --default-text-spacing: -0.75px;
   --tv-width: 480px;
+  --font-small: 18px;
+  --font-medium: 24px;
+  --font-large: 36px;
+  --font-extra-large: 42px; 
+  --font-xxl: 56px;
 }
 
 /* fonts */
@@ -47,7 +52,7 @@ body{
   box-sizing: border-box;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-family: 'Space';
-  font-size: 17px;
+  font-size: var(--font-small);
   font-weight: 300;
   scroll-behavior: smooth;
   line-height: 1.65;
@@ -114,7 +119,7 @@ button.link-button{
   height: 100%;
   padding: 3px 3px 3px 3px;
   color: var(--default-black);
-  font-size: 22px;
+  font-size: var(--font-medium);
   font-family: 'VT323';
   text-decoration: underline;
   border: none;
@@ -139,7 +144,7 @@ button.proj-button{
 }
 
 button.proj-button .proj-label{
-  font-size: 48px;
+  font-size: var(--font-extra-large);
   font-family: 'VT323';
   text-align: left;
   padding: 8px 24px;
@@ -150,7 +155,7 @@ button.proj-button .proj-label{
 }
 
 button.proj-button .proj-desc{
-  font-size: 20px;
+  font-size: var(--font-small);
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -167,13 +172,13 @@ button.proj-button .proj-desc{
 
 @media (max-width:627px) {
   button.proj-button .proj-label{
-    font-size: 42px;
+    font-size: var(--font-extra-large);
   }
 }
 
 
 button.proj-button .proj-arrow{
-  font-size: 48px;
+  font-size: var(--font-extra-large);
   font-family: 'VT323';
   background-color: var(--default-black);
   color: var(--default-black);
@@ -218,7 +223,7 @@ button.proj-button:hover{
   }
   button.proj-button .proj-desc{
     border-right: 0px;
-    font-size: 18px;
+    font-size: var(--font-small);
   }
 }
 
@@ -280,9 +285,9 @@ button.proj-button:hover{
 .loading-bar-text{
   text-wrap: nowrap;
   text-align: center;
-  font-size: 36px;
+  font-size: var(--font-large);
   font-family: 'VT323';
-  line-height: 36px;
+  line-height: var(--font-large);
   position: relative;
   left: 4px;
   animation: moveLeft 3s infinite;
@@ -761,8 +766,8 @@ button:not(:hover).bounce .button-top{
   font-family: 'VT323';
   margin: 0px;
   font-weight: unset;
-  font-size: 50px;
-  line-height: 42px;
+  font-size: var(--font-xxl);
+  line-height: 50px;
 }
 
 .home-simple-title{
@@ -770,7 +775,7 @@ button:not(:hover).bounce .button-top{
   max-width: 850px;
   text-wrap: nowrap;
   margin: 0px;
-  font-size: 24px;
+  font-size: var(--font-medium);
 }
 .home-tv{
   height: var(--tv-width);
@@ -820,21 +825,37 @@ button:not(:hover).bounce .button-top{
   }
 
   .home-simple-name{
-    font-size: 42px;
-    line-height: 32px;
+    font-size: var(--font-extra-large);
+    line-height: var(--font-large);
   }
   
   .home-simple-title{
-    font-size: 18px;
+    font-size: var(--font-small);
   }
   .home-tv{
     display: none;
   }
 }
 
+@media (max-height:600px) {
+  .home-tv{
+    display: none;
+  }
+  .home-simple-alt{
+    padding-bottom: 0px;
+  }
+}
+
 @media (prefers-reduced-motion) {
   .home-tv{
     display: none;
+  }
+  button:not(:hover).bounce .button-top{
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
   }
 }
 
@@ -844,32 +865,42 @@ button:not(:hover).bounce .button-top{
   gap: 7px;
 }
 
-.home-simple-video-text{
-  font-size: 22px;
-}
-
 .proj-next-last-controls{
   display: flex;
   flex-direction: row;
   align-items: end;
   gap: 7px;
-  justify-content: center;
-}
-
-.proj-next-last-controls{
   justify-content: space-between;
   width: 100%;
 }
 
-.proj-next-last-controls .big{
-  display: block;
+.proj-next-last-controls button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
 }
+
+.proj-next-last-controls button:hover{
+  text-decoration: underline;
+}
+
+.proj-next-last-controls button.right-icon{
+  flex-direction: row-reverse;
+}
+
 .proj-next-last-controls .small{
   display: none;
   text-decoration: none;
 }
+
 .proj-next-last-controls .no-underline{
   text-decoration: none;
+}
+
+.next-prev-icon{
+  height: 16px;
 }
 
 @media (max-width:375px){
@@ -881,7 +912,6 @@ button:not(:hover).bounce .button-top{
   }
 } 
 
-.banner.home-banner,
 .banner.proj-next-last-banner{
   text-align: end;
   box-sizing: border-box;
@@ -1021,7 +1051,7 @@ button:not(:hover).bounce .button-top{
 }
 
 .project-title .text{
-  font-size: 58px;
+  font-size: var(--font-xxl);
   font-family: 'Notable';
   text-wrap: nowrap;
   margin: 0px;
@@ -1030,7 +1060,7 @@ button:not(:hover).bounce .button-top{
 
 .banner-subtitle{
   width: unset;
-  font-size: 36px;
+  font-size: var(--font-medium);
   font-family: 'VT323';
   font-weight: 400;
   color: var(--default-black);
@@ -1043,37 +1073,37 @@ button:not(:hover).bounce .button-top{
 }
 
 .rect-1{
-  height: 42px;
+  height: 40px;
   width: 24px;
   background-color: var(--default-white);
 }
 
 .rect-2{
-  height: 42px;
+  height: 40px;
   width: 9px;
   background-color: var(--default-white);
 }
 
 .rect-3{
-  height: 42px;
+  height: 40px;
   width: 6px;
   background-color: var(--default-white);
 }
 
 .rect-4{
-  height: 42px;
+  height: 40px;
   width: 3px;
   background-color: var(--default-white);
 }
 
 .rect-5{
-  height: 42px;
+  height: 40px;
   width: 2px;
   background-color: var(--default-white);
 }
 
 .rect-6{
-  height: 42px;
+  height: 40px;
   width: 1px;
   background-color: var(--default-white);
 }
@@ -1089,8 +1119,8 @@ button:not(:hover).bounce .button-top{
 
 @media (max-width:844px){
   .project-title .text{ 
-    font-size: 42px;
-    line-height: 42px;
+    font-size: var(--font-extra-large);
+    line-height: var(--font-extra-large);
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -1134,7 +1164,7 @@ button:not(:hover).bounce .button-top{
   padding: 2px 3px 3px 24px;
   background-color: var(--default-white);
   color: var(--default-black);
-  font-size: 22px;
+  font-size: var(--font-medium);
   font-family: 'VT323';
 }
 
@@ -1213,7 +1243,7 @@ button:not(:hover).bounce .button-top{
 .akvd-request-info-title{
   font-family: 'Space';
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--font-medium);
   text-wrap: nowrap;
   margin: 0px;
 }
@@ -1280,7 +1310,7 @@ button:not(:hover).bounce .button-top{
 
 .section-header{
   font-family: 'Space';
-  font-size: 24px;
+  font-size: var(--font-medium);
   font-weight: 600;
   margin: 0px;
 }
@@ -1314,7 +1344,7 @@ button:not(:hover).bounce .button-top{
 .mindyoga-request-info-title{
   font-family: 'Space';
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--font-medium);
   text-wrap: nowrap;
 }
 
@@ -1887,6 +1917,16 @@ video {
 
 /*visually hidden*/
 .visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually-hidden-text {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;

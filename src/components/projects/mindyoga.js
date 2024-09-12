@@ -32,14 +32,15 @@ class Mindyoga extends React.Component {
                 <div>
                     <SubTitle title="WHAT IS METACOGNITIVE REFLECTION?" />
                     <div className='mindyoga-text'><p>Prior research in the field of learning science has found that reflection is an essential skill that drives improved learning. Most reflection models detail a monitoring phase - where learner identify risks, a planning phase - where learners determine how they can address risks, and a practicing phase - where learning implement improvements. Mindyoga adapts this model by providing scaffolds at key points in the process to help learners overcome obstacles in the reflection process.</p></div>
-                    <img className='mindyoga-stage mindyoga-stages-image' src={process} alt='The three stages of reflection that MindYoga leverages for metacognitive behavioral improvement. The stages include: monitoring (where learners ask "what is my riskiest metacognitive behavior"), planning (where learners ask "in what ways can I improve these behaviors"), and practicing (where learners ask "when can i implement these improvements").'/>
+                    <p id='process-image-label' className='visually-hidden-text'>The three stages of reflection that MindYoga leverages for metacognitive behavioral improvement. The stages include: monitoring (where learners ask "what is my riskiest metacognitive behavior"), planning (where learners ask "in what ways can I improve these behaviors"), and practicing (where learners ask "when can i implement these improvements").'</p>
+                    <img className='mindyoga-stage mindyoga-stages-image' src={process} aria-labelledby='process-image-label'/>
                 </div>
 
                 <div className='mindyoga-three-stages-text-title'>
                     <SubTitle title="OBSTACLES IN METACOGNITIVE REFLECTION" />
                     <div className='mindyoga-three-stages-text'>
                         <div className='mindyoga-stage'>
-                            <h3 className='section-header'>PRACTICAL &gt; METACOGNITIVE</h3>
+                            <h3 className='section-header'>PRACTICAL-FIRST MENTALITY</h3>
                             <div className='akvd-text'><p>Novice learners are often prioritize improving their practical risks as opposed to their metacognitive risks. During some needfinding observations, learners were even unaware when their mentor gave them direct metacognitive feedback. After one session, the mentor reported that they “gave them feedback on believing in themselves as an expert designer”. However, the learners only reported receiving “feedback on ways to collect data”, missing the comments about how their lack of confidence was impacting their work entirely. This observation was corroborated by another learner, stating “I never really think about metacognitive feedback, only practical or project-based feedback”.</p></div>
                         </div>
                         <div className='mindyoga-stage'>

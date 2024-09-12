@@ -42,7 +42,7 @@ class AboutMe extends React.Component {
                         <div>
                             <SubTitle title="HI, I'M MOLLY" />
                             <div className='about-text'>
-                                <p>I'm a UX designer at Ab Initio Software Corporation in Boston, MA. I employ an iterative design process to tackle complex, user challenges, seek feedback from multiple perspectives, and communicate solutions for web-based products. My background and areas of expertise include human-computer interaction (HCI), academic design research, interaction design, and web design. <br/> <br/> Contact me for professional inquiries.</p>
+                                <p>I'm a UX designer at Ab Initio Software Corporation in Boston, MA. I utilize an iterative design process to tackle complex, user challenges, seek feedback from multiple perspectives, and communicate solutions for web-based products. My background includes work in design research, user-centered interaction design, web development,  enterprise software, and accessibility. <br/> <br/> Contact me for professional inquiries.</p>
                             </div>
                         </div>
 
