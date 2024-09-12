@@ -43,8 +43,8 @@ class Home extends React.Component {
                 <div className={"home-simple-alt"}>
                     <div className="home-tv">
                         <div className='home-simple-video-controls'>
-                            <CustomButton disabled={false} small={true} bounce={false} icon={"on.png"} active= {this.props.video} onClick={(e) => this.props.toggleVideo(true)} ariaLabel="Play video" ariaPressed={this.props.video ? "true" : "false"}/>
-                            <CustomButton disabled={false} small={true} bounce={false} icon={"off.png"} active= {!this.props.video} onClick={(e) => this.props.toggleVideo(false)} ariaLabel="Pause video" ariaPressed={this.props.video ? "false" : "true"}/> 
+                            <CustomButton disabled={false} small={true} bounce={false} icon={"play.png"} active= {this.props.video} onClick={(e) => this.props.toggleVideo(true)} ariaLabel="Play video" ariaPressed={this.props.video ? "true" : "false"}/>
+                            <CustomButton disabled={false} small={true} bounce={false} icon={"pause.png"} active= {!this.props.video} onClick={(e) => this.props.toggleVideo(false)} ariaLabel="Pause video" ariaPressed={this.props.video ? "false" : "true"}/> 
                         </div>
                         <img className={"home-tv-tv"} src={tv} aria-hidden/>
                         <p className='visually-hidden-text' id='tv-label'>Stylistic introduction video played on a retro TV with scenes from Molly's recent adventures, hobbies, and life</p>

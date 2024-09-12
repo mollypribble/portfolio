@@ -18,6 +18,7 @@ import next from "../media/next.png"
 import last from "../media/prev.png"
 import emailText from "../media/email-text.png"
 import about from "../media/about.png"
+import pause from "../media/pause.png"
 
 class CustomButton extends React.Component {
 
@@ -114,6 +115,10 @@ class CustomButton extends React.Component {
         else if (this.props.icon === "about.png"){
             icon = about
             alt = "about"
+        }
+        else if (this.props.icon === "pause.png"){
+            icon = pause
+            alt = "pause"
         }
 
         return <button className={buttonClass} 
