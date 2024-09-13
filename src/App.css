@@ -229,23 +229,11 @@ button.proj-button:hover{
 }
 
 @media (max-width:844px){
-  .project-list .top-row{
-    flex-direction: column;
-  }
-  
-  .project-list .top-row .proj-button:first-child,
-  .project-list .bottom-row .proj-button:first-child {
-    border-right: 0px;
-    border-bottom: 0px;
-  }
-  
-  .project-list .bottom-row{
-    flex-direction: column;
-  }
 
   button.proj-button{
     width: 100%;
     aspect-ratio: unset;
+    border-right: 0px;
   }
 
   button.proj-button .proj-image{
