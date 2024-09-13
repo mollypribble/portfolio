@@ -112,13 +112,13 @@ class RecruitRight extends React.Component {
             <div className="rr-features">
                 <div className="rr-feature-text-wrapper">
                     <div className='rr-takeaway'>
-                        <h3 className='section-header'>FIND THE *RIGHT* RECRUITS</h3>
+                        <h3 className='section-header'>POOR SEARCH CRITERIA</h3>
                         <div className='rr-text'><p>Most of the time, coaches cannot simply find the players with the highest stats, fastest mile times, or best ball-control. Sometimes the reality of travel constraints, graduating class, and tight budgets prevent coaches from pursuing potential recruits who are out of area or not the right age.</p></div>
                     </div>
                 </div>
                 <div className="rr-feature-text-wrapper last">
                     <div className='rr-takeaway'>
-                        <h3 className='section-header'>RELEVANT FILTER CRITERIA</h3>
+                        <h3 className='section-header'>FIND THE *RIGHT* RECRUITS</h3>
                         <div className='rr-text'><p>When exploring recent highlights, coaches need a robust set of filters to find the right players to recruit for their team. Beyond the standard filters such as gender and position, things like graduating class and region were also important to include to help coaches maintain a budget, plan recruiting trips, and follow the recruiting rules of their conference.</p></div>
                     </div>
                 </div>

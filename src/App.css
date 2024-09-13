@@ -6,7 +6,7 @@
   --focus-blue: #cee0eb;
   --focus-shadow-blue: #7fabcb;
   --default-text-spacing: -0.75px;
-  --tv-width: 480px;
+  --tv-width: 300px;
   --font-small: 18px;
   --font-medium: 24px;
   --font-large: 36px;
@@ -449,7 +449,7 @@ button.proj-button:hover{
 
 /* idle button sizes */
 .big-button{
-  height: 68px;
+  height: 77px;
   width: 96px;
   border-radius: 10px;
   background-color: transparent;
@@ -514,12 +514,26 @@ button:hover .button-bottom{
   border-color: var(--light-grey);
 }
 
-.big-button:active .button-top{
+.big-button:active .button-top,
+button.big-button[aria-pressed="true"]:active .button-top,
+button.big-button[aria-current="true"]:active .button-top{
+  top: 8px;
+}
+
+button.big-button[aria-pressed="true"] .button-top,
+button.big-button[aria-current="true"] .button-top{
   top: 6px;
 }
 
-.small-button:active .button-top{
-  top: 3px;
+.small-button:active .button-top,
+button.small-button[aria-pressed="true"]:active .button-top,
+button.small-button[aria-current="true"]:active .button-top{
+  top: 6px;
+}
+
+button.small-button[aria-pressed="true"] .button-top,
+button.small-button[aria-current="true"] .button-top{
+  top: 4px;
 }
 
 /* button bounce animation */
@@ -536,10 +550,10 @@ button:not(:hover).bounce .button-top{
     top: 0px;
   }
   1%{
-    top: 5px;
+    top: 6px;
   }
   50% {
-    top: 5px;
+    top: 6px;
   }
   51%{
     top: 0px;
@@ -813,23 +827,23 @@ main{
 }
 
 .home-tv-video{
-  width: 420px;
   z-index: 5;
   position: absolute;
-  top: 110px;
-  left: 30px;
+  top: 60px;
+  left: 25px;
+  width: 250px;
 }
 
 .home-simple-video-controls{
   z-index: 7;
   position: absolute;
-  bottom: 105px;
-  left: 66px;
   display: flex;
   flex-direction: row;
   align-items: end;
   gap: 13px;
   justify-content: center;
+  bottom: 70px;
+  left: 44px;
 }
 
 
@@ -1239,19 +1253,16 @@ main{
 .akvd-summary .akvd-text{
   border-right: var(--default-white) 1px solid;
   padding: 24px;
-  max-width: 780px;
+  max-width: 70%;
 }
 
 .akvd-request-info{
-  width: 200%;
   background-color: var(--default-white);
   color: var(--default-black);
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 3px;
-  height: fit-content;
-  min-height: 150px;
 }
 
 .akvd-request-info-title{
@@ -1343,7 +1354,7 @@ main{
 }
 
 .mindyoga-text-banner-wrapper{
-  width: 80%;
+  width: 88%;
 }
 
 .mindyoga-text{
@@ -1526,8 +1537,7 @@ main{
 .rr-features-images{
   background-color: var(--default-white);
   height: 400px;
-  width: 90%;
-  border-left: var(--default-white) 1px solid;
+  width: 100%;
 }
 
 .rr-features-image-wrapper{
@@ -1712,6 +1722,7 @@ main{
   width: 50%;
   object-fit: contain;
   object-position: 50% 0;
+  max-height: 345px;
 }
 
 @media (max-width:1111px){
@@ -1805,7 +1816,6 @@ main{
   flex-wrap: nowrap;
   flex-direction: column;
   border-left: var(--default-white) 1px solid;
-  width: 70%;
   justify-content: space-between;
   gap: 7px;
 }
@@ -1831,8 +1841,9 @@ main{
 }
 
 .about-takeaway-image{
-  width: 30%;
-  object-fit: cover;
+  object-fit: contain;
+	width: 30%;
+	max-height: 400px;
 }
 
 .about-split-text .link-nav{
