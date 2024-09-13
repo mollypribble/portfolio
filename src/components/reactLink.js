@@ -9,7 +9,7 @@ class ReactLink extends React.Component {
 
     render () {
 
-        return <Link aria-hidden={true} className="react-link" to={this.props.linkTo}>
+        return <Link role="none" className="react-link" to={this.props.linkTo}>
             {this.props.child}
         </Link>
     }

@@ -1954,6 +1954,14 @@ video {
 
 .skip {
   color:var(--default-white);
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  font-size: var(--font-small);
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  width: 100%;
 }
 
 .react-link{

@@ -98,12 +98,15 @@ class PortfolioContent extends React.Component {
 
     render () {
         const scrollClass = (this.state.page == 0) ? "custom-scroll no-display" : "custom-scroll"
+//         ref={mainContentRef}
+//   id="maincontent"
+//   tabIndex={-1}
 
         console.log(this.state.page)
         
         return <div className='portfolio-content' >
-                    <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page}/>
-                    <main id='main' className='current-content' ref={this.scrollRef} onScroll={this.calcScroll}> 
+                    <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page} mainContentRef={this.scrollRef}/>
+                    <main id='main' tabIndex={-1} className='current-content' ref={this.scrollRef} onScroll={this.calcScroll}> 
                         {this.renderCurrentPage()}
                     </main>
                     <div className={scrollClass}>
