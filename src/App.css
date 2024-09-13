@@ -142,6 +142,7 @@ button.proj-button{
   justify-content: space-between;
   max-width: 700px;
   box-sizing: border-box;
+  margin: 0px;
 }
 
 button.proj-button .proj-label{
@@ -194,7 +195,6 @@ button.proj-button .proj-arrow{
 button.proj-button:hover{
   background-color: var(--default-white);
   color: var(--default-black);
-  border: transparent 1px solid;
 }
 
 .project-list .top-row{
@@ -527,8 +527,11 @@ button.big-button[aria-current="true"] .button-top{
   top: 9px;
 } */
 
-.small-button:active .button-top,
-button.small-button[aria-pressed="true"]:active .button-top,
+.small-button:active .button-top{
+  top: 7px;
+}
+
+/* button.small-button[aria-pressed="true"]:active .button-top,
 button.small-button[aria-current="true"]:active .button-top{
   top: 7px;
 }
@@ -536,7 +539,7 @@ button.small-button[aria-current="true"]:active .button-top{
 button.small-button[aria-pressed="true"] .button-top,
 button.small-button[aria-current="true"] .button-top{
   top: 4px;
-}
+} */
 
 /* button bounce animation */
 button:not(:hover).bounce .button-top{
