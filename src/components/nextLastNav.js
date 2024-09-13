@@ -30,11 +30,11 @@ class NextLastNav extends React.Component {
 
         return <footer className='banner proj-next-last-banner'>
         <nav className='proj-next-last-controls' aria-label={'Project navigation '+label}>
-            <ReactLink linkTo={"/projects/"+prevLink} child={<LinkButton className="big left-icon" label='Prev' alt={`Previous project, Project ${this.props.last-1}`} onClick={(e) => this.props.handleNewProj(this.props.last)} icon={prev}/>} />
-            <ReactLink linkTo={"/projects/"+prevLink} child={<LinkButton className="small left-icon" label='' alt={`Previous project, Project ${this.props.last-1}`} onClick={(e) => this.props.handleNewProj(this.props.last)} icon={prev}/>} />
+            <ReactLink linkTo={"/portfolio/projects/"+prevLink} child={<LinkButton className="big left-icon" label='Prev' alt={`Previous project, Project ${this.props.last-1}`} onClick={(e) => this.props.handleNewProj(this.props.last)} icon={prev}/>} />
+            <ReactLink linkTo={"/portfolio/projects/"+prevLink} child={<LinkButton className="small left-icon" label='' alt={`Previous project, Project ${this.props.last-1}`} onClick={(e) => this.props.handleNewProj(this.props.last)} icon={prev}/>} />
             <p aria-label={'Project '+this.props.curr+' out of 4'}>Project {this.props.curr}/4</p>
-            <ReactLink linkTo={"/projects/"+nextLink} child={<LinkButton className="big right-icon" label='Next' alt={`Next project, Project ${this.props.next-1}`} onClick={(e) => this.props.handleNewProj(this.props.next)} icon={next}/>} />
-            <ReactLink linkTo={"/projects/"+nextLink} child={<LinkButton className="small right-icon" label='' alt={`Next project, Project ${this.props.next-1}`} onClick={(e) => this.props.handleNewProj(this.props.next)} icon={next}/>} />
+            <ReactLink linkTo={"/portfolio/projects/"+nextLink} child={<LinkButton className="big right-icon" label='Next' alt={`Next project, Project ${this.props.next-1}`} onClick={(e) => this.props.handleNewProj(this.props.next)} icon={next}/>} />
+            <ReactLink linkTo={"/portfolio/projects/"+nextLink} child={<LinkButton className="small right-icon" label='' alt={`Next project, Project ${this.props.next-1}`} onClick={(e) => this.props.handleNewProj(this.props.next)} icon={next}/>} />
         </nav>
     </footer>
     }

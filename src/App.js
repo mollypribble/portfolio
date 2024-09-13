@@ -25,28 +25,28 @@ function App() {
         <Route exact path="/">
           <MainDisplay vhs={true} page={0}/>
         </Route>
-        <Route path="/portfolio">
+        <Route exact path="/portfolio">
           <MainDisplay vhs={true} page={0}/>
         </Route>
-        <Route path="/home">
+        <Route path="/portfolio/home">
           <MainDisplay vhs={false} page={0}/>
         </Route>
-        <Route exact path="/projects">
+        <Route exact path="/portfolio/projects">
           <MainDisplay vhs={false} page={1}/>
         </Route>
-        <Route path="/projects/mindyoga">
+        <Route path="/portfolio/projects/mindyoga">
           <MainDisplay vhs={false} page={2}/>
         </Route>
-        <Route path="/projects/active-view-data">
+        <Route path="/portfolio/projects/active-view-data">
           <MainDisplay vhs={false} page={3}/>
         </Route>
-        <Route path="/projects/recruit-right">
+        <Route path="/portfolio/projects/recruit-right">
           <MainDisplay vhs={false} page={4}/>
         </Route>
-        <Route path="/projects/hold-the-code">
+        <Route path="/portfolio/projects/hold-the-code">
           <MainDisplay vhs={false} page={5}/>
         </Route>
-        <Route path="/about">
+        <Route path="/portfolio/about">
           <MainDisplay vhs={false} page={6}/>
         </Route>
 

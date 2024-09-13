@@ -63,9 +63,9 @@ class NavBar extends React.Component {
         return <nav className={navBarClass+first} aria-label={"Portfolio Navigation, " + label}>
             <a href="#main" className="visually-hidden skip" tabIndex={tabIndex}>Skip to main</a>
             <CustomButton disabled={false} className='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} ariaLabel={toggleLabel} />
-            <ReactLink linkTo="/home" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Home" role="link"/>} />
-            <ReactLink linkTo="/projects" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Projects" role="link"/>} />
-            <ReactLink linkTo="/about" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)} ariaLabel="About" role="link"/>} />
+            <ReactLink linkTo="/portfolio/home" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Home" role="link"/>} />
+            <ReactLink linkTo="/portfolio/projects" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Projects" role="link"/>} />
+            <ReactLink linkTo="/portfolio/about" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)} ariaLabel="About" role="link"/>} />
         </nav>
     }
     

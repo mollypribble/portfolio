@@ -83,7 +83,7 @@ class LandingPage extends React.Component {
           <div className={'insert-vhs' + animateClass} />
           <div className={'landing-page' + animateClass}>
               <img className='landing-page-vhs-img' src={vhs} alt="Molly's UX portfolio now available on VHS. Play now!" width="80%" height="auto" />
-              <ReactLink linkTo="/home" child={<CustomButton small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} ariaLabel={"Press play to enter portfolio"}/>} />
+              <ReactLink linkTo="/portfolio/home" child={<CustomButton small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} ariaLabel={"Press play to enter portfolio"}/>} />
           </div>
         </div>
         </>
