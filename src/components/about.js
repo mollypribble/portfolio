@@ -3,6 +3,7 @@ import SubTitle from './subtitle';
 import Title from './title';
 import CustomButton from './button';
 import me from "../media/me-prof.jpg";
+import { withRouter } from 'react-router-dom';
 
 class AboutMe extends React.Component {
 
@@ -93,4 +94,4 @@ class AboutMe extends React.Component {
     
 }
 
-export default AboutMe
+export default withRouter(AboutMe)

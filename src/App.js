@@ -1,14 +1,56 @@
-import { BrowserRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
 import MainDisplay from './components/mainDisplay';
-import PortfolioContent from './components/portfolioContent';
-import LandingPage from './components/landingPage';
 
 function App() {
 
+  useEffect(() => {
+    if (typeof window === "undefined") return false;
+
+    const handleBackButton = () => {
+      window.history.go(0);
+    }
+
+    window.addEventListener("popstate", handleBackButton)
+    return () => {
+      window.removeEventListener("popstate", handleBackButton)
+    }
+  }, [])
+
   return (
     <BrowserRouter>
-      <MainDisplay />
+      <Switch>
+
+        <Route exact path="/">
+          <MainDisplay vhs={true} page={0}/>
+        </Route>
+        <Route path="/portfolio">
+          <MainDisplay vhs={true} page={0}/>
+        </Route>
+        <Route path="/home">
+          <MainDisplay vhs={false} page={0}/>
+        </Route>
+        <Route exact path="/projects">
+          <MainDisplay vhs={false} page={1}/>
+        </Route>
+        <Route path="/projects/mindyoga">
+          <MainDisplay vhs={false} page={2}/>
+        </Route>
+        <Route path="/projects/active-view-data">
+          <MainDisplay vhs={false} page={3}/>
+        </Route>
+        <Route path="/projects/recruit-right">
+          <MainDisplay vhs={false} page={4}/>
+        </Route>
+        <Route path="/projects/hold-the-code">
+          <MainDisplay vhs={false} page={5}/>
+        </Route>
+        <Route path="/about">
+          <MainDisplay vhs={false} page={6}/>
+        </Route>
+
+      </Switch>
     </BrowserRouter>
 );
 }

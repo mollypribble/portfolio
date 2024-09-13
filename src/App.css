@@ -898,7 +898,7 @@ main{
 .proj-next-last-controls{
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: center;
   gap: 7px;
   justify-content: space-between;
   width: 100%;
@@ -1963,4 +1963,9 @@ video {
 
 .skip {
   color:var(--default-white);
+}
+
+.react-link{
+  text-decoration: none;
+  display: contents;
 }

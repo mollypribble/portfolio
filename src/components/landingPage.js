@@ -2,7 +2,8 @@ import React from 'react';
 import CustomButton from './button';
 import vhs from '../media/vhs.png'
 import websitev3gif from '../media/websitev3.gif';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import ReactLink from './reactLink';
+import { withRouter } from 'react-router-dom';
 
 class LandingPage extends React.Component {
 
@@ -59,7 +60,7 @@ class LandingPage extends React.Component {
         });
 
         this.delay(6300).then(() => {
-          console.log("max timeout hit when loaded is: ", this.state.loaded);
+          console.log("items loaded efore timeout: ", this.state.loaded);
           this.setState({ loaded: true });
         }
         )
@@ -82,7 +83,7 @@ class LandingPage extends React.Component {
           <div className={'insert-vhs' + animateClass} />
           <div className={'landing-page' + animateClass}>
               <img className='landing-page-vhs-img' src={vhs} alt="Molly's UX portfolio now available on VHS. Play now!" width="80%" height="auto" />
-              <Link to='/portfolio/home'><CustomButton small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} ariaLabel={"Press play to enter portfolio"}/></Link>
+              <ReactLink linkTo="/home" child={<CustomButton small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} ariaLabel={"Press play to enter portfolio"}/>} />
           </div>
         </div>
         </>
@@ -90,4 +91,4 @@ class LandingPage extends React.Component {
     
 }
 
-export default LandingPage
+export default withRouter(LandingPage)

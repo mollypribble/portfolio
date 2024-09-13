@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingPage from './landingPage';
 import PortfolioContent from './portfolioContent'
+import { withRouter } from 'react-router-dom';
 
 class MainDisplay extends React.Component {
     //pages --> 
@@ -12,14 +13,15 @@ class MainDisplay extends React.Component {
         this.enterPortfolio = this.enterPortfolio.bind(this)
         this.handleResize = this.handleResize.bind(this)
         this.state = {
-            vhs: true,
+            vhs: this.props.vhs,
+            height: window.innerHeight,
+            page: (this.props.page)
         }
       }
 
       enterPortfolio() {
         this.setState({
-            vhs: false,
-            height: window.innerHeight
+            vhs: false
         })
         console.log("Playing Molly's UX Portfolio...")
       }
@@ -40,7 +42,7 @@ class MainDisplay extends React.Component {
 
         // console.log(window.innerHeight)
         
-        const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio} />:<PortfolioContent routeChange={this.routeChange} page={0}/>
+        const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio}/>:<PortfolioContent page={this.props.page}/>
         
         return <div className='main-display'
                   style={{height: `${this.state.height}px`}} >
@@ -50,4 +52,4 @@ class MainDisplay extends React.Component {
     
 }
 
-export default MainDisplay
+export default withRouter(MainDisplay)

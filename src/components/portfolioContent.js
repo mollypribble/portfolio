@@ -8,6 +8,7 @@ import Htc from './projects/htc';
 import RecruitRight from './projects/recruitRight.js';
 import ProjectList from './projectList.js';
 import AboutMe from './about.js';
+import { withRouter } from 'react-router-dom';
 
 class PortfolioContent extends React.Component {
     //pages --> 
@@ -22,7 +23,7 @@ class PortfolioContent extends React.Component {
         this.toggleVideo = this.toggleVideo.bind(this)
         this.scrollRef = React.createRef();
         this.state = {
-            page: 0,
+            page: this.props.page,
             video: true,
             heightCalc: 0
         }
@@ -115,4 +116,4 @@ class PortfolioContent extends React.Component {
     }
 }
 
-export default PortfolioContent
+export default withRouter(PortfolioContent)
