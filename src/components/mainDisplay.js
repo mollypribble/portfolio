@@ -1,10 +1,6 @@
 import React from 'react';
 import LandingPage from './landingPage';
 import PortfolioContent from './portfolioContent'
-// import {
-//   BrowserRouter as Router, Routes,
-//     Route
-// } from "react-router-dom";
 
 class MainDisplay extends React.Component {
     //pages --> 
@@ -41,20 +37,14 @@ class MainDisplay extends React.Component {
       }
 
     render () {
-        console.log(this.state.height)
-        const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio} /> : <PortfolioContent page={0}/>
+
+        // console.log(window.innerHeight)
+        
+        const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio} />:<PortfolioContent routeChange={this.routeChange} page={0}/>
         
         return <div className='main-display'
-                    style={{
-                    height: `${this.state.height}px`
-                }} >
-                  {/* <Router> */}
+                  style={{height: `${this.state.height}px`}} >
                   {returnMe}
-                    {/* <Routes>
-                      <Route path="/portfolio" element={<LandingPage />} />
-                      <Route path="/portfolio/home" element={<PortfolioContent />} />
-                    </Routes>
-                  </Router> */}
         </div>
     }
     

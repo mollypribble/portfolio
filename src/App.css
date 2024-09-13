@@ -514,21 +514,23 @@ button:hover .button-bottom{
   border-color: var(--light-grey);
 }
 
-.big-button:active .button-top,
-button.big-button[aria-pressed="true"]:active .button-top,
+.big-button:active .button-top{
+  top: 11px
+}
+/* button.big-button[aria-pressed="true"]:active .button-top,
 button.big-button[aria-current="true"]:active .button-top{
-  top: 8px;
-}
+  top: 11px;
+} */
 
-button.big-button[aria-pressed="true"] .button-top,
+/* button.big-button[aria-pressed="true"] .button-top,
 button.big-button[aria-current="true"] .button-top{
-  top: 6px;
-}
+  top: 9px;
+} */
 
 .small-button:active .button-top,
 button.small-button[aria-pressed="true"]:active .button-top,
 button.small-button[aria-current="true"]:active .button-top{
-  top: 6px;
+  top: 7px;
 }
 
 button.small-button[aria-pressed="true"] .button-top,
@@ -1384,7 +1386,6 @@ main{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  border-bottom: var(--default-white) 1px solid;
   border-top: var(--default-white) 1px solid;
   width: 100%;
   min-height: 400px;
@@ -1841,9 +1842,8 @@ main{
 }
 
 .about-takeaway-image{
-  object-fit: contain;
+  object-fit: cover;
 	width: 30%;
-	max-height: 400px;
 }
 
 .about-split-text .link-nav{

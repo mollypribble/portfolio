@@ -2,6 +2,7 @@ import React from 'react';
 import CustomButton from './button';
 import vhs from '../media/vhs.png'
 import websitev3gif from '../media/websitev3.gif';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 class LandingPage extends React.Component {
 
@@ -81,7 +82,7 @@ class LandingPage extends React.Component {
           <div className={'insert-vhs' + animateClass} />
           <div className={'landing-page' + animateClass}>
               <img className='landing-page-vhs-img' src={vhs} alt="Molly's UX portfolio now available on VHS. Play now!" width="80%" height="auto" />
-              <CustomButton small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} ariaLabel={"Press play to enter portfolio"}/>
+              <Link to='/portfolio/home'><CustomButton small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} ariaLabel={"Press play to enter portfolio"}/></Link>
           </div>
         </div>
         </>

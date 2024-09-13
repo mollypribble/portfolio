@@ -1,11 +1,15 @@
+import { BrowserRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
 import MainDisplay from './components/mainDisplay';
-// import websitev2gif from 'media/websitev2.gif';
+import PortfolioContent from './components/portfolioContent';
+import LandingPage from './components/landingPage';
 
 function App() {
 
   return (
-    <MainDisplay />
+    <BrowserRouter>
+      <MainDisplay />
+    </BrowserRouter>
 );
 }
 
