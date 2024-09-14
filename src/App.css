@@ -67,7 +67,7 @@ ul{
   margin: 0px;
 }
 
-li{
+ul li{
   list-style-image: url('./media/bullet.png');
 }
 

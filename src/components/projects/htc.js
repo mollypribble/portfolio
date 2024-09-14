@@ -14,8 +14,7 @@ class Htc extends React.Component {
 
     render () {
 
-        return <>
-        <div className="project-display">
+        return <div className="project-display">
             <Title title="Hold the Code" />
             <ProjectOverview 
             skills='Communication Design, Project Management, Tech Ethics' 
@@ -37,7 +36,14 @@ class Htc extends React.Component {
                 </div>
                 <div className='htc-takeaway text-only'>
                 <h3 className='section-header'>GROWING OUR ROOTS</h3>
-                    <div className='htc-text'><p>During my time leading Hold the Code as newsletter executive, our team reached a number of milestones, including:<br /> <br />1 - A 150% increase in subscriber count and 120% increase in overall viewership.<br />2 - Expansion into new forms of content, such as opinion pieces and interviews Instagram content.<br />3 - Welcoming 5 new team members to grow our initial team of 3.<br />4 - Continued publication of our newsletter with over 25 new editions.</p></div>
+                    <div className='htc-text'><p>During my time leading Hold the Code as newsletter executive, our team reached a number of milestones, including:</p>
+                        <ol>
+                            <li>A 150% increase in subscriber count and 120% increase in overall viewership.</li>
+                            <li>Expansion into new forms of content, such as opinion pieces and interviews Instagram content.</li>
+                            <li>Welcoming 5 new team members to grow our initial team of 3.</li>
+                            <li>Continued publication of our newsletter with over 25 new editions.</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
 
@@ -52,7 +58,6 @@ class Htc extends React.Component {
             <NextLastNav handleNewProj={this.props.handleNewProj} curr={4} last={this.props.last} next={this.props.next}/>
 
         </div>
-        </>
     }
     
 }
