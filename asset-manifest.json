@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.60b08d27.css",
-    "main.js": "/portfolio/static/js/main.84d2567a.js",
+    "main.js": "/portfolio/static/js/main.1ea5f97c.js",
     "static/js/453.c651ec7f.chunk.js": "/portfolio/static/js/453.c651ec7f.chunk.js",
     "static/media/websitev3.gif": "/portfolio/static/media/websitev3.26e471a764741c322763.gif",
     "static/media/htc-insta.png": "/portfolio/static/media/htc-insta.9244609750990f431f06.png",
@@ -16,11 +16,11 @@
     "static/media/TV.svg": "/portfolio/static/media/TV.a21cafb0f0aa57222b2fb6f735c98bc2.svg",
     "index.html": "/portfolio/index.html",
     "main.60b08d27.css.map": "/portfolio/static/css/main.60b08d27.css.map",
-    "main.84d2567a.js.map": "/portfolio/static/js/main.84d2567a.js.map",
+    "main.1ea5f97c.js.map": "/portfolio/static/js/main.1ea5f97c.js.map",
     "453.c651ec7f.chunk.js.map": "/portfolio/static/js/453.c651ec7f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.60b08d27.css",
-    "static/js/main.84d2567a.js"
+    "static/js/main.1ea5f97c.js"
   ]
 }
