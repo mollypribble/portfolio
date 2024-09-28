@@ -59,6 +59,26 @@ body{
   overflow: hidden;
 }
 
+.glitch{
+  animation: glitch 2s ease-in-out;
+  -webkit-animation: glitch 2s ease-in-out;
+  -moz-animation: glitch 2s ease-in-out;
+  -o-animation: glitch 2s ease-in-out;
+  -ms-animation: glitch 2s ease-in-out;
+}
+
+@keyframes glitch {
+  0%{
+    left: 4px;
+  }
+  50%{
+    left: -74px;
+  }
+  100%{
+    left: -152px;
+  }
+}
+
 p{
   margin: 0px;
 }
@@ -447,7 +467,7 @@ button.proj-button:hover{
 }
 
 .small-button{
-  height: 32px;
+  height: 28px;
   width: 44px;
   border-radius: 6px;
   background-color: transparent;
@@ -835,8 +855,8 @@ main{
   align-items: end;
   gap: 13px;
   justify-content: center;
-  bottom: 70px;
   left: 44px;
+  bottom: 73px;
 }
 
 
@@ -872,6 +892,13 @@ main{
     display: none;
   }
   button:not(:hover).bounce .button-top{
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+  }
+  .glitch{
     animation: none;
     -webkit-animation: none;
     -moz-animation: none;
