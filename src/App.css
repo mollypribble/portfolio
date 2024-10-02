@@ -60,22 +60,135 @@ body{
 }
 
 .glitch{
-  animation: glitch 2s ease-in-out;
-  -webkit-animation: glitch 2s ease-in-out;
-  -moz-animation: glitch 2s ease-in-out;
-  -o-animation: glitch 2s ease-in-out;
-  -ms-animation: glitch 2s ease-in-out;
+  line-height: 0px;
+  height: 100%;
+  padding-left: 0px;
+  clip-path: inset(0% 0 0 0);
+  animation: glitch 4000ms infinite;
+  -webkit-animation: glitch 4000ms infinite;
+  -moz-animation: glitch 4000ms infinite;
+  -o-animation: glitch 4000ms infinite;
+  -ms-animation: glitch 4000ms infinite;
 }
 
 @keyframes glitch {
   0%{
-    left: 4px;
+    padding-left: 0px;
+    clip-path: inset(0% 0 0 0);
+  }
+  4%{
+    padding-left: 0px;
+  }
+  5%{
+    padding-left: 2px;
+    clip-path: inset(44% 0 0 0);
+  }
+  6%{
+    padding-left: 1px;
+  }
+  7%{
+    padding-left: 4px;
+  }
+  8%{
+    padding-left: 5px;
+  }
+  9%{
+    padding-left: 1px;
+  }
+  10%{
+    padding-left: 1px;
+    clip-path: inset(44% 0 0 0);
+  }
+  11%{
+    padding-left: 2px;
+    clip-path: inset(6% 0 0 0);
+  }
+  12%{
+    padding-left: 0px;
+  }
+  14%{
+    padding-left: 0px;
+  }
+  15%{
+    padding-left: 2px;
+  }
+  16%{
+    padding-left: 4px;
+    clip-path: inset(6% 0 0 0);
+  }
+  17%{
+    padding-left: 1px;
+    clip-path: inset(1% 0 0 0);
+  }
+  18%{
+    padding-left: 0px;
+  }
+  26%{
+    padding-left: 0px;
+    clip-path: inset(1% 0 0 0);
   }
   50%{
-    left: -74px;
+    padding-left: 0px;
+    clip-path: inset(0% 0 0 0);
+  }
+  69%{
+    padding-left: 0px;
+    clip-path: inset(0% 0 0 0);
+  }
+  73%{
+    padding-left: 0px;
+  }
+  80%{
+    padding-left: 2px;
+    clip-path: inset(44% 0 0 0);
+  }
+  81%{
+    padding-left: 1px;
+  }
+  82%{
+    padding-left: 3px;
+  }
+  83%{
+    padding-left: 3px;
+  }
+  84%{
+    padding-left: 1px;
+  }
+  85%{
+    padding-left: 1px;
+    clip-path: inset(44% 0 0 0);
+  }
+  86%{
+    padding-left: 0px;
+    clip-path: inset(6% 0 0 0);
+  }
+  87%{
+    padding-left: 0px;
+  }
+  91%{
+    padding-left: 4px;
+  }
+  92%{
+    padding-left: 0px;
+  }
+  93%{
+    padding-left: 2px;
+    clip-path: inset(6% 0 0 0);
+  }
+  94%{
+    padding-left: 0px;
+    clip-path: inset(1% 0 0 0);
+  }
+  95%{
+    padding-left: 4px;
+  }
+  99%{
+    padding-left: 4px;
+    clip-path: inset(1% 0 0 0);
   }
   100%{
-    left: -152px;
+    padding-left: 0px;
+    clip-path: inset(0% 0 0 0);
   }
 }
 
@@ -808,7 +921,8 @@ main{
   margin: 0px;
   font-weight: unset;
   font-size: var(--font-xxl);
-  line-height: 50px;
+  line-height: 0px;
+  height: 24px;
 }
 
 .home-simple-title{
@@ -904,6 +1018,7 @@ main{
     -moz-animation: none;
     -o-animation: none;
     -ms-animation: none;
+    display: none;
   }
 }
 

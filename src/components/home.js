@@ -53,6 +53,7 @@ class Home extends React.Component {
                     </div>
                     <h1 className='home-simple-name'>
                         Molly Pribble
+                        <div aria-hidden="true" className='glitch'><p>Molly Pribble</p></div>
                     </h1>
                     <h2 className='home-simple-title'>
                         UX designer
