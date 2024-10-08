@@ -4,6 +4,7 @@ import Title from './title';
 import CustomButton from './button';
 import me from "../media/me-prof.jpg";
 import { withRouter } from 'react-router-dom';
+import ButtonLink from './link';
 
 class AboutMe extends React.Component {
 
@@ -50,12 +51,22 @@ class AboutMe extends React.Component {
                         <div className='link-nav banner'>
                             <div className='about-button-label'>LinkedIn & email &rarr;</div>
                             <div className='about-button-wrapper'>
-                                <a href='https://www.linkedin.com/in/molly-pribble' target='_blank' tabIndex="-1">
-                                    <CustomButton disabled={false} small={true} bounce={false} icon={"linkedin.png"} onClick={(e) => {}} ariaLabel="LinkedIn" role="link"/>
-                                </a>
-                                <a href='mailto:mollypribble1@mac.com' target='_blank' tabIndex="-1">
-                                    <CustomButton disabled={false} small={true} bounce={false} icon={"email.png"} onClick={(e) => {}} ariaLabel="Email" role="link"/>
-                                </a>
+                                <ButtonLink href='https://www.linkedin.com/in/molly-pribble' 
+                                target='_blank'
+                                disabled={false} 
+                                small={true} 
+                                bounce={false} 
+                                icon={"linkedin.png"} 
+                                onClick={(e) => {}}
+                                ariaLabel="LinkedIn" />
+                                <ButtonLink href='mailto:mollypribble1@mac.com' 
+                                target='_blank'
+                                disabled={false} 
+                                small={true} 
+                                bounce={false} 
+                                icon={"email.png"} 
+                                onClick={(e) => {}}
+                                ariaLabel="Email" />
                             </div>
                         </div>
 

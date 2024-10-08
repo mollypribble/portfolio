@@ -3,6 +3,7 @@ import CustomButton from './button';
 import vhs from '../media/vhs.png'
 import websitev3gif from '../media/websitev3.gif';
 import ReactLink from './reactLink';
+import ReactButtonLink from './reactButtonLink';
 import { withRouter } from 'react-router-dom';
 
 class LandingPage extends React.Component {
@@ -83,7 +84,7 @@ class LandingPage extends React.Component {
           <div className={'insert-vhs' + animateClass} />
           <div className={'landing-page' + animateClass}>
               <img className='landing-page-vhs-img' src={vhs} alt="Molly's UX portfolio now available on VHS. Play now!" width="80%" height="auto" />
-              <ReactLink linkTo="/portfolio/home" child={<CustomButton small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} ariaLabel={"Press play to enter portfolio"}/>} />
+              <ReactButtonLink linkTo="/portfolio/home" small={false} bounce={true} icon={"play.png"} onClick={this.animateAndNav} ariaLabel={"Press play to enter portfolio"} />
           </div>
         </div>
         </>

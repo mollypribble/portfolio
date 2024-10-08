@@ -47,17 +47,17 @@ class Home extends React.Component {
                         <p className='visually-hidden-text' id='tv-description'>Includes videos of traveling in Europe and South America, hiking, cute animals, road tripping through national parks, going to Lake Michigan, walking around Boston, visiting San Francisco, and doing pottery.</p>
                         <img className={"home-tv-video" + disableVideo} src={websitev3gif} aria-labelledby='tv-label' aria-describedby='tv-description'/>
                         <div className='home-simple-video-controls' role='group' aria-label='Video controls'>
-                            <CustomButton disabled={false} small={true} bounce={false} icon={"play.png"} active= {this.props.video} onClick={(e) => this.props.toggleVideo(true)} ariaLabel="Play" ariaPressed={this.props.video ? "true" : "false"}/>
-                            <CustomButton disabled={false} small={true} bounce={false} icon={"pause.png"} active= {!this.props.video} onClick={(e) => this.props.toggleVideo(false)} ariaLabel="Pause" ariaPressed={this.props.video ? "false" : "true"}/> 
+                            <CustomButton className='small-button' disabled={false} small={true} bounce={false} icon={"play.png"} active= {this.props.video} onClick={(e) => this.props.toggleVideo(true)} ariaLabel="Play" ariaPressed={this.props.video ? "true" : "false"}/>
+                            <CustomButton className='small-button' disabled={false} small={true} bounce={false} icon={"pause.png"} active= {!this.props.video} onClick={(e) => this.props.toggleVideo(false)} ariaLabel="Pause" ariaPressed={this.props.video ? "false" : "true"}/> 
                         </div>
                     </div>
                     <h1 className='home-simple-name'>
                         Molly Pribble
                         <div aria-hidden="true" className='glitch'><p>Molly Pribble</p></div>
                     </h1>
-                    <h2 className='home-simple-title'>
+                    <p className='home-simple-title'>
                         UX designer
-                    </h2>
+                    </p>
                 </div>
 
         </div>

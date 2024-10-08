@@ -1,6 +1,6 @@
 import React from 'react';
 
-class LinkButton extends React.Component {
+class NextLastLink extends React.Component {
 
     constructor(props) {
         super(props);
@@ -14,12 +14,12 @@ class LinkButton extends React.Component {
     render () {
         const classy = "link-button " + this.props.className;
 
-        return <button role="link" className={classy} aria-label={this.props.alt} onClick={(e) => this.clickAndBlur(e)}>
+        return <div className={classy} onClick={(e) => this.clickAndBlur(e)}>
             <img className='next-prev-icon' src={this.props.icon} aria-hidden />
-            <p>{this.props.label}</p>
-        </button>
+            <p aria-label={this.props.alt}>{this.props.label}</p>
+        </div>
     }
     
 }
 
-export default LinkButton
+export default NextLastLink

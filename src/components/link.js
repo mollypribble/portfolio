@@ -1,26 +1,26 @@
 import React from 'react';
 import ButtonBase from './buttonBase';
 
-class CustomButton extends React.Component {
+class ButtonLink extends React.Component {
 
     constructor(props) {
         super(props);
       }
 
     render () {
-        return <button className={this.props.className}>
+        return <a href={this.props.href} target={this.props.target} className='small-button button-link-class'>
             <ButtonBase 
             disabled={this.props.disabled} 
-            className={this.props.childClassName} 
+            className={this.props.className} 
             small={this.props.small} 
             bounce={this.props.bounce} 
             icon={this.props.icon} 
             active={this.props.active} 
             onClick={this.props.onClick} 
             ariaLabel={this.props.toggleLabel} />
-        </button>
+        </a>
     }
     
 }
 
-export default CustomButton
+export default ButtonLink
