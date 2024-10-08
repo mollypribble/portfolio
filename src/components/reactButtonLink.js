@@ -35,7 +35,7 @@ class ReactButtonLink extends React.Component {
             onClick={this.props.onClick} 
             ariaLabel={this.props.toggleLabel} />)
 
-        return <ReactLink linkTo={this.props.linkTo} child={mychild} className={this.props.className}/>
+        return <ReactLink linkTo={this.props.linkTo} child={mychild} className={this.props.className} onClick={this.props.onClick}/>
     }
     
 }

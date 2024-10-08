@@ -207,7 +207,6 @@ ul li{
 button, a{
   color: var(--default-black);
   cursor: url('./media/hover-cursor.png') 9 9, crosshair;
-  font-family: 'Space';
 }
 
 a:active,
@@ -221,7 +220,8 @@ a:focus-visible .proj-button{
   outline: none;
 }
 
-a:focus-visible .link-button {
+a:focus-visible .link-button,
+p a:focus-visible {
   outline: var(--focus-shadow-blue) solid 2px;
   border-radius: 2px;
 }
@@ -232,6 +232,11 @@ a:focus-visible .proj-button,
 a:focus-visible .proj-button .proj-arrow{
   background-color: var(--focus-blue);
   color: var(--default-black);
+}
+
+a:focus-visible.button-link-class .button-bottom,
+a:focus-visible.button-link-class .button-top{
+  border-color: var(--default-black);
 }
 
 a:hover .proj-button .proj-arrow{
@@ -782,6 +787,7 @@ a:not(:hover) .bounce .button-top{
   -moz-animation: slideIn 900ms;
   -o-animation: slideIn 900ms;
   -ms-animation: slideIn 900ms;
+  max-width: 834px;
 }
 
 .nav-toggle-wrapper{
@@ -974,9 +980,9 @@ main{
 .home-tv-video{
   z-index: 5;
   position: absolute;
-  top: 60px;
-  left: 25px;
-  width: 250px;
+  top: 71px;
+  left: 30px;
+  width: 240px;
 }
 
 .home-simple-video-controls{
@@ -985,10 +991,10 @@ main{
   display: flex;
   flex-direction: row;
   align-items: end;
-  gap: 13px;
   justify-content: center;
-  left: 44px;
-  bottom: 73px;
+  bottom: 69px;
+  left: 68px;
+  gap: 7px;
 }
 
 

@@ -71,9 +71,6 @@ class NavBar extends React.Component {
             <ReactButtonLink linkTo="/portfolio/home" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Home" />
             <ReactButtonLink linkTo="/portfolio/projects" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Projects" />
             <ReactButtonLink linkTo="/portfolio/about" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)} ariaLabel="Home" />
-            {/* <ReactLink linkTo="/portfolio/home" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Home" role="link"/>} />
-            <ReactLink linkTo="/portfolio/projects" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Projects" role="link"/>} />
-            <ReactLink linkTo="/portfolio/about" child={<CustomButton disabled={disableButtons} tabIndex={tabIndex}  small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)} ariaLabel="About" role="link"/>} /> */}
         </nav>
     }
     

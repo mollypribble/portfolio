@@ -3,7 +3,7 @@ import CustomButton from './button';
 // import websitev2 from '../media/websitev2.mp4';
 import websitev3gif from '../media/websitev3.gif';
 // import poster from '../media/still.png'
-import tv from '../media/TV.svg';
+import tv from '../media/TV-alt.svg';
 
 class Home extends React.Component {
 

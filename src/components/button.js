@@ -7,8 +7,13 @@ class CustomButton extends React.Component {
         super(props);
       }
 
+    clickAndBlur (e) {
+        this.props.onClick();
+        e.currentTarget.blur();
+    }
+
     render () {
-        return <button className={this.props.className}>
+        return <button className={this.props.className} onClick={(e) => this.clickAndBlur(e)}>
             <ButtonBase 
             disabled={this.props.disabled} 
             className={this.props.childClassName} 
