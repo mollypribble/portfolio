@@ -58,10 +58,10 @@ class NavBar extends React.Component {
         const icon = (this.state.open) ? "close.png" : "menu.png"
         const tabIndex = ((this.state.width <= 600 && this.state.open) || this.state.width > 600) ? "0" : "-1"
         const disableButtons = (this.state.width <= 600 & !this.state.open) ? true : false
-        const label = (this.props.currPage == 6) ? "You are currently on the About page" : (this.props.currPage == 0) ? "You are currently on the Home page" : "You are currently in the Projects section"
+        // const label = (this.props.currPage == 6) ? "You are currently on the About page" : (this.props.currPage == 0) ? "You are currently on the Home page" : "You are currently in the Projects section"
         const toggleLabel = (this.state.open) ? "Close menu" : "Menu"
 
-        return <nav className={navBarClass+first} aria-label={"Portfolio Navigation, " + label}>
+        return <nav className={navBarClass+first} aria-label={"Portfolio"}>
             <button className="visually-hidden skip" tabIndex={tabIndex} 
                 onClick={() => {this.props.mainContentRef.current.focus();}}
                 role="link">

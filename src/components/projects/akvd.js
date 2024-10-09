@@ -13,7 +13,7 @@ class Akvd extends React.Component {
     render () {
 
         return <>
-        <div className="project-display">
+        <div className="project-display"> <div className="project-display-content">
             <Title title="Active View Data" />
             <div className='banner'>Patent Pending_</div>
             <ProjectOverview 
@@ -49,6 +49,7 @@ class Akvd extends React.Component {
                     <h3 className='section-header'>COMMUNICATION & PRESENTATION</h3>
                     <div className='akvd-text'><p>Lastly, Active View Data gave me ample opportunities to practice my presentation and communication skills. Throughout my internship, I regularly scheduled and lead status updates and feedback sessions with the rest of the UX group. My mentors and co-workers often wanted to see demos or walkthroughs of Active View Data throughout the project, and I became practiced in explaining the concept of Active View Data and taking my audience through a typical user flow. My internship ended with a company-wide presentation and demo of Active View Data, where we generated a lot of interest and excitement about this new product.</p></div>
                 </div>
+            </div>
             </div>
 
             <NextLastNav handleNewProj={this.props.handleNewProj} curr={2} last={this.props.last} next={this.props.next}/>

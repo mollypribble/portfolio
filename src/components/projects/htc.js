@@ -15,6 +15,7 @@ class Htc extends React.Component {
     render () {
 
         return <div className="project-display">
+            <div className="project-display-content">
             <Title title="Hold the Code" />
             <ProjectOverview 
             skills='Communication Design, Project Management, Tech Ethics' 
@@ -40,7 +41,7 @@ class Htc extends React.Component {
                         <ol>
                             <li>A 150% increase in subscriber count and 120% increase in overall viewership.</li>
                             <li>Expansion into new forms of content, such as opinion pieces and interviews Instagram content.</li>
-                            <li>Welcoming 5 new team members to grow our initial team of 3.</li>
+                            <li>Welcoming five new team members to grow our initial team of three.</li>
                             <li>Continued publication of our newsletter with over 25 new editions.</li>
                         </ol>
                     </div>
@@ -50,9 +51,10 @@ class Htc extends React.Component {
             <div className='htc-split'>
                 <div className='htc-split-text'>
                     <h3 className='section-header'>OUT OF THE INBOX</h3>
-                    <div className='htc-text'><p>Another initiative at Hold the Code was to expand beyond written content to social media. Since social media is generally more popular among younger audiences, Hold the Code began visually engaging summaries of our newsletter editions for Instagram to increase our reach. The success of this effort lead to our committee absorbing most of RAISO's social media operations, where Hold the Code's social media expert would create stories and posts, advertise about upcoming events, and engage with our audience directly.</p></div>
+                    <div className='htc-text'><p>Another initiative at Hold the Code was to expand beyond written content to social media. Since social media is generally more popular among younger audiences, Hold the Code began creating visually engaging summaries of our newsletter editions for Instagram to increase our reach. The success of this effort lead to our committee absorbing most of RAISO's social media operations, where Hold the Code's social media expert would create stories and posts, advertise about upcoming events, and engage with our audience directly.</p></div>
                 </div>
                 <img className='htc-takeaway-image' src={insta} alt="Image of Hold the Code's instagram page including posts about AI legislation, creative AI, and AI & healthcare."/>
+            </div>
             </div>
 
             <NextLastNav handleNewProj={this.props.handleNewProj} curr={4} last={this.props.last} next={this.props.next}/>

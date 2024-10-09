@@ -17,7 +17,7 @@ class ButtonLink extends React.Component {
             icon={this.props.icon} 
             active={this.props.active} 
             onClick={this.props.onClick} 
-            ariaLabel={this.props.toggleLabel} />
+            ariaLabel={this.props.ariaLabel} />
         </a>
     }
     

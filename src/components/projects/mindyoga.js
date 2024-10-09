@@ -14,7 +14,7 @@ class Mindyoga extends React.Component {
     render () {
 
         return <>
-        <div className="project-display">
+        <div className="project-display"> <div className="project-display-content">
             <Title title="Mindyoga" />
             <ProjectOverview 
             skills='Design Research, Human-Computer Interaction, Rapid Prototyping' 
@@ -53,6 +53,7 @@ class Mindyoga extends React.Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
             <NextLastNav handleNewProj={this.props.handleNewProj} curr={1} last={this.props.last} next={this.props.next}/>
