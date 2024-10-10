@@ -12,7 +12,7 @@ class ProjectButton extends React.Component {
     }
 
     render () {
-        return <div className={"proj-button " + "button-" + this.props.projNumber} alt={this.props.alt} onClick={(e) => this.clickAndBlur(e)} aria-labelledby='proj-label' aria-describedby='proj-desc'>
+        return <div className={"proj-button " + "button-" + this.props.projNumber} alt={this.props.alt} onClick={(e) => this.clickAndBlur(e)}>
             <div className='proj-label' id='proj-label'>
                 {this.props.projNumber}: {this.props.projName}
             </div>
