@@ -44,9 +44,9 @@ html{
   cursor: url('./media/cursor.png') 9 9, auto;
 }
 
-html:active{
+/* html:active{
   cursor: url('./media/active-cursor.png') 9 6, auto;
-}
+} */
 
 body{
   overflow: hidden;
@@ -68,6 +68,20 @@ body{
 /* alt color modes */
 
 /* light */
+
+.main-display.light button, .main-display.light a{
+  color: var(--default-white);
+  cursor: url('./media/hover-cursor-light.png') 9 9, crosshair;
+}
+
+.main-display.light a:active,
+.main-display.light button:active {
+  cursor: url('./media/active-cursor-light.png') 9 9, crosshair;
+}
+
+.main-display.light{
+  cursor: url('./media/cursor-light-color.png') 9 9, auto;
+}
 
 .main-display.light {
   --default-black: #e6e5e5;
@@ -94,13 +108,15 @@ body{
 }
 
 .main-display.light button:hover .button-top,
-.main-display.light a:hover .button-top{
+.main-display.light a:hover .button-top,
+.main-display.light .button-top.active {
   border: 1px solid var(--default-white);
   background-color: var(--light-grey);
 }
 
 .main-display.light button:hover .button-bottom,
-.main-display.light a:hover .button-bottom {
+.main-display.light a:hover .button-bottom,
+.main-display.light .button-top.active + .button-bottom  {
   border: 1px solid var(--default-white);
   background-color: var(--dark-grey);
 }
@@ -119,7 +135,6 @@ body{
 .main-display.light .banner-subtitle{
   color: var(--default-white);
   background-color: var(--default-black);
-  border-top: 1px solid var(--default-white);
 }
 
 .main-display.light .mindyoga-stage.mindyoga-stages-image {
@@ -127,18 +142,34 @@ body{
 }
 
 /* colorful */
+.main-display.color button, .main-display.color a{
+  color: var(--default-white);
+  cursor: url('./media/hover-cursor-color.png') 9 9, crosshair;
+}
+
+.main-display.color a:active,
+.main-display.color button:active {
+  cursor: url('./media/active-cursor-color.png') 9 9, crosshair;
+}
+
+.main-display.color{
+  cursor: url('./media/cursor-light-color.png') 9 9, auto;
+}
 
 .main-display.color {
   --default-black: #f1eae3;
+  --rect: #dfd5cb;
+  --rect-2: #c6bcb2;
   --default-white: #170a1c;
-  --light-grey: #7fc5d5;
-  --lighter-grey: #c8e2e8;
-  --dark-grey: #0b7189;
+  --light-grey: #a3d3de;
+  --lighter-grey: #daeff4;
+  --dark-grey: #5296a5;
   --focus-blue: #b3bd85;
   --focus-shadow-blue: #697a21;
   --focus-outline-blue: #697a21;
-  --small-button: #da99b2;
-  --small-button-shadow: #a13d63;
+  --small-button: #eacdd8;
+  --small-button-shadow: #da99b2;
+  --small-button-shadow-deep: #a13d63;
   --banner: #2a310a;
 }
 .main-display.color a .link-button img{
@@ -158,33 +189,82 @@ body{
 
 .main-display.color button .small-button .button-top,
 .main-display.color a .small-button .button-top {
-  background-color: var(--small-button);
+  background-color: var(--rect);
 }
 
 .main-display.color button .small-button .button-bottom,
 .main-display.color a .small-button .button-bottom {
   border: 1px solid var(--default-white);
+  background-color: var(--rect-2);
+}
+
+.main-display.color .nav-bar button .small-button .button-top,
+.main-display.color .nav-bar a .small-button .button-top,
+.main-display.color .nav-bar-small button .small-button .button-top,
+.main-display.color .nav-bar-small a .small-button .button-top {
+  background-color: var(--small-button);
+}
+
+.main-display.color .nav-bar button .small-button .button-bottom,
+.main-display.color .nav-bar a .small-button .button-bottom,
+.main-display.color .nav-bar-small button .small-button .button-bottom,
+.main-display.color .nav-bar-small a .small-button .button-bottom{
+  border: 1px solid var(--default-white);
   background-color: var(--small-button-shadow);
 }
 
+.main-display.color .nav-bar button .small-button .button-top.active,
+.main-display.color .nav-bar a .small-button .button-top.active,
+.main-display.color .nav-bar-small button .small-button .button-top.active,
+.main-display.color .nav-bar-small a .small-button .button-top.active,
+.main-display.color .nav-bar button:hover .small-button .button-top,
+.main-display.color .nav-bar a:hover .small-button .button-top,
+.main-display.color .nav-bar-small button:hover .small-button .button-top,
+.main-display.color .nav-bar-small a:hover .small-button .button-top{
+  border: 1px solid var(--default-white);
+  background-color: var(--small-button-shadow);
+}
+
+.main-display.color .nav-bar button .small-button .button-top.active + .button-bottom,
+.main-display.color .nav-bar a .small-button .button-top.active + .button-bottom,
+.main-display.color .nav-bar-small button .small-button .button-top.active + .button-bottom,
+.main-display.color .nav-bar-small a .small-button .button-top.active + .button-bottom,
+.main-display.color .nav-bar button:hover .small-button .button-bottom,
+.main-display.color .nav-bar a:hover .small-button .button-bottom,
+.main-display.color .nav-bar-small button:hover .small-button .button-bottom,
+.main-display.color .nav-bar-small a:hover .small-button .button-bottom{
+  border: 1px solid var(--default-white);
+  background-color: var(--small-button-shadow-deep);
+}
+
 .main-display.color button:focus-visible .button-top,
-.main-display.color a:focus-visible .button-top {
+.main-display.color a:focus-visible .button-top,
+.main-display.color .nav-bar-small button:focus-visible .button-top,
+.main-display.color .nav-bar-small a:focus-visible .button-top,
+.main-display.color .nav-bar button:focus-visible .button-top,
+.main-display.color .nav-bar a:focus-visible .button-top {
   background-color: var(--focus-blue);
 }
 
 .main-display.color button:focus-visible .button-bottom,
-.main-display.color a:focus-visible .button-bottom {
+.main-display.color a:focus-visible .button-bottom,
+.main-display.color .nav-bar-small button:focus-visible .button-bottom,
+.main-display.color .nav-bar-small a:focus-visible .button-bottom,
+.main-display.color .nav-bar button:focus-visible .button-bottom,
+.main-display.color .nav-bar a:focus-visible .button-bottom {
   background-color: var(--focus-shadow-blue);
 }
 
 .main-display.color button:hover .button-top,
-.main-display.color a:hover .button-top{
+.main-display.color a:hover .button-top,
+.main-display.color .button-top.active {
   border: 1px solid var(--default-white);
   background-color: var(--light-grey);
 }
 
 .main-display.color button:hover .button-bottom,
-.main-display.color a:hover .button-bottom {
+.main-display.color a:hover .button-bottom,
+.main-display.color .button-top.active + .button-bottom {
   border: 1px solid var(--default-white);
   background-color: var(--dark-grey);
 }
@@ -241,12 +321,16 @@ body{
 .main-display.color .rect-4,
 .main-display.color .rect-5,
 .main-display.color .rect-6{
-  background-color: var(--focus-blue);
+  background-color: var(--rect);
   border: 1px solid var(--default-white);
 }
 
 .main-display.color .banner,
 .main-display.color .akvd-request-info {
+  background-color: var(--banner);
+}
+
+.main-display.color .custom-scroll-fill {
   background-color: var(--banner);
 }
 
@@ -405,6 +489,10 @@ button, a{
 a:active,
 button:active {
   cursor: url('./media/active-cursor.png') 9 9, crosshair;
+}
+
+.small-button.hidden-modes {
+  display: none;
 }
 
 button:focus,
@@ -1018,6 +1106,21 @@ a:not(:hover) .bounce .button-top{
   -ms-animation: flyOut 1s;
   display: none;
   z-index: 11;
+}
+
+.color-row-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.color-toggle-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 66px;
 }
 
 @keyframes flyOut {
@@ -2332,9 +2435,16 @@ main{
 
 }
 
-@media (max-width:299px){
+@media (max-width:445px){
   .about-button-label{
     display: none;
+  }
+  .about-split-text .banner.link-nav{
+    justify-content: center;
+    background-color: var(--default-black);
+    align-items: start;
+    margin-top: 0px;
+    margin-bottom: 24px;
   }
 }
 

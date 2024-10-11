@@ -49,7 +49,8 @@ class PortfolioContent extends React.Component {
         if (this.state.page == 0){
             return <Home 
                     video={this.state.video} 
-                    toggleVideo={this.toggleVideo}/>
+                    toggleVideo={this.toggleVideo}
+                    tvColor={this.props.theme}/>
         }
         else if (this.state.page == 1){
             return <ProjectList handleNewProj={this.handleNewProj} />
@@ -105,7 +106,7 @@ class PortfolioContent extends React.Component {
         console.log(this.state.page)
         
         return <div className='portfolio-content' >
-                    <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page} mainContentRef={this.scrollRef}/>
+                    <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page} mainContentRef={this.scrollRef} theme={this.props.theme} changeTheme={this.props.changeTheme}/>
                     <main id='main' tabIndex={-1} className='current-content' ref={this.scrollRef} onScroll={this.calcScroll}> 
                         {this.renderCurrentPage()}
                     </main>

@@ -12,11 +12,12 @@ class MainDisplay extends React.Component {
         super(props);
         this.enterPortfolio = this.enterPortfolio.bind(this)
         this.handleResize = this.handleResize.bind(this)
+        this.setColorMode = this.setColorMode.bind(this)
         this.state = {
             vhs: this.props.vhs,
             height: window.innerHeight,
             page: (this.props.page),
-            colorMode: "dark"
+            colorMode: "color"
         }
       }
 
@@ -30,9 +31,16 @@ class MainDisplay extends React.Component {
       handleResize(e) {
         this.setState({height: window.innerHeight});
       }
+
+      setColorMode(newMode) {
+        this.setState({colorMode: newMode});
+      }
     
       componentDidMount() {
         window.addEventListener('resize', this.handleResize);
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          this.setColorMode("light");
+        }
       }
     
       componentWillUnmount() {
@@ -40,10 +48,8 @@ class MainDisplay extends React.Component {
       }
 
     render () {
-
-        // console.log(window.innerHeight)
         
-        const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio}/>:<PortfolioContent page={this.props.page}/>
+        const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio}/>:<PortfolioContent page={this.props.page} theme={this.state.colorMode} changeTheme={this.setColorMode}/>
         
         return <div className={'main-display'+ " " + this.state.colorMode}
                   style={{height: `${this.state.height}px`}} >

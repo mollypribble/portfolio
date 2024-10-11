@@ -13,7 +13,7 @@ class CustomButton extends React.Component {
     }
 
     render () {
-        return <button className={this.props.className} onClick={(e) => this.clickAndBlur(e)} aria-label={this.props.ariaLabel}>
+        return <button className={this.props.className} onClick={(e) => this.clickAndBlur(e)} aria-label={this.props.ariaLabel} hidden={this.props.disabled} >
             <ButtonBase 
             disabled={this.props.disabled} 
             className={this.props.childClassName} 

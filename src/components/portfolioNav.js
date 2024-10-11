@@ -58,6 +58,7 @@ class NavBar extends React.Component {
         const icon = (this.state.open) ? "close.png" : "menu.png"
         const tabIndex = ((this.state.width <= 600 && this.state.open) || this.state.width > 600) ? "0" : "-1"
         const disableButtons = (this.state.width <= 600 & !this.state.open) ? true : false
+        const hideColorModes = disableButtons ? "hidden-modes" : ""
         // const label = (this.props.currPage == 6) ? "You are currently on the About page" : (this.props.currPage == 0) ? "You are currently on the Home page" : "You are currently in the Projects section"
         const toggleLabel = (this.state.open) ? "Close navigation" : "Open navigation"
 
@@ -69,10 +70,23 @@ class NavBar extends React.Component {
                 onClick={() => {this.props.mainContentRef.current.focus()}} >
                 Skip to main
             </a>
+
             <CustomButton disabled={false} className='nav-toggle-wrapper small-button' childClassName='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} ariaLabel={toggleLabel} />
+
             <ReactButtonLink linkTo="/portfolio/home" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Home" />
             <ReactButtonLink linkTo="/portfolio/projects" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 6)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Projects" />
-            <ReactButtonLink linkTo="/portfolio/about" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)} ariaLabel="Home" />
+            <ReactButtonLink linkTo="/portfolio/about" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 6)} onClick={(e) => this.handleNavWrapper(6)} ariaLabel="About" />
+                
+
+            <div className='color-row-wrapper'>
+                <CustomButton disabled={disableButtons} className={'small-button ' + hideColorModes} childClassName='dark-mode' small={true} bounce={false} icon={"dark-mode.png"} active={(this.props.theme == 'dark')} onClick={(e) => this.props.changeTheme("dark")} ariaLabel={"Dark mode"} />
+                <CustomButton disabled={disableButtons} className={'small-button ' + hideColorModes} childClassName='light-mode' small={true} bounce={false} icon={"light-mode.png"} active={(this.props.theme == 'light')} onClick={(e) => this.props.changeTheme("light")} ariaLabel={"Light mode"} />
+            </div>
+            <div className='color-row-wrapper'>
+                <CustomButton disabled={disableButtons} className={'small-button ' + hideColorModes} childClassName='color-mode' small={true} bounce={false} icon={"color-mode.png"} active={(this.props.theme == 'color')} onClick={(e) => this.props.changeTheme("color")} ariaLabel={"Color mode"} />
+                {/* <CustomButton disabled={disableButtons} className={'small-button ' + hideColorModes} childClassName='color-mode' small={true} bounce={false} icon={"play.png"} active={false} onClick={(e) => this.props.changeTheme("color")} ariaLabel={"Color mode"} /> */}
+            </div>
+
         </nav>
     }
     

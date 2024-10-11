@@ -19,6 +19,9 @@ import last from "../media/prev.png"
 import emailText from "../media/email-text.png"
 import about from "../media/about.png"
 import pause from "../media/pause.png"
+import light from "../media/light-mode.png"
+import dark from "../media/dark-mode.png"
+import color from "../media/color-mode.png"
 
 class ButtonBase extends React.Component {
 
@@ -119,6 +122,18 @@ class ButtonBase extends React.Component {
         else if (this.props.icon === "pause.png"){
             icon = pause
             alt = "pause"
+        }
+        else if (this.props.icon === "light-mode.png"){
+            icon = light
+            alt = "Light mode"
+        }
+        else if (this.props.icon === "dark-mode.png"){
+            icon = dark
+            alt = "Dark mode"
+        }
+        else if (this.props.icon === "color-mode.png"){
+            icon = color
+            alt = "Color mode"
         }
 
         return <div className={buttonClass} 

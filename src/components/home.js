@@ -4,6 +4,7 @@ import CustomButton from './button';
 import websitev3gif from '../media/websitev3.gif';
 // import poster from '../media/still.png'
 import tv from '../media/TV-alt.svg';
+import tvLight from '../media/TV-light.svg';
 
 class Home extends React.Component {
 
@@ -35,14 +36,16 @@ class Home extends React.Component {
       }
 
     render () {
+        console.log(this.props.tvColor, this.props.tvColor == 'light')
+        const tvSrc = (this.props.tvColor == 'light') ? tvLight :tv;
 
-        const disableVideo = this.props.video ? "" : " disabled"
+        const disableVideo = this.props.video ? "" : " disabled";
 
         return <div className="home-display">
 
                 <div className={"home-simple-alt"}>
                     <div className="home-tv">
-                        <img className={"home-tv-tv"} src={tv} aria-hidden/>
+                        <img className={"home-tv-tv"} src={tvSrc} aria-hidden/>
                         <p className='visually-hidden-text' id='tv-label'>Stylistic introduction video played on a retro TV with scenes from Molly's recent adventures, hobbies, and life</p>
                         <p className='visually-hidden-text' id='tv-description'>Includes videos of traveling in Europe and South America, hiking, cute animals, road tripping through national parks, going to Lake Michigan, walking around Boston, visiting San Francisco, and doing pottery.</p>
                         <img className={"home-tv-video" + disableVideo} src={websitev3gif} aria-labelledby='tv-label' aria-describedby='tv-description' alt=""/>
