@@ -116,7 +116,7 @@ body{
   color: var(--default-white);
 }
 
-.main-display.light .banner-subtitle,{
+.main-display.light .banner-subtitle{
   color: var(--default-white);
   background-color: var(--default-black);
   border-top: 1px solid var(--default-white);
