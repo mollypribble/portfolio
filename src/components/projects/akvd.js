@@ -24,11 +24,11 @@ class Akvd extends React.Component {
             <div className='akvd-summary'>
                 <div className='akvd-text'><p>Active View Data is a project aimed at creating a tool that enables non-technical business users to easily leverage highly-performant graphical data processing software in their work. Many powerful data processing software suites make use of a graph-based paradigm, where users use a canvas to create diagrams of data flows that read, write, combine, and transform data. These programs can be extremely powerful and efficient at processing large batches of data, but may not be a familiar environment to business users who are more familiar with tools like Excel, PowerBI, or Tableau. Active View Data tries to bridge this gap by providing business-friendly interface between users and powerful, graph-based processing software.</p></div>
                 <div className='akvd-request-info'>
-                    <h3 className='akvd-request-info-title'>
+                    <h2 className='akvd-request-info-title'>
                         REQUEST CASE STUDY
-                    </h3>
+                    </h2>
                     <div className='akvd-request-info-text'>
-                        <p>Images & details from this project are protected from public release. To request more information, please email me at <a href='mailto:mollypribble1@mac.com' target="_blank" tabIndex="1" aria-label="Email molly">mollypribble1@mac.com</a>.</p>
+                        <p>Images & details from this project are protected from public release. To request more information, please email me at <a href='mailto:mollypribble1@mac.com' target="_blank">mollypribble1@mac.com</a>.</p>
                     </div>
                 </div>
             </div>

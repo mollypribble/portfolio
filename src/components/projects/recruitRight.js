@@ -14,7 +14,7 @@ class RecruitRight extends React.Component {
 
         return <>
         <div className="project-display">
-            <div className='project-display-content'>
+            <div className={'project-display-content' + ' rr'}>
                 <Title title="Recruit Right" />
                 <ProjectOverview 
                 skills='Wireframing, User Personas, Web Design' 

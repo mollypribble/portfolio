@@ -15,8 +15,8 @@ class NextLastLink extends React.Component {
         const classy = "link-button " + this.props.className;
 
         return <div className={classy} onClick={(e) => this.clickAndBlur(e)}>
-            <img className='next-prev-icon' src={this.props.icon} aria-hidden />
-            <p aria-label={this.props.alt}>{this.props.label}</p>
+            <img className='next-prev-icon' src={this.props.icon} aria-hidden alt=""/>
+            <p>{this.props.label}</p>
         </div>
     }
     

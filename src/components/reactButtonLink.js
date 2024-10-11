@@ -11,21 +11,55 @@ class ReactButtonLink extends React.Component {
       }
 
     render () {
-        const mychild=this.props.proj ? 
-        <ProjectButton 
+        // const mychild2=this.props.proj ? 
+        // <ProjectButton 
+        // projName={this.props.projName} 
+        // projNumber={this.props.projNumber} 
+        // projDescription={this.props.projDescription} 
+        // onClick={this.props.onClick} />
+        // : (this.props.nextLast ?
+        //     <NextLastLink 
+        //     className={this.props.childClassName} 
+        //     label={this.props.label} 
+        //     alt={this.props.alt} 
+        //     onClick={this.props.onClick} 
+        //     icon={this.props.icon}/>
+        //     :
+        //     <ButtonBase 
+        //     disabled={this.props.disabled} 
+        //     className={this.props.childClassName} 
+        //     small={this.props.small} 
+        //     bounce={this.props.bounce} 
+        //     icon={this.props.icon} 
+        //     active={this.props.active} 
+        //     onClick={this.props.onClick} 
+        //     ariaLabel={this.props.toggleLabel} />)
+
+        let ariaLabelledby = null
+        let ariaDescribedBy = null
+        let ariaLabel = null
+
+        let mychild = <ProjectButton 
         projName={this.props.projName} 
         projNumber={this.props.projNumber} 
         projDescription={this.props.projDescription} 
         onClick={this.props.onClick} />
-        : (this.props.nextLast ?
-            <NextLastLink 
+
+        if (this.props.proj) {
+            ariaLabelledby= 'proj-label'+`${this.props.projNumber}`
+            ariaDescribedBy= 'proj-desc'+`${this.props.projNumber}`
+        }
+        else if (this.props.nextLast) {
+            ariaLabel=this.props.alt
+            mychild=<NextLastLink 
             className={this.props.childClassName} 
             label={this.props.label} 
-            alt={this.props.alt} 
             onClick={this.props.onClick} 
             icon={this.props.icon}/>
-            :
-            <ButtonBase 
+        }
+        else {
+            ariaLabel=this.props.ariaLabel
+            mychild=<ButtonBase 
             disabled={this.props.disabled} 
             className={this.props.childClassName} 
             small={this.props.small} 
@@ -33,12 +67,10 @@ class ReactButtonLink extends React.Component {
             icon={this.props.icon} 
             active={this.props.active} 
             onClick={this.props.onClick} 
-            ariaLabel={this.props.toggleLabel} />)
+            ariaLabel={this.props.toggleLabel} />
+        }
 
-        const ariaLabelledby= this.props.proj ? 'proj-label' : ''
-        const ariaDescribedBy= this.props.proj ? 'proj-desc' : ''
-
-        return <ReactLink linkTo={this.props.linkTo} child={mychild} hidden={this.props.disabled}  className={this.props.className} onClick={this.props.onClick} ariaLabelledBy={ariaLabelledby} ariaDescribedBy={ariaDescribedBy}/>
+        return <ReactLink linkTo={this.props.linkTo} child={mychild} hidden={this.props.disabled}  className={this.props.className} onClick={this.props.onClick} ariaLabel={ariaLabel} ariaLabelledBy={ariaLabelledby} ariaDescribedBy={ariaDescribedBy}/>
     }
     
 }

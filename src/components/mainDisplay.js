@@ -15,7 +15,8 @@ class MainDisplay extends React.Component {
         this.state = {
             vhs: this.props.vhs,
             height: window.innerHeight,
-            page: (this.props.page)
+            page: (this.props.page),
+            colorMode: "dark"
         }
       }
 
@@ -44,7 +45,7 @@ class MainDisplay extends React.Component {
         
         const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio}/>:<PortfolioContent page={this.props.page}/>
         
-        return <div className='main-display'
+        return <div className={'main-display'+ " " + this.state.colorMode}
                   style={{height: `${this.state.height}px`}} >
                   {returnMe}
         </div>

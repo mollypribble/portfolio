@@ -1,4 +1,5 @@
 :root{
+  /* Default to dark mode*/
   --default-white: #e6e5e5;
   --default-black: #171c1e;
   --light-grey: #b7bfc6;
@@ -48,6 +49,10 @@ html:active{
 }
 
 body{
+  overflow: hidden;
+}
+
+.main-display{
   background-color: var(--default-black);
   color: var(--default-white);
   box-sizing: border-box;
@@ -59,6 +64,193 @@ body{
   line-height: 1.65;
   overflow: hidden;
 }
+
+/* alt color modes */
+
+/* light */
+
+.main-display.light {
+  --default-black: #e6e5e5;
+  --default-white: #171c1e;
+  --light-grey: #d5d9dd;
+  --dark-grey: #b7bfc6;
+  --focus-blue: #cee0eb;
+  --focus-shadow-blue: #7fabcb;
+  --focus-outline-blue: #4886B1;
+}
+.main-display.light a .link-button img{
+  filter: invert(1);
+}
+
+.main-display.light a.proj-button-wrapper,
+.main-display.light button .button-top,
+.main-display.light a .button-top {
+  background-color: var(--default-black);
+}
+
+.main-display.light button:focus-visible .button-top,
+.main-display.light a:focus-visible .button-top {
+  background-color: var(--focus-blue);
+}
+
+.main-display.light button:hover .button-top,
+.main-display.light a:hover .button-top{
+  border: 1px solid var(--default-white);
+  background-color: var(--light-grey);
+}
+
+.main-display.light button:hover .button-bottom,
+.main-display.light a:hover .button-bottom {
+  border: 1px solid var(--default-white);
+  background-color: var(--dark-grey);
+}
+
+
+.main-display.light button .button-top img,
+.main-display.light a .button-top img {
+  filter: none;
+}
+
+.main-display.light a:focus .proj-button .proj-arrow,
+.main-display.light a:focus .proj-button{
+  color: var(--default-white);
+}
+
+.main-display.light .banner-subtitle,{
+  color: var(--default-white);
+  background-color: var(--default-black);
+  border-top: 1px solid var(--default-white);
+}
+
+.main-display.light .mindyoga-stage.mindyoga-stages-image {
+  background-color: var(--default-black);
+}
+
+/* colorful */
+
+.main-display.color {
+  --default-black: #f1eae3;
+  --default-white: #170a1c;
+  --light-grey: #7fc5d5;
+  --lighter-grey: #c8e2e8;
+  --dark-grey: #0b7189;
+  --focus-blue: #b3bd85;
+  --focus-shadow-blue: #697a21;
+  --focus-outline-blue: #697a21;
+  --small-button: #da99b2;
+  --small-button-shadow: #a13d63;
+  --banner: #2a310a;
+}
+.main-display.color a .link-button img{
+  filter: invert(1);
+}
+
+.main-display.color button .button-top,
+.main-display.color a .button-top {
+  background-color: var(--lighter-grey);
+}
+
+.main-display.color button .button-bottom,
+.main-display.color a .button-bottom {
+  border: 1px solid var(--default-white);
+  background-color: var(--light-grey);
+}
+
+.main-display.color button .small-button .button-top,
+.main-display.color a .small-button .button-top {
+  background-color: var(--small-button);
+}
+
+.main-display.color button .small-button .button-bottom,
+.main-display.color a .small-button .button-bottom {
+  border: 1px solid var(--default-white);
+  background-color: var(--small-button-shadow);
+}
+
+.main-display.color button:focus-visible .button-top,
+.main-display.color a:focus-visible .button-top {
+  background-color: var(--focus-blue);
+}
+
+.main-display.color button:focus-visible .button-bottom,
+.main-display.color a:focus-visible .button-bottom {
+  background-color: var(--focus-shadow-blue);
+}
+
+.main-display.color button:hover .button-top,
+.main-display.color a:hover .button-top{
+  border: 1px solid var(--default-white);
+  background-color: var(--light-grey);
+}
+
+.main-display.color button:hover .button-bottom,
+.main-display.color a:hover .button-bottom {
+  border: 1px solid var(--default-white);
+  background-color: var(--dark-grey);
+}
+
+
+.main-display.color button .button-top img,
+.main-display.color a .button-top img {
+  filter: none;
+}
+
+.main-display.color a:focus .proj-button .proj-arrow,
+.main-display.color a:focus .proj-button{
+  color: var(--default-white);
+}
+
+.main-display.color a:hover .proj-button .proj-arrow,
+.main-display.color a:hover .proj-button{
+  background-color: var(--small-button-shadow);
+}
+
+.main-display.color .banner-subtitle{
+  color: var(--default-white);
+  background-color: var(--default-black);
+}
+
+.main-display.color .mindyoga-stage.mindyoga-stages-image {
+  background-color: #e6e5e5;
+  border-left: 0px;
+  border-bottom: 1px solid var(--default-white);
+}
+
+.main-display.color .about-split-text .link-nav button .button-top,
+.main-display.color .about-split-text .link-nav a .button-top,
+.main-display.color .about-split-text .link-nav button .button-bottom,
+.main-display.color .about-split-text .link-nav a .button-bottom  {
+  border-color: var(--default-white);
+}
+
+.main-display.color .about-split-text .link-nav button:hover .button-top,
+.main-display.color .about-split-text .link-nav a:hover .button-top {
+  background-color: var(--light-grey);
+  border-color: var(--default-black);
+}
+
+.main-display.color .about-split-text .link-nav button:hover .button-bottom,
+.main-display.color .about-split-text .link-nav a:hover .button-bottom  {
+  background-color: var(--dark-grey);
+  border-color: var(--default-black);
+}
+
+.main-display.color .rect-1,
+.main-display.color .rect-2,
+.main-display.color .rect-3,
+.main-display.color .rect-4,
+.main-display.color .rect-5,
+.main-display.color .rect-6{
+  background-color: var(--focus-blue);
+  border: 1px solid var(--default-white);
+}
+
+.main-display.color .banner,
+.main-display.color .akvd-request-info {
+  background-color: var(--banner);
+}
+
+/**/
 
 .glitch{
   line-height: 0px;
@@ -88,10 +280,10 @@ body{
     padding-left: 1px;
   }
   7%{
-    padding-left: 4px;
+    padding-left: 2px;
   }
   8%{
-    padding-left: 5px;
+    padding-left: 3px;
   }
   9%{
     padding-left: 1px;
@@ -114,7 +306,7 @@ body{
     padding-left: 2px;
   }
   16%{
-    padding-left: 4px;
+    padding-left: 3px;
     clip-path: inset(6% 0 0 0);
   }
   17%{
@@ -140,7 +332,7 @@ body{
     padding-left: 0px;
   }
   80%{
-    padding-left: 2px;
+    padding-left: 1px;
     clip-path: inset(44% 0 0 0);
   }
   81%{
@@ -167,7 +359,7 @@ body{
     padding-left: 0px;
   }
   91%{
-    padding-left: 4px;
+    padding-left: 3px;
   }
   92%{
     padding-left: 0px;
@@ -181,10 +373,10 @@ body{
     clip-path: inset(1% 0 0 0);
   }
   95%{
-    padding-left: 4px;
+    padding-left: 3px;
   }
   99%{
-    padding-left: 4px;
+    padding-left: 2px;
     clip-path: inset(1% 0 0 0);
   }
   100%{
@@ -279,7 +471,7 @@ a:hover .proj-button .proj-arrow{
 
 /*link style button*/
 a .link-button{
-  background-color: var(--default-white);
+  /* background-color: var(--default-white); */
   height: 100%;
   padding: 3px 3px 3px 3px;
   color: var(--default-black);
@@ -1018,7 +1210,7 @@ main{
   align-items: end;
   justify-content: center;
   bottom: 69px;
-  left: 68px;
+  left: 72px;
   gap: 7px;
 }
 
@@ -1040,9 +1232,6 @@ main{
   .home-tv{
     display: none;
   }
-  /* .glitch{
-    display: none;
-  } */
 }
 
 @media (max-height:600px) {
@@ -1067,6 +1256,15 @@ main{
     -ms-animation: none;
   }
   .glitch{
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+    display: none;
+  }
+
+  .glitch2{
     animation: none;
     -webkit-animation: none;
     -moz-animation: none;
@@ -1295,6 +1493,10 @@ main{
   padding: 12px 24px 12px 24px;
   margin: 0px;
   font-weight: unset;
+}
+
+.rr .banner-subtitle {
+  border-top: 1px solid var(--default-white);
 }
 
 .rect-1{
@@ -1558,6 +1760,10 @@ main{
   padding: 24px;
 }
 
+.mindyoga-three-stages .mindyoga-text {
+  border-top: 1px solid var(--default-white);
+}
+
 .mindyoga-summary .mindyoga-text{
   border-right: var(--default-white) 1px solid;
   min-height: 160px;
@@ -1593,6 +1799,7 @@ main{
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
+  border-top: 1px solid var(--default-white);
 }
 
 .mindyoga-three-stages-text-title .project-subtitle{
@@ -1604,6 +1811,7 @@ main{
   flex-direction: row;
   flex-wrap: nowrap;
   border-bottom: var(--default-white) 1px solid;
+  border-top: var(--default-white) 1px solid;
   width: 100%;
   min-height: 400px;
 }
@@ -1654,6 +1862,7 @@ main{
   .mindyoga-three-stages-text{
     flex-direction: column;
     border-bottom: 0px;
+    border-top: 0px;
   }
 
   .mindyoga-three-stages-text .mindyoga-stage{
@@ -1718,7 +1927,7 @@ main{
   flex-wrap: nowrap;
   width: 100%;
   margin-bottom: 36px;
-  border-bottom: var(--default-white) 1px solid;
+  border-top: var(--default-white) 1px solid;
 }
 
 .rr-features{
@@ -1952,6 +2161,7 @@ main{
     width: 100%;
     object-fit: cover;
     border-top: var(--default-white) 1px solid;
+    border-bottom: var(--default-white) 1px solid;
   }
   .htc-summary .htc-text{
     width: unset;
@@ -2187,5 +2397,9 @@ video {
   button img,
   a img{
     backdrop-filter: invert(100%);
+  }
+  html {
+    cursor: unset;
+    list-style-image: unset;
   }
 }

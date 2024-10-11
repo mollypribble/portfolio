@@ -2,7 +2,6 @@ import React from 'react';
 import CustomButton from './button';
 import ReactButtonLink from './reactButtonLink';
 import { withRouter } from 'react-router-dom';
-import ReactLink from './reactLink';
 
 class NavBar extends React.Component {
 
@@ -23,6 +22,7 @@ class NavBar extends React.Component {
         if (this.state.open){
             this.setState({ open: !this.state.open });
         }
+        {this.props.mainContentRef.current.focus()}
     }
 
 
@@ -63,7 +63,10 @@ class NavBar extends React.Component {
 
         return <nav className={navBarClass+first} aria-label={"Portfolio"}>
             <a className="visually-hidden skip"  tabIndex={0}
-                onClick={() => {this.props.mainContentRef.current.focus();}}>
+                onKeyDown={(e) => {if (e.key === 'Enter' || e.keyCode === 13) {
+                    this.props.mainContentRef.current.focus()
+                }}}
+                onClick={() => {this.props.mainContentRef.current.focus()}} >
                 Skip to main
             </a>
             <CustomButton disabled={false} className='nav-toggle-wrapper small-button' childClassName='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} ariaLabel={toggleLabel} />

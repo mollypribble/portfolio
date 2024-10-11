@@ -45,10 +45,9 @@ class Home extends React.Component {
                         <img className={"home-tv-tv"} src={tv} aria-hidden/>
                         <p className='visually-hidden-text' id='tv-label'>Stylistic introduction video played on a retro TV with scenes from Molly's recent adventures, hobbies, and life</p>
                         <p className='visually-hidden-text' id='tv-description'>Includes videos of traveling in Europe and South America, hiking, cute animals, road tripping through national parks, going to Lake Michigan, walking around Boston, visiting San Francisco, and doing pottery.</p>
-                        <img className={"home-tv-video" + disableVideo} src={websitev3gif} aria-labelledby='tv-label' aria-describedby='tv-description'/>
+                        <img className={"home-tv-video" + disableVideo} src={websitev3gif} aria-labelledby='tv-label' aria-describedby='tv-description' alt=""/>
                         <div className='home-simple-video-controls' role='group' aria-label='Video controls'>
-                            <CustomButton className='small-button' disabled={false} small={true} bounce={false} icon={"play.png"} active= {this.props.video} onClick={(e) => this.props.toggleVideo(true)} ariaLabel="Play" ariaPressed={this.props.video ? "true" : "false"}/>
-                            <CustomButton className='small-button' disabled={false} small={true} bounce={false} icon={"pause.png"} active= {!this.props.video} onClick={(e) => this.props.toggleVideo(false)} ariaLabel="Pause" ariaPressed={this.props.video ? "false" : "true"}/> 
+                            <CustomButton className='small-button' disabled={false} small={true} bounce={false} icon={this.props.video ? "pause.png" : "play.png"} onClick={(e) => this.props.toggleVideo(!this.props.video)} ariaLabel={this.props.video ? "Pause" : "Play"} />
                         </div>
                     </div>
                     <h1 className='home-simple-name'>

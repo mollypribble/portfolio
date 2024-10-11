@@ -13,11 +13,11 @@ class ProjectButton extends React.Component {
 
     render () {
         return <div className={"proj-button " + "button-" + this.props.projNumber} alt={this.props.alt} onClick={(e) => this.clickAndBlur(e)}>
-            <div className='proj-label' id='proj-label'>
+            <div className='proj-label' id={'proj-label'+this.props.projNumber}>
                 {this.props.projNumber}: {this.props.projName}
             </div>
             <div className='proj-desc-arrow-wrapper'>
-                <div className='proj-desc' id='proj-desc'><p>{this.props.projDescription}</p></div>
+                <div className='proj-desc' id={'proj-desc'+this.props.projNumber}><p>{this.props.projDescription}</p></div>
                 <div className='proj-arrow' aria-hidden="true">&rarr;</div>
             </div>
         </div>
