@@ -69,6 +69,10 @@ body{
 
 /* light */
 
+.main-display.light ul li{
+  list-style-image: url('./media/bullet-light.png');
+}
+
 .main-display.light button, .main-display.light a{
   color: var(--default-white);
   cursor: url('./media/hover-cursor-light.png') 9 9, crosshair;
@@ -142,6 +146,10 @@ body{
 }
 
 /* colorful */
+.main-display.color ul li{
+  list-style-image: url('./media/bullet-light.png');
+}
+
 .main-display.color button, .main-display.color a{
   color: var(--default-white);
   cursor: url('./media/hover-cursor-color.png') 9 9, crosshair;
@@ -165,8 +173,8 @@ body{
   --lighter-grey: #daeff4;
   --dark-grey: #5296a5;
   --focus-blue: #b3bd85;
-  --focus-shadow-blue: #697a21;
-  --focus-outline-blue: #697a21;
+  --focus-shadow-blue: #6F8023;
+  --focus-outline-blue: #6F8023;
   --small-button: #eacdd8;
   --small-button-shadow: #da99b2;
   --small-button-shadow-deep: #a13d63;
@@ -1366,8 +1374,10 @@ main{
     -ms-animation: none;
     display: none;
   }
+}
 
-  .glitch2{
+@media (max-width:400px) {
+  .glitch{
     animation: none;
     -webkit-animation: none;
     -moz-animation: none;
@@ -1375,6 +1385,10 @@ main{
     -ms-animation: none;
     display: none;
   }
+  .home-simple-name {
+    line-height: var(--font-extra-large);
+    height: unset;
+}
 }
 
 .home-simple-video{
