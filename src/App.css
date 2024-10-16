@@ -155,6 +155,11 @@ body{
   cursor: url('./media/hover-cursor-color.png') 9 9, crosshair;
 }
 
+.main-display.color .banner a,
+.main-display.color .akvd-request-info-text a {
+  color: unset;
+}
+
 .main-display.color a:active,
 .main-display.color button:active {
   cursor: url('./media/active-cursor-color.png') 9 9, crosshair;
@@ -290,7 +295,7 @@ body{
 
 .main-display.color a:hover .proj-button .proj-arrow,
 .main-display.color a:hover .proj-button{
-  background-color: var(--small-button-shadow);
+  background-color: var(--small-button-shadow-deep);
 }
 
 .main-display.color .banner-subtitle{
@@ -1667,6 +1672,8 @@ main{
     line-height: var(--font-extra-large);
     padding-top: 24px;
     padding-bottom: 24px;
+    text-wrap: wrap;
+    padding-right: 60px
   }
   .rect-1,
   .rect-2,
@@ -1676,13 +1683,12 @@ main{
   .rect-6{
     height: 24px;
   }
+  .project-subtitle .text{
+    border: 0px;
+  }
 }
 
-@media (max-width:844px){
-  .project-title .text{ 
-    text-wrap: wrap;
-    padding-right: 60px
-  }
+@media (max-width:930px){
 
   .rect-1,
   .rect-2,
@@ -1696,10 +1702,6 @@ main{
   .sub-rect-4,
   .sub-rect-5{
     display: none;
-  }
-
-  .project-subtitle .text{
-    border: 0px;
   }
 }
 
