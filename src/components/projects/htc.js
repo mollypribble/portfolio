@@ -39,12 +39,12 @@ class Htc extends React.Component {
                 <div className='htc-takeaway text-only'>
                 <h3 className='section-header'>GROWING OUR ROOTS</h3>
                     <div className='htc-text'><p>During my time leading Hold the Code as newsletter executive, our team reached a number of milestones, including:</p>
-                        <ol>
+                        <ul>
                             <li>A 150% increase in subscriber count and 120% increase in overall viewership.</li>
                             <li>Expansion into new forms of content, such as opinion pieces and interviews Instagram content.</li>
                             <li>Welcoming five new team members to grow our initial team of three.</li>
                             <li>Continued publication of our newsletter with over 25 new editions.</li>
-                        </ol>
+                        </ul>
                     </div>
                 </div>
             </div>
