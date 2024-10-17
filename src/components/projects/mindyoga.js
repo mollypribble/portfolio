@@ -17,6 +17,7 @@ class Mindyoga extends React.Component {
         <div className="project-display"> <div className="project-display-content">
             <Title title="Mindyoga" />
             <ProjectOverview 
+            what='Socio-technical framework to improve metacognition'
             skills='Design Research, Human-Computer Interaction, Rapid Prototyping' 
             dates='Sept 2021-Jun 2022' 
             affiliation='Northwestern Univ.' />

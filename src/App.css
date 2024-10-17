@@ -78,6 +78,11 @@ body{
   cursor: url('./media/hover-cursor-light.png') 9 9, crosshair;
 }
 
+.main-display.light .banner a,
+.main-display.light .akvd-request-info-text a {
+  color: unset;
+}
+
 .main-display.light a:active,
 .main-display.light button:active {
   cursor: url('./media/active-cursor-light.png') 9 9, crosshair;
@@ -143,6 +148,8 @@ body{
 
 .main-display.light .mindyoga-stage.mindyoga-stages-image {
   background-color: var(--default-black);
+  border-bottom: 1px solid var(--default-white);
+  border-top: 1px solid var(--default-white);
 }
 
 /* colorful */
@@ -307,6 +314,7 @@ body{
   background-color: #e6e5e5;
   border-left: 0px;
   border-bottom: 1px solid var(--default-white);
+  border-top: 1px solid var(--default-white);
 }
 
 .main-display.color .about-split-text .link-nav button .button-top,
@@ -2047,6 +2055,7 @@ main{
   width: 100%;
   margin-bottom: 36px;
   border-top: var(--default-white) 1px solid;
+  border-bottom: 1px solid var(--default-white);
 }
 
 .rr-features{
@@ -2320,6 +2329,14 @@ main{
   width: 40%;
 }
 
+.about-takeaway.text-only.part-two{
+  width: 35%;
+}
+
+.about-takeaway.text-only.part-two:last-child{
+  width: 65%;
+}
+
 .about-takeaways .about-takeaway.text-only:first-child {
   border-right: var(--default-white) 1px solid;
 }
@@ -2357,6 +2374,10 @@ main{
 .about-takeaway .about-text{
   padding-left: 48px;
   padding-right: 24px;
+}
+
+.about-takeaway p.about-text{
+  padding-left: 24px;
 }
 
 .about-takeaway{
@@ -2442,6 +2463,14 @@ main{
 
   .about-takeaway.text-only:last-child,
   .about-takeaway-image {
+    width: unset;
+  }
+
+  .about-takeaway.text-only.part-two{
+    width: unset;
+  }
+  
+  .about-takeaway.text-only.part-two:last-child{
     width: unset;
   }
 
