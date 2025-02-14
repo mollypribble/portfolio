@@ -34,21 +34,24 @@ class AboutMe extends React.Component {
 
     render () {
 
-        return <div className="project-list-display">
+        return <div className="">
                 <Title title="About Me"/>
 
                 <div className='about-split'>
+
+                    <img className='about-takeaway-image' alt='Headshot of Molly' src={me}/>
                     
                     <div className='about-split-text'>
                         
                         <div>
                             <SubTitle title="HI, I'M MOLLY" />
                             <div className='about-text'>
-                                <p>I'm a UX designer at Ab Initio, an enterprise data-management software company in Boston, MA. <br /> <br />
-                                    I've worked on a wide range of projects from designing a re-usable, cross-product filtering widget to developing an introductory accessibility training course for front-end developers and designers.
+                                <p>I'm a Boston-based UX designer, currently at Ab Initio. My interests and professional expertise include: UI/interaction design, accessibility, HCI, ethical technology, and design research.<br /> <br />
+                                    {/* I've worked on a wide range of projects from designing a re-usable, cross-product filtering widget to developing an introductory accessibility training course for front-end developers and designers.
                                     Prior to this, I graduated from and conducted HCI design research at Northwestern University.
                                     In future, I want to further explore accessible design, socio-technical interaction design, and how technology can positively influence emotions.
-                                    <br/> <br/> Contact me for professional inquiries.</p>
+                                    <br/> <br/>  */}
+                                    Contact me for professional inquiries.</p>
                             </div>
                         </div>
 
@@ -75,8 +78,6 @@ class AboutMe extends React.Component {
                         </div>
 
                     </div>
-
-                    <img className='about-takeaway-image' alt='Headshot of Molly' src={me}/>
                     
                 </div>
 
@@ -88,12 +89,13 @@ class AboutMe extends React.Component {
                             <li>1.5 years of academic research experience</li>
                             <li>BS/MS in Computer Science (Northwestern '22)</li>
                             <li>Segal Design Certificate (Northwestern '22)</li>
+                            <li><a href='https://practical-accessibility.today/' target='_blank'>Practical Accessibility</a> Certificate of Completion</li>
                             <li>HTML, CSS, Javascript/Typescript, React, Python</li>
                             <li>Figma, Sketch</li>
                         </ul>
                     </div>
                     <div className='about-takeaway text-only last-one'>
-                        <h3 className='section-header'>MISC. INTERESTS</h3>
+                        <h3 className='section-header'>HOBBIES & EXTRACURRICULARS</h3>
                         <ul className='about-text'>
                             <li>Pottery</li>
                             <li>Baking</li>
@@ -105,7 +107,7 @@ class AboutMe extends React.Component {
                     </div>
                 </div>
 
-                <div className="about-takeaways">
+                {/* <div className="about-takeaways">
                     <div className='about-takeaway text-only part-two'>
                         <h3 className='section-header'>TO DO LIST</h3>
                         <ul className='about-text'>
@@ -129,7 +131,7 @@ class AboutMe extends React.Component {
                            Until I began approaching this portfolio's web design from a place of self-expression did I find inspiration and satisfaction. The process of redesigning this site not only gave me an opportunity to practice my web development, but also gave me an opportunity to be creative and introspective. I figure if I want people to learn more about me from this portfolio, I ought to put a bit of myself into the site first.
                         </p>
                     </div>
-                </div>
+                </div> */}
         </div>
     }
     

@@ -125,11 +125,15 @@ body{
 
 .main-display.light button:hover .button-bottom,
 .main-display.light a:hover .button-bottom,
-.main-display.light .button-top.active + .button-bottom  {
+.main-display.light .button-top.active + .button-bottom {
   border: 1px solid var(--default-white);
   background-color: var(--dark-grey);
 }
 
+.main-display.light .nav-bar button:focus-visible .small-button .button-top.active + .button-bottom,
+.main-display.light .nav-bar a:focus-visible .big-button .button-top.active + .button-bottom {
+  background-color: var(--focus-shadow-blue);
+}
 
 .main-display.light button .button-top img,
 .main-display.light a .button-top img {
@@ -262,7 +266,8 @@ body{
 .main-display.color .nav-bar-small button:focus-visible .button-top,
 .main-display.color .nav-bar-small a:focus-visible .button-top,
 .main-display.color .nav-bar button:focus-visible .button-top,
-.main-display.color .nav-bar a:focus-visible .button-top {
+.main-display.color .nav-bar a:focus-visible .button-top,
+.main-display.color .nav-bar button:focus-visible .small-button .button-top.active {
   background-color: var(--focus-blue);
 }
 
@@ -271,7 +276,8 @@ body{
 .main-display.color .nav-bar-small button:focus-visible .button-bottom,
 .main-display.color .nav-bar-small a:focus-visible .button-bottom,
 .main-display.color .nav-bar button:focus-visible .button-bottom,
-.main-display.color .nav-bar a:focus-visible .button-bottom {
+.main-display.color .nav-bar a:focus-visible .button-bottom,
+.main-display.color .nav-bar button:focus-visible .small-button .button-top.active + .button-bottom {
   background-color: var(--focus-shadow-blue);
 }
 
@@ -608,10 +614,12 @@ a.proj-button-wrapper{
   align-items: stretch;
   width: 50%;
   justify-content: space-between;
-  max-width: 700px;
   box-sizing: border-box;
   margin: 0px;
   text-decoration: none;
+}
+a.proj-button-wrapper.no-right{
+  border-right: 0px;
 }
 
 a .proj-button{
@@ -620,6 +628,7 @@ a .proj-button{
   flex-wrap: nowrap;
   justify-content: space-between;
   height: 100%;
+  padding: 2%;
 }
 
 a .proj-button .proj-label{
@@ -1576,6 +1585,7 @@ main{
   -moz-animation: fadeIn 600ms;
   -o-animation: fadeIn 600ms;
   -ms-animation: fadeIn 600ms;
+  height: calc(100% - 108px);
 }
 
 .project-list{
@@ -1587,6 +1597,7 @@ main{
   display: flex;
   border-top: 1px solid var(--default-white);
   flex-wrap: wrap;
+  height: calc(100% - 103px);
 }
 
 /* title and subtitle */
@@ -1623,6 +1634,10 @@ main{
   padding: 12px 24px 12px 24px;
   margin: 0px;
   font-weight: unset;
+}
+
+.about-split-text .banner-subtitle{
+  border-bottom: var(--default-white) 1px solid;
 }
 
 .rr .banner-subtitle {
@@ -2344,7 +2359,7 @@ main{
 .about-split{
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row-reverse;
+  flex-direction: row;
   border-bottom: var(--default-white) 1px solid;
   border-top: var(--default-white) 1px solid;
   width: 100%;
@@ -2360,6 +2375,7 @@ main{
   border-left: var(--default-white) 1px solid;
   justify-content: space-between;
   gap: 7px;
+  width: 100%;
 }
 
 .about-split-text .about-text {
@@ -2391,6 +2407,7 @@ main{
   width: 30%;
   object-position: 50% 25%;
   max-height: 500px;
+  max-width: 470px;
 }
 
 .about-split-text .link-nav{
@@ -2464,6 +2481,7 @@ main{
   .about-takeaway.text-only:last-child,
   .about-takeaway-image {
     width: unset;
+    max-width: unset;
   }
 
   .about-takeaway.text-only.part-two{
