@@ -24,7 +24,7 @@ class Htc extends React.Component {
             affiliation='Responsible AI Student Org. (RAISO)' />
 
             <div className='htc-summary'>
-                <div className='htc-text'><p>Hold the Code was a communication design initiative based out of the Responsible AI Student Organization (RAISO) at Northwestern University, aimed at educating non-technical readers about the applications, break-throughs, and risks of AI and contemporary technology. As technology becomes more advanced, it is important that everyone is able to understand how it works, what it does, and what the potential impacts are. Hold the Code is a newsletter that aims to educate about these topics in an understandable, accessible way without misleading or confusing jargon and buzzwords.</p></div>
+                <div className='htc-text'><p><a href="https://raiso.substack.com/" target="_blank">Hold the Code</a> was a communication and education initiative based out of the Responsible AI Student Organization (RAISO) at Northwestern University. As technology becomes more advanced, it is important that everyone is able to understand how it works, what it does, and what the potential impacts are. Hold the Code is a newsletter that aims to educate about these topics to a non-technical audience in an understandable, accessible way without misleading or confusing jargon and buzzwords.</p></div>
                 <img className='htc-summary-image' src={substack} alt="Hold the Code newsletter page featuring a post titled 'Chatbots: Friend or Foe'."/>
             </div>
 
@@ -38,12 +38,13 @@ class Htc extends React.Component {
                 </div>
                 <div className='htc-takeaway text-only'>
                 <h3 className='section-header'>GROWING OUR ROOTS</h3>
-                    <div className='htc-text'><p>During my time leading Hold the Code as newsletter executive, our team reached a number of milestones, including:</p>
+                    <div className='htc-text'><p>Under my leadership, Hold the Code reached a number of milestones, including:</p>
                         <ul>
-                            <li>A 150% increase in subscriber count and 120% increase in overall viewership.</li>
-                            <li>Expansion into new forms of content, such as opinion pieces and interviews Instagram content.</li>
-                            <li>Welcoming five new team members to grow our initial team of three.</li>
-                            <li>Continued publication of our newsletter with over 25 new editions.</li>
+                            <li>A <b>150% increase</b> in subscriber count</li>
+                            <li>A <b>120% increase</b> in overall viewership</li>
+                            <li>Expansion into <b>long-form and social media content</b></li>
+                            <li>Welcoming <b>five new contributors</b> to grow our team of three</li>
+                            <li>Publication of <b>over 25 newsletter editions</b></li>
                         </ul>
                     </div>
                 </div>

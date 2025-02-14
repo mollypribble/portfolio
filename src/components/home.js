@@ -58,7 +58,7 @@ class Home extends React.Component {
                         <div aria-hidden="true" className='glitch'><p>Molly Pribble</p></div>
                     </h1>
                     <p className='home-simple-title'>
-                        UX designer
+                        UX/UI designer
                     </p>
                 </div>
 

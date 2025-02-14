@@ -645,7 +645,7 @@ a .proj-button .proj-label{
 
 a .proj-button .proj-desc{
   font-size: var(--font-small);
-  padding: 24px;
+  padding: 36px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -1742,7 +1742,7 @@ main{
   flex-direction: row;
   flex-wrap: nowrap;
   border-bottom: var(--default-white) 1px solid;
-  width: 100%;
+  width: calc(100% + 1px);
   overflow: hidden;
 }
 
@@ -1751,7 +1751,7 @@ main{
   max-width: 340px;
   border-right: var(--default-white) 1px solid;
   display: flex;
-  padding: 24px;
+  padding: 36px;
   overflow: hidden;
 }
 
@@ -1793,14 +1793,14 @@ main{
 
 .akvd-summary .akvd-text{
   border-right: var(--default-white) 1px solid;
-  padding: 24px;
+  padding: 36px;
   max-width: 70%;
 }
 
 .akvd-request-info{
   background-color: var(--default-white);
   color: var(--default-black);
-  padding: 24px;
+  padding: 36px;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -1837,7 +1837,7 @@ main{
   width: calc(100%/3); 
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 36px;
   gap: 7px;
 }
 
@@ -1845,7 +1845,7 @@ main{
   border-right: 0px;
 }
 
-@media (max-width:1200px) { 
+@media (max-width:1400px) { 
   .akvd-takeaways{
     flex-direction: column;
     border-bottom: 0px;
@@ -1854,7 +1854,7 @@ main{
     border-right: 0px;
     border-bottom: var(--default-white) 1px solid;
     width: unset;
-    padding: 24px;
+    padding: 36px;
   }
   .akvd-summary{
     flex-direction: column;
@@ -1862,11 +1862,11 @@ main{
   .akvd-request-info{
     min-height: unset;
     width: unset;
-    padding: 24px;
+    padding: 36px;
   }
   .akvd-summary .akvd-text{
     border-right: 0px;
-    padding: 24px;
+    padding: 36px;
     max-width: unset;
   }
   .akvd-request-info-title{
@@ -1879,6 +1879,9 @@ main{
   font-size: var(--font-medium);
   font-weight: 600;
   margin: 0px;
+}
+.mindyoga-results h3{
+  font-size: 44px;
 }
 
 /* Mindyoga */
@@ -1899,7 +1902,7 @@ main{
 }
 
 .mindyoga-text{
-  padding: 24px;
+  padding: 36px;
 }
 
 .mindyoga-three-stages .mindyoga-text {
@@ -1932,7 +1935,6 @@ main{
   border-top: var(--default-white) 1px solid;
   width: 100%;
   min-height: 400px;
-  margin-bottom: 36px;
   gap: 36px;
 }
 
@@ -1942,6 +1944,7 @@ main{
   flex-wrap: nowrap;
   width: 100%;
   border-top: 1px solid var(--default-white);
+  /* border-bottom: 1px solid var(--default-white); */
 }
 
 .mindyoga-three-stages-text-title .project-subtitle{
@@ -1964,8 +1967,56 @@ main{
   width: calc(100%/3); 
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 36px;
   gap: 7px;
+}
+
+.mindyoga-results .mindyoga-three-stages-text {
+  margin-bottom: 36px;
+  min-height: unset;
+}
+
+.mindyoga-results .my-group .mindyoga-three-stages-text {
+  margin-bottom: 0px;
+  border-bottom:  0px;
+}
+
+.mindyoga-results .my-group {
+  margin-bottom: 36px;
+  border-bottom: var(--default-white) 1px solid;
+}
+
+.mindyoga-stage.twos{
+  width: calc(100%/2); 
+}
+
+.mindyoga-stage.twos.work-week-imgs{
+  padding: 0;
+  width: 50%;
+}
+
+.mindyoga-stage.twos.prototype-imgs{
+  padding: 0;
+  width: 50%;
+}
+
+.mindyoga-stage.twos.prototype-imgs img:first-child{
+  border-top: 0;
+}
+
+.mindyoga-stage.twos.work-week-imgs img.mindyoga-ww-image {
+  border: 0;
+  border-bottom: var(--default-white) 1px solid;
+}
+
+.mindyoga-stage.twos.prototype-imgs p{
+  padding: 0 36px 36px 36px;
+}
+
+.mindyoga-stage.ones{
+  width: unset; 
+  border-top: var(--default-white) 1px solid;
+  border-right: 0px;
 }
 
 .mindyoga-stages-image{
@@ -1984,7 +2035,7 @@ main{
   padding-right: 0px;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1400px) {
   .mindyoga-summary{
     flex-direction: column;
     border: 0px;
@@ -1997,7 +2048,7 @@ main{
   .mindyoga-summary .mindyoga-text{
     border: 0px;
     border-top: var(--default-white) 1px solid;
-    padding: 24px;
+    padding: 36px;
     min-height: unset;
   }
 
@@ -2013,17 +2064,45 @@ main{
     width: unset;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 36px;
     gap: 7px;
   }
 
   .mindyoga-stage.mindyoga-stages-image{
-    border: var(--default-white) 1px solid;
     border-bottom: 0px;
     height: 200px;
     overflow: hidden;
     background-color: var(--default-white);
     margin-bottom: 36px;
+  }
+  .mindyoga-stage.twos.work-week-imgs{
+    padding: 0;
+    width: 100%;
+  }
+  
+  .mindyoga-stage.twos.prototype-imgs{
+    padding: 0;
+    width: 100%;
+  }
+  
+  .mindyoga-stage.twos.prototype-imgs img:first-child{
+    border-top: 0;
+  }
+  
+  .mindyoga-stage.twos.work-week-imgs img.mindyoga-ww-image {
+    border: 0;
+    padding: 0;
+    margin: 0 15% 0 15%;
+    height: unset;
+  }
+  .mindyoga-stage.twos img.mindyoga-p-image{
+    padding: 0;
+    margin: 0;
+    height: unset;
+  }
+  
+  .mindyoga-stage.twos.prototype-imgs p{
+    padding: 0 36px 36px 36px;
   }
 }
 
@@ -2042,7 +2121,7 @@ main{
 
 .rr-summary .rr-text{
   border-right: var(--default-white) 1px solid;
-  padding: 24px;
+  padding: 36px;
   min-height: 80px;
   width: calc(100% - 380px);
   max-width: 900px;
@@ -2126,7 +2205,7 @@ main{
   width: unset;
   display: flex;
   flex-direction: column;
-  padding: 24px 0px 24px 0px;
+  padding: 36px 0px 36px 0px;
   gap: 7px;
 }
 
@@ -2151,7 +2230,7 @@ main{
     flex-direction: column;
   }
   .rr-takeaway{
-    padding: 24px 0px 24px 0px;
+    padding: 36px 0px 36px 0px;
   }
 
   .rr-takeaway-image-wrapper{
@@ -2205,7 +2284,7 @@ main{
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 24px 0 24px 0;
+  padding: 36px 0 36px 0;
   gap: 7px;
   height: 100%;
 }
@@ -2231,7 +2310,7 @@ main{
   flex-wrap: nowrap;
   flex-direction: column;
   border-right: var(--default-white) 1px solid;
-  padding: 24px;
+  padding: 36px;
   min-height: 216px;
   width: calc(100% - 380px);
   max-width: 65%;
@@ -2261,7 +2340,7 @@ main{
 
 .htc-summary .htc-text{
   border-left: var(--default-white) 1px solid;
-  padding: 24px;
+  padding: 36px;
   min-height: 80px;
   width: calc(100% - 380px);
 }
@@ -2336,7 +2415,7 @@ main{
   width: 60%;
   display: flex;
   flex-direction: column;
-  padding: 24px 0 24px 0;
+  padding: 36px 0 36px 0;
   gap: 7px;
 }
 
@@ -2379,7 +2458,7 @@ main{
 }
 
 .about-split-text .about-text {
-  padding: 24px;
+  padding: 36px;
 }
 
 .about-takeaway .section-header{
