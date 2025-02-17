@@ -40,14 +40,20 @@ function App() {
         <Route path="/portfolio/projects/active-view-data">
           <MainDisplay vhs={false} page={3}/>
         </Route>
-        <Route path="/portfolio/projects/recruit-right">
+        {/* <Route path="/portfolio/projects/recruit-right">
+          <MainDisplay vhs={false} page={4}/>
+        </Route> */}
+        <Route path="/portfolio/projects/universal-filtering">
           <MainDisplay vhs={false} page={4}/>
         </Route>
-        <Route path="/portfolio/projects/hold-the-code">
+        <Route path="/portfolio/projects/a11y">
           <MainDisplay vhs={false} page={5}/>
         </Route>
-        <Route path="/portfolio/about">
+        <Route path="/portfolio/projects/hold-the-code">
           <MainDisplay vhs={false} page={6}/>
+        </Route>
+        <Route path="/portfolio/about">
+          <MainDisplay vhs={false} page={7}/>
         </Route>
 
       </Switch>

@@ -5,7 +5,9 @@ import Akvd from './projects/akvd';
 import Mindyoga from './projects/mindyoga';
 // import Edc from './projects/edc';
 import Htc from './projects/htc';
-import RecruitRight from './projects/recruitRight.js';
+// import RecruitRight from './projects/recruitRight.js';
+import A11y from './projects/a11y.js';
+import Filters from './projects/filters.js'
 import ProjectList from './projectList.js';
 import AboutMe from './about.js';
 import { withRouter } from 'react-router-dom';
@@ -56,18 +58,21 @@ class PortfolioContent extends React.Component {
             return <ProjectList handleNewProj={this.handleNewProj} />
         }
         else if (this.state.page == 2){
-            return <Mindyoga handleNewProj={this.handleNewProj} next={3} last={5}/>
+            return <Mindyoga handleNewProj={this.handleNewProj} next={3} last={6}/>
         }
         else if (this.state.page == 3){
             return <Akvd handleNewProj={this.handleNewProj} next={4} last={2}/>
         }
         else if (this.state.page == 4){
-            return <RecruitRight handleNewProj={this.handleNewProj} next={5} last={3}/>
+            return <Filters handleNewProj={this.handleNewProj} next={5} last={3}/>
         }
         else if (this.state.page == 5){
-            return <Htc handleNewProj={this.handleNewProj} next={2} last={4}/>
+            return <A11y handleNewProj={this.handleNewProj} next={6} last={4}/>
         }
         else if (this.state.page == 6){
+            return <Htc handleNewProj={this.handleNewProj} next={2} last={5}/>
+        }
+        else if (this.state.page == 7){
             return <AboutMe handleNewProj={this.handleNewProj} />
         }
         return <div>{this.state.page}</div>
@@ -103,7 +108,7 @@ class PortfolioContent extends React.Component {
 //   id="maincontent"
 //   tabIndex={-1}
 
-        console.log(this.state.page)
+        // console.log(this.state.page)
         
         return <div className='portfolio-content' >
                     <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page} mainContentRef={this.scrollRef} theme={this.props.theme} changeTheme={this.props.changeTheme}/>

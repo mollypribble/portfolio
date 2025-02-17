@@ -16,11 +16,18 @@ class RecruitRight extends React.Component {
         <div className="project-display">
             <div className={'project-display-content' + ' rr'}>
                 <Title title="Recruit Right" />
+                <div className='banner'>A platform for finding and recruiting elite soccer players_</div>
                 <ProjectOverview 
-                what='Recruitment platform for colleges, coaches, and players'
+                what='Lead UX Designer'
                 skills='Wireframing, User Personas, Web Design' 
                 dates='Jun 2022-Jul 2023' 
                 affiliation='Freelance' />
+
+                {/* <ProjectOverview 
+                what='Recruitment platform for colleges, coaches, and players'
+                skills='Wireframing, User Personas, Web Design' 
+                dates='Jun 2022-Jul 2023' 
+                affiliation='Freelance' /> */}
 
                 <div className='rr-summary'>
                     <div className='rr-text'><p>RecruitRight is a web application designed to make the college soccer recruitment process smoother for coaches, players, and teams. As the primary UX designer, I focused identifying core features and designing a set of conceptual mockups to guide development, acquire further investors, and set RecruitRight apart from alternative platforms.</p></div>

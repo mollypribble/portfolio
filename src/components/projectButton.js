@@ -17,7 +17,7 @@ class ProjectButton extends React.Component {
                 {this.props.projNumber}: {this.props.projName}
             </div>
             <div className='proj-desc-arrow-wrapper'>
-                <div className='proj-desc' id={'proj-desc'+this.props.projNumber}><p>{this.props.projDescription}</p></div>
+                <div className='proj-desc' id={'proj-desc'+this.props.projNumber}><b>{this.props.projRole}</b><p>{this.props.projDescription}</p></div>
                 <div className='proj-arrow' aria-hidden="true">&rarr;</div>
             </div>
         </div>

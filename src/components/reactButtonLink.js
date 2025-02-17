@@ -41,6 +41,7 @@ class ReactButtonLink extends React.Component {
 
         let mychild = <ProjectButton 
         projName={this.props.projName} 
+        projRole={this.props.projRole} 
         projNumber={this.props.projNumber} 
         projDescription={this.props.projDescription} 
         onClick={this.props.onClick} />

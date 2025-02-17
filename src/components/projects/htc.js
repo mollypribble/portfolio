@@ -17,11 +17,18 @@ class Htc extends React.Component {
         return <div className="project-display">
             <div className="project-display-content">
             <Title title="Hold the Code" />
+            <div className='banner'>A technical newsletter for nontechnical people_</div>
             <ProjectOverview 
-            what='Responsible tech newletter'
+            what='Project Manager'
             skills='Communication Design, Project Management, Tech Ethics' 
             dates='Jan 2021-Jun 2022' 
             affiliation='Responsible AI Student Org. (RAISO)' />
+
+            {/* <ProjectOverview 
+            what='Responsible tech newletter'
+            skills='Communication Design, Project Management, Tech Ethics' 
+            dates='Jan 2021-Jun 2022' 
+            affiliation='Responsible AI Student Org. (RAISO)' /> */}
 
             <div className='htc-summary'>
                 <div className='htc-text'><p><a href="https://raiso.substack.com/" target="_blank">Hold the Code</a> was a communication and education initiative based out of the Responsible AI Student Organization (RAISO) at Northwestern University. As technology becomes more advanced, it is important that everyone is able to understand how it works, what it does, and what the potential impacts are. Hold the Code is a newsletter that aims to educate about these topics to a non-technical audience in an understandable, accessible way without misleading or confusing jargon and buzzwords.</p></div>
@@ -59,7 +66,7 @@ class Htc extends React.Component {
             </div>
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} curr={4} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={5} last={this.props.last} next={this.props.next}/>
 
         </div>
     }

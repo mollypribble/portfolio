@@ -584,6 +584,114 @@ a:hover .proj-button .proj-arrow{
   color: var(--default-black);
 }
 
+/* BASIC LAYOUT */
+
+.port-section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1px;
+  margin-bottom: 36px;
+  width: 100%;
+  padding: 1px 0px 1px 0px;
+  background-color: var(--default-white);
+}
+
+.port-section-title{
+  background-color: var(--default-black);
+  color: var(--default-white);
+  font-size: var(--font-large);
+  font-family: 'VT323';
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 1px;
+  padding: 12px 24px 12px 24px;
+  margin: 0px;
+  font-weight: unset;
+}
+
+.port-single>*, .port-double>*, .port-triple>*{
+  padding: 36px;
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--default-black);
+  color: var(--default-white);
+}
+
+.port-single img, .port-double img, .port-triple img{
+  padding: 0px;
+}
+
+.port-double, .port-triple{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1px;
+}
+
+.port-double>*{
+  width: calc(100%/2);
+}
+
+.port-double.right-small>*:first-child{
+  width: 60%;
+}
+
+.port-double.right-small>*:last-child{
+  width: 40%;
+}
+
+.port-double.left-small>*:first-child{
+  width: 40%;
+}
+
+.port-double.left-small>*:last-child{
+  width: 60%;
+}
+
+.port-triple>*{
+  width: calc(100%/3);
+}
+
+.port-subsection-header{
+  font-family: 'Space';
+  font-size: var(--font-medium);
+  font-weight: 600;
+  margin: 0px;
+}
+
+@media (max-width:1400px) {
+  .port-double, .port-triple{
+    flex-direction: column;
+  }
+
+  .port-double.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .port-double>*, .port-triple>*{
+    width: unset;
+  }
+
+  .port-double.right-small>*:first-child{
+    width: unset;
+  }
+  
+  .port-double.right-small>*:last-child{
+    width: unset;
+  }
+  
+  .port-double.left-small>*:first-child{
+    width: unset;
+  }
+  
+  .port-double.left-small>*:last-child{
+    width: unset;
+  }
+}
+
 /*link style button*/
 a .link-button{
   /* background-color: var(--default-white); */
@@ -629,6 +737,7 @@ a .proj-button{
   justify-content: space-between;
   height: 100%;
   padding: 2%;
+  gap: 24px;
 }
 
 a .proj-button .proj-label{
@@ -645,12 +754,19 @@ a .proj-button .proj-label{
 
 a .proj-button .proj-desc{
   font-size: var(--font-small);
-  padding: 36px;
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 100%;
   justify-content: flex-end;
+  padding: 36px;
+  padding-top: 0px;
+}
+
+a .proj-button .proj-role{
+  font-size: var(--font-small);
+  padding: 36px;
+  padding-bottom: 0px;
 }
 
 .proj-desc-arrow-wrapper{
@@ -676,7 +792,7 @@ a .proj-button .proj-arrow{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 4px;
+  padding-bottom: 16px;
 }
 
 a .proj-button:hover{
@@ -1441,6 +1557,10 @@ main{
   text-decoration: none;
 }
 
+abbr{
+  text-decoration: none;
+}
+
 .proj-next-last-controls a.big-wrapper{
   display: block;
 }
@@ -1595,9 +1715,16 @@ main{
   margin-bottom: 36px;
   width: 100%;
   display: flex;
-  border-top: 1px solid var(--default-white);
+  /* background-color: var(--default-white);
+  padding-top: 1px; */
+  border-top: var(--default-white) 1px solid;
+  border-bottom: var(--default-white) 1px solid;
   flex-wrap: wrap;
   height: calc(100% - 103px);
+}
+
+.project-list a:last-child{
+  border-bottom: 0px;
 }
 
 /* title and subtitle */
@@ -1729,7 +1856,6 @@ main{
 }
 
 .banner{
-  width: 100%;
   padding: 2px 3px 3px 24px;
   background-color: var(--default-white);
   color: var(--default-black);
@@ -1744,6 +1870,7 @@ main{
   border-bottom: var(--default-white) 1px solid;
   width: calc(100% + 1px);
   overflow: hidden;
+  margin-bottom: 36px;
 }
 
 .project-overview-detail{
@@ -1880,6 +2007,7 @@ main{
   font-weight: 600;
   margin: 0px;
 }
+
 .mindyoga-results h3{
   font-size: 44px;
 }
@@ -2289,6 +2417,13 @@ main{
   margin-top: 36px;
 }
 
+.a11y-takeaways-header{
+  width: 100%;
+  border-top: var(--default-white) 1px solid;
+  border-bottom: var(--default-white) 1px solid;
+  margin-top: 36px;
+}
+
 .htc-takeaway.text-only{
   margin-right: 0px;
   width: 50%;
@@ -2356,7 +2491,6 @@ main{
 }
 
 .htc-summary-image{
-  width: 50%;
   object-fit: contain;
   object-position: 0% 0;
   max-height: 345px;
@@ -2497,6 +2631,7 @@ main{
   object-position: 50% 25%;
   max-height: 500px;
   max-width: 470px;
+  border-left: var(--default-white) 1px solid;
 }
 
 .about-split-text .link-nav{
@@ -2571,6 +2706,8 @@ main{
   .about-takeaway-image {
     width: unset;
     max-width: unset;
+    border: 0;
+    border-bottom: var(--default-white) 1px solid;
   }
 
   .about-takeaway.text-only.part-two{

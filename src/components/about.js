@@ -38,8 +38,6 @@ class AboutMe extends React.Component {
                 <Title title="About Me"/>
 
                 <div className='about-split'>
-
-                    <img className='about-takeaway-image' alt='Headshot of Molly' src={me}/>
                     
                     <div className='about-split-text'>
                         
@@ -78,6 +76,8 @@ class AboutMe extends React.Component {
                         </div>
 
                     </div>
+
+                    <img className='about-takeaway-image' alt='Headshot of Molly' src={me}/>
                     
                 </div>
 
