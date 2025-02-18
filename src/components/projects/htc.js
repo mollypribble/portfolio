@@ -49,7 +49,7 @@ class Htc extends React.Component {
                         <ul>
                             <li>A <b>150% increase</b> in subscriber count</li>
                             <li>A <b>120% increase</b> in overall viewership</li>
-                            <li>Expansion into <b>long-form and social media content</b></li>
+                            {/* <li>Expansion into <b>long-form and social media content</b></li> */}
                             <li>Welcoming <b>five new contributors</b> to grow our team of three</li>
                             <li>Publication of <b>over 25 newsletter editions</b></li>
                         </ul>
@@ -60,7 +60,7 @@ class Htc extends React.Component {
             <div className='htc-split'>
                 <div className='htc-split-text'>
                     <h3 className='section-header'>OUT OF THE INBOX</h3>
-                    <div className='htc-text'><p>Another initiative at Hold the Code was to expand beyond written content to social media. Since social media is generally more popular among younger audiences, Hold the Code began creating visually engaging summaries of our newsletter editions for Instagram to increase our reach. The success of this effort lead to our committee absorbing most of RAISO's social media operations, where Hold the Code's social media expert would create stories and posts, advertise about upcoming events, and engage with our audience directly.</p></div>
+                    <div className='htc-text'><p>Another initiative that began under my leadership at Hold the Code was to expand beyond written content to social media. Since social media is generally more popular among younger audiences, Hold the Code began creating visually engaging summaries of our newsletter editions for Instagram to increase our reach. The success of this effort lead to our committee absorbing most of RAISO's social media operations, where Hold the Code's social media expert would create stories and posts, advertise about upcoming events, and engage with our audience directly.</p></div>
                 </div>
                 <img className='htc-takeaway-image' src={insta} alt="Image of Hold the Code's instagram page including posts about AI legislation, creative AI, and AI & healthcare."/>
             </div>
