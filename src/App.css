@@ -509,7 +509,7 @@ ul li{
 }
 
 button, a{
-  color: var(--default-black);
+  color: var(--default-white);
   cursor: url('./media/hover-cursor.png') 9 9, crosshair;
 }
 
