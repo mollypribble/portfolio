@@ -31,12 +31,12 @@ class Home extends React.Component {
         window.addEventListener('resize', this.updateWidth);
       }
       
-      componentWillUnmount() {
+    componentWillUnmount() {
         window.removeEventListener('resize', this.updateWidth);
-      }
+    }
 
     render () {
-        console.log(this.props.tvColor, this.props.tvColor == 'light')
+
         const tvSrc = (this.props.tvColor == 'light') ? tvLight :tv;
 
         const disableVideo = this.props.video ? "" : " disabled";
@@ -55,7 +55,7 @@ class Home extends React.Component {
                     </div>
                     <h1 className='home-simple-name'>
                         Molly Pribble
-                        <div aria-hidden="true" className='glitch'><p>Molly Pribble</p></div>
+                        {this.props.video ? <div aria-hidden="true" className='glitch'><p>Molly Pribble</p></div> : <></>}
                     </h1>
                     <p className='home-simple-title'>
                         UX/UI designer
