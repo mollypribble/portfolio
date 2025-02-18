@@ -2712,7 +2712,6 @@ abbr{
     width: unset;
     max-width: unset;
     border: 0;
-    border-bottom: var(--default-white) 1px solid;
   }
 
   .about-takeaway.text-only.part-two{
