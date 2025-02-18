@@ -1823,7 +1823,9 @@ abbr{
     padding-top: 24px;
     padding-bottom: 24px;
     text-wrap: wrap;
-    padding-right: 60px
+    padding-right: 60px;
+    overflow-wrap: break-word;
+    width: 100%;
   }
   .rect-1,
   .rect-2,
@@ -1835,6 +1837,9 @@ abbr{
   }
   .project-subtitle .text{
     border: 0px;
+  }
+  .project-list a:last-child{
+    border-bottom: 1px;
   }
 }
 
