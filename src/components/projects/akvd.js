@@ -17,7 +17,7 @@ class Akvd extends React.Component {
             <Title title="Active View Data" />
             <div className='banner'>A business-friendly interface for data processing &#xB7; Patent Pending_</div>
             <ProjectOverview 
-            what='Lead UX Designer'
+            what='Solo UX Designer'
             skills='UX Design, Interaction Design, Prototyping, User Testing' 
             dates='Jun 2022-Aug 2022' 
             affiliation='Ab Initio Software' />

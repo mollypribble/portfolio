@@ -14,6 +14,7 @@
   --font-large: 36px;
   --font-extra-large: 42px; 
   --font-xxl: 56px;
+  --banner: var(--default-white);
 }
 
 /* fonts */
@@ -100,6 +101,7 @@ body{
   --focus-blue: #cee0eb;
   --focus-shadow-blue: #7fabcb;
   --focus-outline-blue: #4886B1;
+  --banner: var(--default-white);
 }
 .main-display.light a .link-button img{
   filter: invert(1);
@@ -509,8 +511,19 @@ ul li{
 }
 
 button, a{
-  color: var(--default-white);
   cursor: url('./media/hover-cursor.png') 9 9, crosshair;
+}
+
+button{
+  color: var(--default-white);
+}
+
+a{
+  color: var(--default-white);
+}
+
+.banner a{
+  color: var(--default-black);
 }
 
 a:active,
@@ -2806,3 +2819,10 @@ video {
     list-style-image: unset;
   }
 }
+
+.section-header.contrast,
+.mindyoga-three-stages-text .mindyoga-stage.callout {
+  background-color: var(--banner);
+  color: var(--default-black);
+}
+

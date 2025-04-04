@@ -44,7 +44,7 @@ class a11y extends React.Component {
                     </div>
                 </Single>
                 <Double>
-                    <p className='section-header'>However, the biggest issue I uncovered during this audit was the widespread lack of accessibility knowledge in our organization.</p>
+                    <p className='section-header contrast'>However, the biggest issue I uncovered during this audit was the widespread lack of accessibility knowledge in our organization.</p>
                     <div>
                         <p>Without dedicated accessibility resources, our products contain a lot of inaccessible code and design. The <b>lack of resources</b> was exacerbated by a general sense that accessibility was a <b>confusing, overwhelming topic</b> and an attitude that accessibility <b>doesn't provide additional business value</b>.</p>
                     </div>
