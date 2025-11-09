@@ -18,42 +18,48 @@ function App() {
     }
   }, [])
 
+  const projsArrayURLs = [
+    "mindyoga", "active-view-data", "a11y", "hold-the-code"
+  ];
+
+  const numProjs = projsArrayURLs.length;
+
   return (
     <BrowserRouter>
       <Switch>
 
         <Route exact path="/">
-          <MainDisplay vhs={true} page={0}/>
+          <MainDisplay vhs={true} page={0} projURLs={projsArrayURLs}/>
         </Route>
         <Route exact path="/portfolio">
-          <MainDisplay vhs={true} page={0}/>
+          <MainDisplay vhs={true} page={0} projURLs={projsArrayURLs}/>
         </Route>
         <Route path="/portfolio/home">
-          <MainDisplay vhs={false} page={0}/>
+          <MainDisplay vhs={false} page={0} projURLs={projsArrayURLs}/>
         </Route>
         <Route exact path="/portfolio/projects">
-          <MainDisplay vhs={false} page={1}/>
+          <MainDisplay vhs={false} page={1} projURLs={projsArrayURLs}/>
         </Route>
-        <Route path="/portfolio/projects/mindyoga">
-          <MainDisplay vhs={false} page={2}/>
+        <Route path="/portfolio/about">
+          <MainDisplay vhs={false} page={2} projURLs={projsArrayURLs}/>
         </Route>
-        <Route path="/portfolio/projects/active-view-data">
-          <MainDisplay vhs={false} page={3}/>
+        <Route path={"/portfolio/projects/"+projsArrayURLs[0]}>
+          <MainDisplay vhs={false} page={3} numProjs={numProjs} projURLs={projsArrayURLs}/>
+        </Route>
+        <Route path={"/portfolio/projects/"+projsArrayURLs[1]}>
+          <MainDisplay vhs={false} page={4} numProjs={numProjs} projURLs={projsArrayURLs}/>
         </Route>
         {/* <Route path="/portfolio/projects/recruit-right">
           <MainDisplay vhs={false} page={4}/>
         </Route> */}
-        <Route path="/portfolio/projects/universal-filtering">
+        {/* <Route path="/portfolio/projects/universal-filtering">
           <MainDisplay vhs={false} page={4}/>
+        </Route> */}
+        <Route path={"/portfolio/projects/"+projsArrayURLs[2]}>
+          <MainDisplay vhs={false} page={5} numProjs={numProjs} projURLs={projsArrayURLs}/>
         </Route>
-        <Route path="/portfolio/projects/a11y">
-          <MainDisplay vhs={false} page={5}/>
-        </Route>
-        <Route path="/portfolio/projects/hold-the-code">
-          <MainDisplay vhs={false} page={6}/>
-        </Route>
-        <Route path="/portfolio/about">
-          <MainDisplay vhs={false} page={7}/>
+        <Route path={"/portfolio/projects/"+projsArrayURLs[3]}>
+          <MainDisplay vhs={false} page={6} numProjs={numProjs} projURLs={projsArrayURLs}/>
         </Route>
 
       </Switch>

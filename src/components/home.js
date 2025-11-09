@@ -53,13 +53,15 @@ class Home extends React.Component {
                             <CustomButton className='small-button' disabled={false} small={true} bounce={false} icon={this.props.video ? "pause.png" : "play.png"} onClick={(e) => this.props.toggleVideo(!this.props.video)} ariaLabel={this.props.video ? "Pause" : "Play"} />
                         </div>
                     </div>
-                    <h1 className='home-simple-name'>
-                        Molly Pribble
-                        {this.props.video ? <div aria-hidden="true" className='glitch'><p>Molly Pribble</p></div> : <></>}
-                    </h1>
-                    <p className='home-simple-title'>
-                        UX/UI designer
-                    </p>
+                    <div className='home-simple-text'>
+                        <h1 className='home-simple-name'>
+                            Molly Pribble
+                            {this.props.video ? <div aria-hidden="true" className='glitch'><p>Molly Pribble</p></div> : <></>}
+                        </h1>
+                        <p className='home-simple-title'>
+                            UX/UI designer
+                        </p>
+                    </div>
                 </div>
 
         </div>

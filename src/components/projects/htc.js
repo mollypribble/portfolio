@@ -66,7 +66,7 @@ class Htc extends React.Component {
             </div>
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} curr={5} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={this.props.currPageNum} last={this.props.last} next={this.props.next} maxProjs={this.props.maxProjs}/>
 
         </div>
     }

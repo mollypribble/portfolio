@@ -76,8 +76,8 @@ class NavBar extends React.Component {
             {/* <CustomButton disabled={false} className='nav-toggle-wrapper small-button' childClassName='nav-toggle' small={true} bounce={false} icon={icon} active={false} onClick={(e) => this.toggleOpen()} ariaLabel={toggleLabel} /> */}
 
             <ReactButtonLink linkTo="/portfolio/home" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"home.png"} active={(this.props.currPage == 0)} onClick={(e) => this.handleNavWrapper(0)} ariaLabel="Home" />
-            <ReactButtonLink linkTo="/portfolio/projects" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 7)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Projects" />
-            <ReactButtonLink linkTo="/portfolio/about" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 7)} onClick={(e) => this.handleNavWrapper(7)} ariaLabel="About" />
+            <ReactButtonLink linkTo="/portfolio/projects" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"proj.png"} active={(this.props.currPage != 0 && this.props.currPage != 2)} onClick={(e) => this.handleNavWrapper(1)} ariaLabel="Projects" />
+            <ReactButtonLink linkTo="/portfolio/about" disabled={disableButtons} tabIndex={tabIndex} small={false} bounce={false} icon={"about.png"} active={(this.props.currPage == 2)} onClick={(e) => this.handleNavWrapper(2)} ariaLabel="About" />
                 
 
             <div className='color-row-wrapper'>

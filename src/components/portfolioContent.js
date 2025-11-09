@@ -13,11 +13,6 @@ import AboutMe from './about.js';
 import { withRouter } from 'react-router-dom';
 
 class PortfolioContent extends React.Component {
-    //pages --> 
-    // 0 --> home
-    // 1 --> project list
-    // 2-5 --> projects
-    // 6 --> about
 
     constructor(props) {
         super(props);
@@ -48,34 +43,19 @@ class PortfolioContent extends React.Component {
     }
 
     renderCurrentPage (){
-        if (this.state.page == 0){
-            return <Home 
-                    video={this.state.video} 
-                    toggleVideo={this.toggleVideo}
-                    tvColor={this.props.theme}/>
-        }
-        else if (this.state.page == 1){
-            return <ProjectList handleNewProj={this.handleNewProj} />
-        }
-        else if (this.state.page == 2){
-            return <Mindyoga handleNewProj={this.handleNewProj} next={3} last={6}/>
-        }
-        else if (this.state.page == 3){
-            return <Akvd handleNewProj={this.handleNewProj} next={4} last={2}/>
-        }
-        else if (this.state.page == 4){
-            return <Filters handleNewProj={this.handleNewProj} next={5} last={3}/>
-        }
-        else if (this.state.page == 5){
-            return <A11y handleNewProj={this.handleNewProj} next={6} last={4}/>
-        }
-        else if (this.state.page == 6){
-            return <Htc handleNewProj={this.handleNewProj} next={2} last={5}/>
-        }
-        else if (this.state.page == 7){
-            return <AboutMe handleNewProj={this.handleNewProj} />
-        }
-        return <div>{this.state.page}</div>
+
+        const pageIndexArray = [
+            <Home video={this.state.video} toggleVideo={this.toggleVideo} tvColor={this.props.theme}/>, 
+            <ProjectList handleNewProj={this.handleNewProj} projURLs={this.props.projURLs} />, 
+            <AboutMe handleNewProj={this.handleNewProj} />,
+            <Mindyoga handleNewProj={this.handleNewProj} currPageNum={this.state.page} next={this.props.projURLs[1]} last={this.props.projURLs[3]} maxProjs={this.props.numProjs}/>,
+            <Akvd handleNewProj={this.handleNewProj} currPageNum={this.state.page} next={this.props.projURLs[2]} last={this.props.projURLs[0]} maxProjs={this.props.numProjs}/>, 
+            <A11y handleNewProj={this.handleNewProj} currPageNum={this.state.page} next={this.props.projURLs[3]} last={this.props.projURLs[1]} maxProjs={this.props.numProjs}/>,
+            <Htc handleNewProj={this.handleNewProj} currPageNum={this.state.page} next={this.props.projURLs[0]} last={this.props.projURLs[2]} maxProjs={this.props.numProjs}/>
+        ];
+
+        return pageIndexArray[this.state.page];
+        // return <div> hi {this.state.page} {this.props.projURLs}</div>
     }
 
     scrollToTop = () => {
@@ -104,11 +84,6 @@ class PortfolioContent extends React.Component {
 
     render () {
         const scrollClass = (this.state.page == 0) ? "custom-scroll no-display" : "custom-scroll"
-//         ref={mainContentRef}
-//   id="maincontent"
-//   tabIndex={-1}
-
-        // console.log(this.state.page)
         
         return <div className='portfolio-content' >
                     <NavBar handleNewProj={this.handleNewProj} currPage={this.state.page} mainContentRef={this.scrollRef} theme={this.props.theme} changeTheme={this.props.changeTheme}/>

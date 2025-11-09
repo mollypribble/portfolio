@@ -49,7 +49,8 @@ class MainDisplay extends React.Component {
 
     render () {
         
-        const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio}/>:<PortfolioContent page={this.props.page} theme={this.state.colorMode} changeTheme={this.setColorMode}/>
+        const returnMe = (this.state.vhs) ? <LandingPage enterPortfolio={this.enterPortfolio}/>:
+        <PortfolioContent page={this.props.page} theme={this.state.colorMode} changeTheme={this.setColorMode} numProjs={this.props.numProjs} projURLs={this.props.projURLs} />
         
         return <div className={'main-display'+ " " + this.state.colorMode}
                   style={{height: `${this.state.height}px`}} >

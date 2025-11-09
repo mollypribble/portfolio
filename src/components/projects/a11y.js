@@ -84,7 +84,7 @@ class a11y extends React.Component {
 
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} curr={4} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={this.props.currPageNum} last={this.props.last} next={this.props.next} maxProjs={this.props.maxProjs}/>
 
         </div>
     }

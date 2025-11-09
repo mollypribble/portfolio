@@ -44,7 +44,7 @@ class AboutMe extends React.Component {
                         <div>
                             <SubTitle title="HI, I'M MOLLY" />
                             <div className='about-text'>
-                                <p>I'm a Boston-based UX designer, currently at Ab Initio. My interests and professional expertise include: UI/interaction design, accessibility, HCI, ethical technology, and design research.<br /> <br />
+                                <p>I design interfaces that feel effortless and look intentional. Grounded in research and fluent in web technologies, I turn ideas into experiences that are both beautiful and buildable. I value clarity, collaboration, and accessibility in every project.<br /> <br />
                                     {/* I've worked on a wide range of projects from designing a re-usable, cross-product filtering widget to developing an introductory accessibility training course for front-end developers and designers.
                                     Prior to this, I graduated from and conducted HCI design research at Northwestern University.
                                     In future, I want to further explore accessible design, socio-technical interaction design, and how technology can positively influence emotions.

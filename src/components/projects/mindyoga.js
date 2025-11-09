@@ -177,7 +177,7 @@ class Mindyoga extends React.Component {
             </div>
             </div>
 
-            <NextLastNav handleNewProj={this.props.handleNewProj} curr={1} last={this.props.last} next={this.props.next}/>
+            <NextLastNav handleNewProj={this.props.handleNewProj} curr={this.props.currPageNum} last={this.props.last} next={this.props.next} maxProjs={this.props.maxProjs}/>
         </div>
 
         </>

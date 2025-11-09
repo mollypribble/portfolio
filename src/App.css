@@ -8,7 +8,7 @@
   --focus-shadow-blue: #7fabcb;
   --focus-outline-blue: #4886B1;
   --default-text-spacing: -0.75px;
-  --tv-width: 300px;
+  --tv-width: 250px;
   --font-small: 18px;
   --font-medium: 24px;
   --font-large: 36px;
@@ -726,14 +726,14 @@ a.proj-button-wrapper{
   background-color: var(--default-black);
   color: var(--default-white);
   border: none;
-  border-bottom: var(--default-white) 1px solid;
-  border-right: var(--default-white) 1px solid;
+  /* border-bottom: var(--default-white) 1px solid;
+  border-right: var(--default-white) 1px solid; */
   padding: 0px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: stretch;
-  width: 50%;
+  width: calc(50% - 0.5px);
   justify-content: space-between;
   box-sizing: border-box;
   margin: 0px;
@@ -1413,10 +1413,19 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   height: 100%;
   align-items: center;
   border: 0px;
+  gap: 20px;
+}
+
+.home-simple-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 0px;
 }
 
 .home-simple-name{
@@ -1459,9 +1468,10 @@ main{
 .home-tv-video{
   z-index: 5;
   position: absolute;
-  top: 71px;
-  left: 30px;
-  width: 240px;
+  top: 50px;
+  left: 26px;
+  width: 200px;
+  border-radius: 30px;
 }
 
 .home-simple-video-controls{
@@ -1471,8 +1481,8 @@ main{
   flex-direction: row;
   align-items: end;
   justify-content: center;
-  bottom: 69px;
-  left: 72px;
+  bottom: 55px;
+  left: 58px;
   gap: 7px;
 }
 
@@ -1734,10 +1744,8 @@ abbr{
   border-bottom: var(--default-white) 1px solid;
   flex-wrap: wrap;
   height: calc(100% - 103px);
-}
-
-.project-list a:last-child{
-  border-bottom: 0px;
+  gap: 1px;
+  background: var(--default-white);
 }
 
 /* title and subtitle */
@@ -2620,7 +2628,7 @@ abbr{
 }
 
 .about-split-text .about-text {
-  padding: 36px;
+  padding: 24px;
 }
 
 .about-takeaway .section-header{
