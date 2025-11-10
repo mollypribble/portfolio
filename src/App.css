@@ -1743,7 +1743,7 @@ abbr{
   border-top: var(--default-white) 1px solid;
   border-bottom: var(--default-white) 1px solid;
   flex-wrap: wrap;
-  height: calc(100% - 103px);
+  /* height: calc(100% - 103px); */
   gap: 1px;
   background: var(--default-white);
 }
