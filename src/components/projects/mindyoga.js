@@ -157,7 +157,7 @@ class Mindyoga extends React.Component {
                 <div className='mindyoga-three-stages-text-title mindyoga-results'>
                     <SubTitle title="STUDY RESULTS" />
 
-                    <div className='mindyoga-stage ones'>
+                    <div className='mindyoga-stage ones study'>
                             <div className='akvd-text'><p>Over two weeks, we observed a number of novice research students at Northwestern University and their interactions with the Mindyoga system. Through a combination of tracking metric, feeedback interviews, and post-study surveys, we were able to determine is Mindyoga was successful in aiding metacognitive reflection and identify areas for improvement.</p></div>
                     </div>
 

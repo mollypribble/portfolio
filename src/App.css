@@ -2173,6 +2173,12 @@ abbr{
   border-right: 0px;
 }
 
+.mindyoga-stage.study{
+  width: unset; 
+  border-top: var(--default-white) 1px solid;
+  border-right: 0px;
+}
+
 .mindyoga-stages-image{
   object-fit: contain;
   width: 100%;

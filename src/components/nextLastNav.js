@@ -27,14 +27,21 @@ class NextLastNav extends React.Component {
         }
 
         const UIPageNum = this.props.curr-2 //correct for page index numbers in App.js
-        console.log(this.props.maxProjs)
+
+        let maxProjNum = this.props.maxProjs;
+
+        if (this.props.maxProjs === undefined){
+            maxProjNum = 4;
+        }
+
+        console.log(this.props.maxProjs, maxProjNum)
 
         return <footer className='banner proj-next-last-banner'>
         <nav className='proj-next-last-controls' aria-label={'Project'}>
-            <p className='visually-hidden-text'>Project {UIPageNum} out of {this.props.maxProjs}</p>
+            <p className='visually-hidden-text'>Project {UIPageNum} out of {maxProjNum}</p>
             <ReactButtonLink className="big-wrapper" nextLast={true} linkTo={"/portfolio/projects/"+prevLink} childClassName="big left-icon" label='Prev' alt={`Previous project`} onClick={(e) => this.props.handleNewProj(prevIndex)} icon={prev} />
             <ReactButtonLink className="small-wrapper" nextLast={true} linkTo={"/portfolio/projects/"+prevLink} childClassName="small left-icon" label='Prev' alt={`Previous project`} onClick={(e) => this.props.handleNewProj(prevIndex)} icon={prev} />
-            <p aria-hidden={true}>Project {UIPageNum}/{this.props.maxProjs}</p>
+            <p aria-hidden={true}>Project {UIPageNum}/{maxProjNum}</p>
             <ReactButtonLink className="big-wrapper" nextLast={true} linkTo={"/portfolio/projects/"+nextLink} childClassName="big right-icon" label='Next' alt={`Next project`} onClick={(e) => this.props.handleNewProj(nextIndex)} icon={next} />
             <ReactButtonLink className="small-wrapper" nextLast={true} linkTo={"/portfolio/projects/"+nextLink} childClassName="small right-icon" label='Next' alt={`Next project`} onClick={(e) => this.props.handleNewProj(nextIndex)} icon={next} />
         </nav>
