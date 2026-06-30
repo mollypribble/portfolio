@@ -59,7 +59,7 @@ class Home extends React.Component {
                             {this.props.video ? <div aria-hidden="true" className='glitch'><p>Molly Pribble</p></div> : <></>}
                         </h1>
                         <p className='home-simple-title'>
-                            UX/UI designer
+                            UX designer
                         </p>
                     </div>
                 </div>

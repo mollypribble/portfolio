@@ -44,7 +44,7 @@ class AboutMe extends React.Component {
                         <div>
                             <SubTitle title="HI, I'M MOLLY" />
                             <div className='about-text'>
-                                <p>I design interfaces that feel effortless and look intentional. Grounded in research and fluent in web technologies, I turn ideas into experiences that are both beautiful and buildable. I value clarity, collaboration, and accessibility in every project.<br /> <br />
+                                <p>I design websites and software applications. My approach to design is grounded in user-centered principles. With experience in enterprise software, freelance web design and development, and a foundation in research, I create experiences that are both beautiful and buildable, and I strive for clarity, collaboration, and accessibility in every project.<br /> <br />
                                     {/* I've worked on a wide range of projects from designing a re-usable, cross-product filtering widget to developing an introductory accessibility training course for front-end developers and designers.
                                     Prior to this, I graduated from and conducted HCI design research at Northwestern University.
                                     In future, I want to further explore accessible design, socio-technical interaction design, and how technology can positively influence emotions.
@@ -91,7 +91,7 @@ class AboutMe extends React.Component {
                             <li>Segal Design Certificate (Northwestern '22)</li>
                             <li><a href='https://practical-accessibility.today/' target='_blank'>Practical Accessibility</a> Certificate of Completion</li>
                             <li>HTML, CSS, Javascript/Typescript, React, Python</li>
-                            <li>Figma, Sketch</li>
+                            <li>Figma, Sketch, AI-enabled prototyping, Wordpress</li>
                         </ul>
                     </div>
                     <div className='about-takeaway text-only last-one'>
@@ -100,9 +100,7 @@ class AboutMe extends React.Component {
                             <li>Pottery</li>
                             <li>Baking</li>
                             <li>Yoga</li>
-                            <li>Soccer</li>
                             <li>Hiking</li>
-                            <li>Photography</li>
                         </ul>
                     </div>
                 </div>

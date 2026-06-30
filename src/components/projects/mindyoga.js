@@ -8,6 +8,7 @@ import ww from '../../media/project-media/mindyoga/work_week.png';
 import p1 from '../../media/project-media/mindyoga/Reflection_Dash.png'
 import p2 from '../../media/project-media/mindyoga/Planning_Scaffold.png'
 import p3 from '../../media/project-media/mindyoga/Slack_Reminders.png'
+import Triple from '../layout/triple';
 
 class Mindyoga extends React.Component {
 
@@ -89,7 +90,7 @@ class Mindyoga extends React.Component {
                 <div className='mindyoga-three-stages-text-title mindyoga-results'>
                     <SubTitle title="THE MINDYOGA FRAMEWORK" />
 
-                    <div className='mindyoga-stage ones'>
+                    {/* <div className='mindyoga-stage ones'>
                             <div className='akvd-text'><p>To address each of the observed obstacles, we created a low-fi prototype of the Mindyoga framework, which consisted of:
                                 <br/><br/>
                                 <ul>
@@ -103,9 +104,42 @@ class Mindyoga extends React.Component {
                                 </p>
                             </p></div>
 
-                    </div>
+                    </div> */}
                     <div className='my-group'>
+                        {/* <Triple>
+                            <div>
+                                <img className='mindyoga-stage mindyoga-stages-image mindyoga-p-image' src={p1} alt='Reflection Dashboard Prototype'/>
+                                <div className='akvd-text'><p aria-hidden="true"><b>Reflection Dashboard</b></p></div>
+                            </div>
+                            <div>
+                                <img className='mindyoga-stage mindyoga-stages-image mindyoga-p-image' src={p2} alt='Planning Scaffold Prototype'/>
+                                <div className='akvd-text'><p aria-hidden="true"><b>Planning Scaffold</b></p></div>
+                            </div>
+                            <div>
+                                <img className='mindyoga-stage mindyoga-stages-image mindyoga-p-image' src={p3} alt='Slack Reminders'/>
+                                <div className='akvd-text'><p aria-hidden="true"><b>Slack Reminders</b></p></div>
+                            </div>
+                        </Triple> */}
                     <div className='mindyoga-three-stages-text'>
+                        <div className='mindyoga-stage twos work-week-imgs'>
+                            {/* <img className='mindyoga-stage mindyoga-stages-image mindyoga-ww-image' src={ww} alt={wwAlt}/> */}
+                            <div className='mindyoga-stage ones'>
+
+                            <div className='akvd-text'><p>To address each of the observed obstacles, we created a low-fi prototype of the Mindyoga framework, which consisted of:
+                                <br/><br/>
+                                <ul>
+                                    <li>A <b>reflection dashboard</b> to require learners to explicitly write down their perceived metacognitive risks</li>
+                                    <li>A mentor-guided <b>planning scaffold</b> to create an specific, accurate action plan to improve metacognition</li>
+                                    <li>Automated <b>Slack reminders</b> delivered during key work sessions and customized with the learner’s action plan for the week</li>
+                                </ul>
+                                <br/>
+                                <p aria-hidden="true">
+                                    {wwAlt}
+                                </p>
+                            </p></div>
+                            </div>
+                        </div>
+
                         <div className='mindyoga-stage twos prototype-imgs'>
                             <img className='mindyoga-stage mindyoga-stages-image mindyoga-p-image' src={p1} alt='Reflection Dashboard Prototype'/>
                             <div className='akvd-text'><p aria-hidden="true"><b>Reflection Dashboard</b></p></div>
@@ -114,9 +148,7 @@ class Mindyoga extends React.Component {
                             <img className='mindyoga-stage mindyoga-stages-image mindyoga-p-image' src={p3} alt='Slack Reminders'/>
                             <div className='akvd-text'><p aria-hidden="true"><b>Slack Reminders</b></p></div>
                         </div>
-                        <div className='mindyoga-stage twos work-week-imgs'>
-                            <img className='mindyoga-stage mindyoga-stages-image mindyoga-ww-image' src={ww} alt={wwAlt}/>
-                        </div>
+                        
                     </div>
                     </div>
                     

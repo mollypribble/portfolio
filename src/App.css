@@ -2146,12 +2146,12 @@ abbr{
 
 .mindyoga-stage.twos.work-week-imgs{
   padding: 0;
-  width: 50%;
+  width: calc(100%/3);
 }
 
 .mindyoga-stage.twos.prototype-imgs{
   padding: 0;
-  width: 50%;
+  width: calc(200%/3);
 }
 
 .mindyoga-stage.twos.prototype-imgs img:first-child{
@@ -2169,7 +2169,7 @@ abbr{
 
 .mindyoga-stage.ones{
   width: unset; 
-  border-top: var(--default-white) 1px solid;
+  /* border-top: var(--default-white) 1px solid; */
   border-right: 0px;
 }
 
