@@ -62,6 +62,9 @@ class Home extends React.Component {
                             UX designer
                         </p>
                     </div>
+
+                    <div className='banner home-banner'>{'>>'} This portfolio was design and developed without the use of AI. While I am proficient in AI design tools and incorporate them in my process professionally, all content, designs, ideas, theming, and code on this site come 100% from my own brain.</div>
+
                 </div>
 
         </div>

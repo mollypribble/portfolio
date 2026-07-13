@@ -1619,6 +1619,7 @@ abbr{
 .banner.home-banner{
   position: absolute;
   bottom: 0px;
+  line-height: 1.25;
 }
 
 .banner.home-banner.disabled{
