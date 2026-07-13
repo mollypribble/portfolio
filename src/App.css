@@ -1468,7 +1468,7 @@ main{
 .home-tv-video{
   z-index: 5;
   position: absolute;
-  top: 50px;
+  top: 56px;
   left: 26px;
   width: 200px;
   border-radius: 30px;
@@ -1481,7 +1481,7 @@ main{
   flex-direction: row;
   align-items: end;
   justify-content: center;
-  bottom: 57px;
+  bottom: 56px;
   left: 58px;
   gap: 7px;
 }
