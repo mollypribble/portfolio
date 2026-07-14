@@ -42,7 +42,7 @@ class AboutMe extends React.Component {
                     <div className='about-split-text'>
                         
                         <div>
-                            <SubTitle title="HI, I'M MOLLY" />
+                            <SubTitle title="HI, I'M MOLLY." />
                             <div className='about-text'>
                                 <p>I design websites and software applications. My approach to design is grounded in user-centered principles. With experience in enterprise software, freelance web design and development, and a foundation in research, I create experiences that are both beautiful and buildable, and I strive for clarity, collaboration, and accessibility in every project.<br /> <br />
                                     {/* I've worked on a wide range of projects from designing a re-usable, cross-product filtering widget to developing an introductory accessibility training course for front-end developers and designers.
