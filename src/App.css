@@ -1620,6 +1620,9 @@ abbr{
   position: absolute;
   bottom: 0px;
   line-height: 1.25;
+  color: var(--default-white);
+  max-width: 70%;
+  background-color: none;
 }
 
 .banner.home-banner.disabled{
