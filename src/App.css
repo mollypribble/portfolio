@@ -1622,7 +1622,7 @@ abbr{
   line-height: 1.25;
   color: var(--default-white);
   max-width: 70%;
-  background-color: none;
+  background-color: transparent;
 }
 
 .banner.home-banner.disabled{
