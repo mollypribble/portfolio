@@ -63,7 +63,7 @@ class Home extends React.Component {
                         </p>
                     </div>
 
-                    <div className='banner home-banner'>{'>>'} This portfolio was designed and developed without the use of AI.</div>
+                    {/* <div className='banner home-banner'>{'>>'} This portfolio was designed and developed without the use of AI.</div> */}
 
                 </div>
 
